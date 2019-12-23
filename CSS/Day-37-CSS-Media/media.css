@@ -1,0 +1,17 @@
+
+.para{ font-size: 32px; color: white; display: block; }
+.bg-gray{background-color: #808080; padding: 20px; }
+
+@media screen and (max-width: 1024px) {
+	.para{ color: yellow; font-size: 25px; } 	
+	.tablet-show{ display: block; } 	
+}
+
+@media screen and (max-width: 700px){
+	
+	.tablet-show{ display: none; } 	
+	.mobile-show{ display: block; } 	
+}
+
+
+

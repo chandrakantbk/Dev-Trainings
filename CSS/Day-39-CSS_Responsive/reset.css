@@ -1,0 +1,5 @@
+*{box-sizing: border-box;  }
+
+body, article, header, p{ display:block; margin:0; font-size: 1em;   }
+
+h1, h2, h3{ display: block; font-size: 1em; }

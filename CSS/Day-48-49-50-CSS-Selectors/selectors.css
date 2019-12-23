@@ -1,0 +1,213 @@
+/** 
+	element ~= valid css selecor
+	------------------
+
+	tagname{ }
+	* global selector - selects all elements
+	.className
+	#id
+	element , element - comma selecor used to selects multiple elements
+
+	## Combination selectors #
+	
+
+
+
+	element  element - decendent selector
+	parent > direct children
+	element + sibling
+	element ~ element 
+
+	# psudo #
+
+	:hover{  }
+	:visited
+	:active
+
+	element:first-child - only selects if element is first child
+	
+	element:last-child - only selects if element is last child
+	
+	element:not(selector)
+
+
+*/
+
+
+
+/** combinator type css selector */
+
+/* .main-body p, .main-body b{color: red; } */
+
+.main-body > p {color: red; }
+ 
+.main-body > p:first-child{ 
+
+	-ms-user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;  
+	
+	color: white;
+	
+	text-transform: capitalize;
+	text-shadow: 4px 4px 1px rgba(0,0,0,0.5);
+	
+	font-size: 2.2em;
+	
+}
+
+.main-body > p:first-child:hover{ 
+	background: yellow;
+}
+
+.main-body > p{  
+	transition: all 1s ease;
+}
+
+.main-body p:focus{
+	color: green;
+}
+
+.arrow{ 
+	display: block;
+    position: absolute;
+    height: 0px;
+    width: 0px;
+    border-width: 0px 20px 20px 20px;
+    border-color: #000 transparent;
+    border-style: solid;
+    top: -20px;
+}
+
+.my-animated-box{
+	background-color: #6426d8;
+}
+
+.my-animated-box::before{
+	content:'';
+
+	display: block;
+    position: absolute;
+    height: 0px;
+    width: 0px;
+    border-width: 0px 20px 20px 20px;
+    border-color: #000 transparent;
+    border-style: solid;
+    top: -20px;
+}
+
+
+
+
+p{position: relative; padding: 10px;
+	margin-top: 50px 
+}
+
+
+.my-animated-box::after{
+	content:'world';
+}
+
+p:before{
+	left: -60px;
+    
+	content: '';
+   
+    position: absolute;
+    height: 50px;
+    width: 50px;
+	border-width: 1px;
+	
+	border-color: #000;
+	
+	border-radius: 50%;
+	
+    border-style: solid;
+    margin-top: 4px;
+	background: url('../srcMedia/tickmark.png') no-repeat scroll 0 0/100% transparent;
+}
+
+.main-body > p{margin: 0px; }
+
+
+.last-div{ background-color: rgba(152,52,20,0.5); height: 50px; margin: 20px 0px; }
+
+.last-div + p{ background: yellow; }
+
+.last-div ~ p{ background: red; }
+
+
+p:nth-child(6){
+	color: red;
+}
+
+p:nth-of-type(4){
+	color: blue;
+}
+
+
+/* table td:nth-child(2n+1){
+	background-color: red;
+}
+*/
+
+nav a.btn{ background: blue; padding: 20px; text-align: center; min-width: 90px; text-decoration: none; color: #fff;   }
+
+/** attribute selectors  */
+[href]{ background: yellow; }
+[data-city *= "p" ]{ background: yellow; }
+[data-city ^= "p" ]{ background: yellow; }
+[data-city $= "p" ]{ background: yellow; }
+[data-city |= "pu" ]{ background: red; }
+
+input[type |= 'radio' ]{ background: yellow; }
+
+nav a[href $= ".pdf"]{  
+	color: red !important;
+	font-size: 20px;
+}
+
+
+input:checked{ 
+  cursor: pointer;
+}
+
+
+:root{
+	cursor: url('../srcMedia/cursor.png'), auto;
+}
+
+a{ cursor: url('../srcMedia/cursor.png'), auto; }
+
+
+
+
+.my-input-type{  
+	
+    height: 28px;
+    width: 400px;
+    border: 1px solid #000;
+    -webkit-appearance: textfield;
+    -webkit-writing-mode: horizontal-tb !important;
+    margin-top: 20px;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+}
+
+
+.my-input-type:before{
+	content:'helloo';
+	
+}
+
+
+
+
+
+
+
+
+
+

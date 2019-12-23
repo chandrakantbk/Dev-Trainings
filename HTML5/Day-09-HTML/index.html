@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+	<meta charset = "utf-8">
+	
+	<title>Day-9 - Form tag </title>
+
+  </head>
+  
+	<body>
+		<div tabindex="1">
+			<h1><b>Priyanka</b> Job Profile</h1>
+			<img src = "../srcMedia/comfort.jpg" alt="home image" width="400" />
+			<p> <b>Email: </b> info@gmail.com  </p>
+		</div>
+		
+		
+		<!-- <table border="2" cellspacing="20" cellpadding="15"> -->
+		
+			<caption>Education Details</caption>
+			
+			<tr tabindex="3">
+				<th>Degree </th>
+				<th>University </th>
+				<th>Year of Passing</th>
+			</tr>
+			
+			<tr tabindex="4"> 
+				<td>BE </td>
+				<td>Pune University </td>
+				<td>2019 </td>
+			</tr>
+			
+			<tr tabindex="5"> 
+				<td>HSC </td>
+				<td>Maharashtra Board </td>
+				<td>2015 </td>
+			</tr>
+			
+			<tr tabindex="6"> 
+				<td>SSC</td>
+				<td>Pune Board</td>
+				<td>2013</td>
+			</tr>
+			
+			<tr tabindex="7"> 
+				<td colspan="2" >
+					<p><strong>Note: </strong> This is single column. </p>
+				</td>
+				<td>
+					<p>This program is free software; you can redistribute it.</p>
+				</td>
+			</tr>
+			
+		</table>
+		
+		
+		<form id="login-form" action = "https://www.google.com/process.php" autocomplete="on">
+			<label for="username-1">Username: </label> <input type="text" id="username-1">
+			<label for="password-1">Pasword: </label> <input type="password" id="username-1">
+			
+			<label for="">Remember me</label> <input type="checkbox" id="rememer-1" checked>
+			
+			<input type="submit" value="SEND">
+		</form>
+		
+		<form method="get" action = "#" tabindex="2"  id="form-signup">
+			
+			<fieldset>
+				<legend>Personal Info</legend>
+				
+				<div>
+					<label for="user-name">Name:</label> 
+					<input type="text" id="user-name">
+				</div>
+				<div>
+					<label for="user-address">State:</label> 
+					<input type="text" id="user-address" list="state-list">
+				</div>
+				
+				<div>
+					<label for="user-name">Gender:</label>
+				
+					<input type="radio" name="group1" value="male" id="option-1"> 	
+					
+					<label for="option-1">Male </label>
+				
+					<input type="radio" name="group1" value="2" id="option-2">
+					<label for="option-2">Female </label>
+	
+				</div>
+				
+				
+			</fieldset>
+				
+			<br/>
+				
+			<p>Please fill your education details</p>
+			
+			<fieldset>
+				<legend>Educational skills </legend>
+				Skills: 
+				<input type="checkbox" name="skills" id="skill-1"> 
+				<label for="skill-1">Programming</label>
+				
+				<input type="checkbox" name="skills" id="skill-2"> 
+				<label for="skill-2">Web development</label>
+				
+				
+				<input type="checkbox" name="skills" id="skill-3"> 
+				<label for="skill-3">Animation</label>
+				
+			</fieldset>
+				
+			<datalist id="state-list">
+				<option>Maharashtra</option>
+				<option>UP</option>
+				<option>Karntaka</option>
+				<option>Odisha</option>
+				<option>Telangana</option>
+			</datalist>
+				
+				
+				
+				<input type="submit" value="SEND">
+				
+				<input type="reset" value="RESET">
+					
+		</form>
+		
+		<form target=""> </form>
+		<form autocomplete="on"> </form>
+		<form autocomplete="off"> </form>
+		
+		type="checkbox"
+		type="radio"
+		type="button"
+		type="password"
+		
+		type="number"
+		type="email"
+		type="image"
+		type="file"
+		
+		<datalist>	 
+			<option value="mh"> </option>
+		</datalist>
+		
+		<fieldset>
+			<legend> title </legend>
+		</fieldset>
+		
+		
+	</body>
+	
+</html>

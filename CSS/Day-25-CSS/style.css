@@ -1,0 +1,95 @@
+
+/** CSS for learner  */
+.box-container{ 
+	display: grid; 
+	
+	grid-template-columns: 100px 100px 100px 100px;
+	
+	grid-template-rows:  100px 100px 100px; 
+	
+	/* grid-template-rows: repeat(3, 100px); */
+	
+	grid-template-areas: 
+		"data-box-1 data-box-3 data-box-6"
+		
+		"data-box-2 . data-box-4" 
+		
+		"data-box-5 data-box-7 data-box-8";
+	
+ }
+
+.box{background: #f0f0f0; padding: 30px; border: 1px solid #333; }
+
+#box-1{ grid-area: data-box-1; }
+#box-2{ grid-area: data-box-2; }
+#box-3{ grid-area: data-box-3; }
+#box-4{ grid-area: data-box-4; }
+#box-5{ grid-area: data-box-5; }
+#box-6{ grid-area: data-box-6; }
+#box-7{ grid-area: data-box-7; }
+#box-8{ grid-area: data-box-8; }
+
+
+/** Reusable CSS by working professional  */
+
+/* 
+.grid{ 
+	display: grid; 
+	
+	grid-template-columns: 100px 100px 100px 100px;
+	
+	grid-template-rows:  100px 100px 100px; 
+	
+	grid-template-rows: repeat(3, 100px);
+	
+	grid-template-areas: 
+		"data-box-1 data-box-3 data-box-6"
+		
+		"data-box-2 . data-box-4" 
+		
+		"data-box-5 data-box-7 data-box-8";
+	
+ }
+
+
+.grid .grid-item{background: #f0f0f0; padding: 20px; border: 1px solid #333; }
+
+.grid .grid-item.grid-item-1 {grid-area: data-box-1;}
+.grid .grid-item.grid-item-2 {grid-area: data-box-2;}
+.grid .grid-item.grid-item-3 {grid-area: data-box-3;}
+.grid .grid-item.grid-item-4 {grid-area: data-box-4;}
+.grid .grid-item.grid-item-5 {grid-area: data-box-5;}
+.grid .grid-item.grid-item-6 {grid-area: data-box-6;}
+.grid .grid-item.grid-item-7 {grid-area: data-box-7;}
+.grid .grid-item.grid-item-8 {grid-area: data-box-8;}
+
+*/
+
+
+
+
+
+/* Flex CSS */
+
+.flex-container{display: flex;  margin-bottom: 50px; flex-direction: row-reverse; justify-content: space-evenly; }
+
+.menu-buttons{
+	display: inline-block;
+	padding: 15px; 
+	background: #dcf1f3; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

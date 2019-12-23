@@ -1,0 +1,209 @@
+<!DCOTYPE html>
+
+<html lang="en"> 
+	<head>
+		<title>Day-55-56-57 bootstrap border btn interactivity </title>
+		
+		<meta name="viewport" content="width = device-width, initial-scale=1, maximum-scale=1">
+		
+		<meta http-equiv="X-UA-Compatible" content = "IE = Edge">
+		
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
+		
+		<style>
+		
+		</style>
+		
+	</head>
+
+	<body>
+		
+		<div class="container-fluid bg-info">
+			<div class="text-white">
+				<p>Bootstrap  3 </p>
+				xs  for phones - screens less than 768px wide ===> 767px
+				sm  for tablets - screens equal to or greater than 768px wide 
+				md  for small laptops - screens equal to or greater than 992px wide 
+				lg  for laptops and desktops - screens equal to or greater than 1200px wide 
+				
+			
+				<p>Bootstrap  4 </p>
+				
+				col-sm for larger mobile phones (devices with resolutions ≥ 576px);
+				
+				col-md for tablets (≥768px);
+				col-lg for laptops (≥992px);
+				col-xl for desktops (≥1200px)
+			
+			
+			</div>
+		
+		</div>
+		
+		
+		<div class="container-fluid p-4" >
+		 
+		 <p class="m-1"> Random Text  </p>
+		   
+		 <iframe src="index-spacing.html" width="600" height="400"> </iframe>
+		 
+		 
+		 <div class="border border-dark rounded" style="width: 100px; height: 100px;" >  
+			1
+		 </div>
+		 
+		 <div class="border border-primary " style="width: 100px; height: 100px;" >  
+			2
+		 </div>
+		 
+		 <div class="d-lg-inline-block border border-warning" style="width: 100px; height: 100px;" >  
+			3
+		 </div>
+		
+		 <div class="w-50 btn-group" style="height: 50px;" >
+		 
+			<button class="btn btn-primary">  button 1 </button>
+			
+			<button class="btn btn-secondary">  button 1 </button>
+			
+			<button class="btn btn-disabled">  button 1 </button>
+			
+			<button class="btn btn-danger">  button 1 </button>
+			
+			
+		 </div>
+		
+		
+			
+		
+		 
+		</div>
+		
+		
+		<div class="container-fluid ">
+			
+			<div class="btn-group">
+				<button class="btn btn-primary"> button primary </button>
+				
+				<button class="btn btn-primary"> button primary </button>
+				
+				<button class="btn btn-danger my-toast">Show MSG </button>
+				 
+			</div>
+			
+			
+			<div class="dropdown my-3">
+				
+				<button type="button" class="btn btn-primary dropdown-toggle" 
+				data-toggle="dropdown"> Dropdown button  </button>
+				
+				<div class="dropdown-menu">
+				  <a class="dropdown-item" href="#">item 1</a>
+				  <a class="dropdown-item" href="#">item 2</a>
+				  <a class="dropdown-item" href="#">item 3</a>
+				</div>
+				
+				
+			</div>
+			
+			
+			<div class="dropdown">
+				<button class="btn btn-primary dropdown-toggle" data-toggle="dropdown"  >Dropdown Menu Container</button>
+				
+				<div class="dropdown-munu">
+					<a href="http://google.com" class="dropdown-item">Text </a>
+				</div>
+				
+			</div>
+			
+			
+		
+			 <div class="toast border border-danger m-2">
+			 
+				<div class="toast-header bg-info text-white">
+				  Toast Header
+				</div>
+				
+				<div class="toast-body">
+				  Rabdom Text
+				</div>
+				
+			 </div>
+		
+		
+		</div>
+		
+		  <div class="alert alert-success alert-dismissible">
+			
+			<button type="button" class="close" data-dismiss="alert">×</button>
+			
+			This alert box could indicate a successful or positive action.
+			
+		  </div>
+		
+		
+		
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	  
+	  
+	  <script>
+		
+		$(document).ready(function(){
+		  
+		  $(".my-toast").click(function(){
+			
+			
+			$('.toast').toast('show');
+			
+			
+			
+		  });
+		  
+		  $('.dropdown-toggle').dropdown();
+		  
+		});
+	  
+	  
+	  
+	  </script>
+	  
+	  
+	  
+	</body>
+	
+	
+</html>
+
+
+
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

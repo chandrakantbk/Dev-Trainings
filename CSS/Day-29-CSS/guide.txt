@@ -1,0 +1,76 @@
+
+
+<div > display: TABLE
+
+	
+	
+	<div> display: table-cell
+		
+		
+		content 1
+		
+		
+		
+	</div>
+	
+	<div> display: table-cell
+		content 2
+		
+		
+		
+		
+		
+	</div>
+	
+	<div> display: table-cell
+		content 3
+		content 3
+		content 3
+		content 3
+		content 3
+		content 3
+	</div>
+	
+</div>
+
+<div >
+
+	<div>  display: INLINE-BLOCK
+	
+	
+		content 3
+		
+		
+	</div>
+	
+	<div>  display: INLINE-BLOCK
+		content 1
+	</div>
+	
+	<div>  display: INLINE-BLOCK
+		content 2
+	</div>
+	
+</div>
+
+
+
+<div > display: table
+	<div> display: table-ell
+		content
+	</div>
+	
+</div>
+
+
+<div > display: table
+	<div> display: table-ell
+		content
+	</div>
+	
+</div>
+
+
+<div> display: flex
+		
+	<div> 

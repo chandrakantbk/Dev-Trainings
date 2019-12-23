@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset = "utf-8">
+		<title>Day-12 - Video/Audio, a, iframe, and hr tags </title>
+	</head>
+
+	<body>
+		<div>
+			<video controls poster="../srcMedia/poster.jpg" autoplay muted width="600" tabindex="0">
+				<source src="../srcMedia/ec2.mp4" type="video/mp4">
+				<source src="../srcMedia/ec2.ogg" type="video/ogg">
+				Video tag does not support
+			</video>
+			<div>
+				<audio controls id="audio-1" tabindex="1" width="600" height="50" title="training audio file" style=" " accesskey="a"> 
+					<source src="../srcMedia/silent-audio-2.mp3" type="audio/mp3">
+				</audio>
+			</div>
+			
+			<br />
+			<hr />
+			
+			<a href="../Day-10/index.html" target="frame-1" >Aceess day-10 learnings</a>
+			
+			<br/>
+
+			<iframe name="frame-1" width="440" height="300" border="0" > </iframe>
+			
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/YDH_ByxBsfg" frameborder="0" ></iframe>
+			
+			
+		</div>
+
+		
+	</body>
+	
+</html>

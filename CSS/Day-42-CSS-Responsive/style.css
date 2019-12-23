@@ -1,0 +1,59 @@
+
+
+.container{ 
+	background-image: url('../srcMedia/bg-image.png');
+    background-size: cover;
+    padding: 30px;
+    height: 650px;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+	
+}
+
+.overlay{position: absolute; width: 100%; height: 100%; z-index: 5; top: 0; left: 0; }
+
+.blue-bg{background-color: rgba(71, 75, 218, 0.7);  /** #474bda; */ }
+
+.white-bg{background-color: rgba(255, 255, 255, 0.8); color: #000; }
+
+.content{position: relative; z-index: 10; }
+
+.bottom-box {margin: 40px 0px;
+    padding: 20px;
+    position: relative;
+    z-index: 10; }
+
+.option{
+	display: block;
+    width: 48%;
+    margin: 40px 10px 10px;
+    padding: 30px 30px;
+    border: solid 1px #707070;
+    background-color: rgba(255,255,255,0.8);
+    height: 200px;
+    vertical-align: top;
+    color: #000;
+    font-size: 18px;
+}
+
+
+.option-1{display: none; }
+
+
+.tickmark-image{ width: 100px;  }
+
+@media screen and (min-width: 1010px ){
+	
+	.option{display: inline-block; font-size: 28px; }
+	
+	
+	
+}
+
+@media screen and (orientation: portrait ){
+
+	
+}
+

@@ -1,0 +1,108 @@
+CSS Methodology
+
+CSS simple
+	|
+	|-hard to manage
+		|
+		|-so class names
+		|-easy to forget class names properties
+			.main-container
+				padding: 30px;
+				margin: 10px;
+				overflow: hidden;
+				background-color: #808080;
+			
+
+			.container
+				padding: 30px;
+				overflow: auto;
+				background-color: #FFF;
+				
+			
+			.main-container.page-level-container
+				background-color: gray;
+				
+	|
+	|
+	|-CSS re-usablity
+		|
+		|-naming convention
+			|
+			|- bg-white{background-color: white; }
+			|- text-white { color: white; }
+			|- btn-standard: bg: blue, text: yellow
+			
+			class="btn-standard text-white"
+				
+				OO CSS
+				
+				.btn{ }
+				
+				.color-green{
+					
+				}
+				
+				<div class="btn color-green"> </div>
+				
+				
+				dashboard
+				
+				btn-primary--disabled
+				
+				B E M
+				
+				
+				dashboard{ 
+				
+				}
+				
+				dashboard-widget{
+				
+				}
+				
+				dashboard-widget--toolbar{ }
+				dashboard-widget--newssection{ }
+				
+				
+				S M A CSS
+				
+				btn-group{ }
+				
+				
+				btn{ }
+				
+				btn-
+				
+				col
+				
+				col-lg{ }
+				
+				col-3
+				
+				col-sm-1
+				
+				
+				Semantic UI
+				
+				button
+				
+				_ 
+				
+				
+				.btn{
+				
+				}
+				
+				.btn-inline{
+				
+				}
+				
+				.btn-inline--red{
+				
+				}
+				
+				BEM
+
+
+				
+				

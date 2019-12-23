@@ -1,0 +1,86 @@
+
+/** For all css */
+
+p{ margin-top: 10px; }
+
+p:first-child{ margin-top: 0px; color: red; }
+
+.tablet-img{ display: none; }
+
+.container{
+	display: block;
+	margin: 20px;
+	box-sizing: border-box;
+}
+
+.box-container{
+	
+	display: inline-block;
+	
+	width: 320px;
+	
+	height: auto;
+	
+	margin: 10px;
+	padding: 10px;
+	
+	border:4px #000 solid;
+	
+	vertical-align: top;
+	
+}
+
+img{ 
+
+	display: inline-block;
+	border-style: solid;
+	border-width: 2px;
+	border-color: black;
+	width: 100%;
+
+}
+
+
+.desktop-img{display: inline-block; }
+
+.tablet-img{ display: none; }
+
+
+
+
+
+@media screen and (max-width: 1190px ){ 
+     
+	 .box-container{ width: 250px; border-color: red; color: green; font-size: 18px; } 
+
+	 
+}
+
+
+@media screen and (max-width: 1024px ){ 
+     /** tablet css */
+	 .box-container{ width: 200px; color: red; } 
+	 
+		 
+	.desktop-img{display:none; }
+
+	.tablet-img{ display: inline-block; }
+		 
+	 
+}
+
+
+@media screen and (max-width: 700px){ 
+	
+	/** mobile device css */
+     
+	 .box-container{ 
+		 display: block;
+		 width: auto; 
+		 color: blue; 
+		 border-color: yellow;
+		 font-size: 22px;  
+	 } 
+	 
+	 img{ display: none; }
+}

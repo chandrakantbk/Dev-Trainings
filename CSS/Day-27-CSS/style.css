@@ -1,0 +1,67 @@
+body{
+	padding: 1px; 
+	background: #f0f0f0; 
+}
+
+.container{
+	height: 500px;
+    margin: 400px 50px;
+		
+	background-color: #c0f58b;
+	
+	background-image: url('../srcMedia/sample-bg.png');
+    
+    background-repeat: no-repeat;
+	
+    /* background-position: 290px 110px; */
+    /* background-size: 100%; */
+	
+	background-size: cover;
+
+	background-attachment: fixed;
+	
+	/* background: url('../srcMedia/poster.jpg') no-repeat scroll  290px 110px / 100% #c0f58b; */
+
+	position: relative;
+	
+}
+
+.box{ 
+	background: yellow;
+	height: 100px; 
+	width: 150px;
+	border: 1px solid black; 
+
+}
+
+#box-3{ 
+
+	/* background-color: green;  */
+	
+	/* background-color: rgba(0, 128, 0, 0.7); */
+	
+	/* background-color: rgba(0, 128, 0, 0.7); */
+	
+	/** COLOR RANGE
+		0 TO 255
+		MEANS
+		0   == 00
+		255 == FF 
+	*/
+	/* Red color in HEX format */
+	background-color: #FF0000;
+	
+	
+	/* Red color RGBA format */
+	
+	background-color: rgba(255, 0, 0, 1);
+	
+	background-color: rgb(255, 0, 0);
+	
+	color: white; 
+	position: absolute; 
+	top: 20px; 
+	right: 20px;
+	padding: 10px; 
+
+}

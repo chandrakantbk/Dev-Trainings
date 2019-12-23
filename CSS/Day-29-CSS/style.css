@@ -1,0 +1,104 @@
+body{
+	padding: 1px; 
+	background: #f0f0f0; 
+}
+
+.container{
+	height: 500px;
+    margin: 400px 50px;
+	
+	background: url('../srcMedia/sample-bg.png') no-repeat scroll 0px 0px #c0f58b;
+	
+	position: relative;
+	
+}
+
+.box{ 
+	background: yellow;
+	height: 100px; 
+	width: 150px;
+	
+	
+		
+	
+	
+	border-width: 2px;
+	border-style: solid; 
+	border-color: black;
+	
+	
+	/** Shorthand property to define above */
+	
+	/* 
+	
+		border: 2px solid black;  
+	
+	*/
+	
+	
+	border: none;
+	
+
+	
+	/*
+	
+	border-style: dashed; 
+	border-style: dotted; 
+	border-style: double; 
+	
+	*/
+	
+	
+	
+	/* 3d border */
+	/*
+	
+		border-style: groove; 
+		border-style: inset; 
+		border-style: outset; 
+		border-style: ridge; 
+	
+	*/
+	
+	
+	
+	
+	
+	margin: 10px;
+	
+	/* 
+	
+	margin: 10px 5px 20px 30px;
+	
+	margin-top: 10px;
+	margin-right: 5px;
+	margin-bottom: 20px;
+	margin-left: 30px; 
+	
+	*/
+	
+	border-top: 2px dashed green;
+	
+	border-right: 5px groove red;
+	
+	border-bottom: 5px groove red;
+	
+	border-left: 5px groove red;
+	
+	
+	/* border-top-width: 40px; */
+	/* border-left-color: green; */
+	
+}
+
+#box-3{ 
+
+	background-color: rgba(255, 0, 0, 1);
+	
+	color: white; 
+	position: absolute; 
+	top: 20px; 
+	right: 20px;
+	padding: 10px; 
+
+}

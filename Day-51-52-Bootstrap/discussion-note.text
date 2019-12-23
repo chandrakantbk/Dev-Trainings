@@ -1,0 +1,57 @@
+Bootstrap
+	css library
+	Responsive development
+		|
+		|-laylot adjust with screen size
+		|-Faster loading
+				|		|
+				|		|-fast loading
+				|		|-fast rendering* 
+				|
+				| render vs loading
+						  |
+						  |- loading ==> rendering
+		|-CDN
+			-url
+		|-self hosted bootstrap files	
+		
+css library vs css framework
+	|
+	|-
+
+		
+		
+xyz
+| |
+| |-structure  ==== framework 
+|
+|-features without structure ==== library
+		
+
+Contional HTML resources
+
+<!-- [if gte IE 9 ] >
+	
+		<link href="../pathto/style.css" rel="stylesheet">
+		
+		<script src="../pathto/ie10.js" rel="stylesheet">
+	
+<! [ endif ] -->
+		
+lt   < 		
+gt	 >
+gte  >=
+lte	 <=
+eq	 ==
+ne	 !=
+
+		
+		
+Bootstrap 3.x > IE8, 9
+
+
+
+Bootstrap 4.x > IE10
+
+	display: flex;
+

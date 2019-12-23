@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset = "utf-8">
+		<title>Day-21 - CSS - display, width, height </title>
+		
+		<!-- External CSS -->
+		<link rel="stylesheet" type="text/css" href="style.css">
+		
+		<style>
+			.container{
+				background: #4f9afe;
+				margin: 50px;
+				margin-bottom:100px;
+				color: #fbfbfb;
+				
+				width: 500px; /** px, rem, em, vw, % */
+				
+				padding: 25px; 
+				height: 300px;
+				
+			}
+			
+			#last-box{margin-bottom: 50px; }
+			
+			.child-container{ 
+				height: 200px; 
+				
+				width: 100px;
+				
+				
+				background: green; 
+			}
+			
+			#child-2{background: red;  }
+			#child-3{background: yellow;  }
+			
+			
+		</style>
+		
+	</head>
+
+	<body>
+	
+		<div class="container">
+			<div class="child-container" id="child-1">
+				text line 1
+			</div>
+			
+			<div class="child-container" id="child-2">
+				text line 2
+			</div>
+			<div class="child-container" id="child-3">
+				text line 3
+			</div>
+			
+			
+		</div>
+		
+		
+		
+	</body>
+	
+</html>

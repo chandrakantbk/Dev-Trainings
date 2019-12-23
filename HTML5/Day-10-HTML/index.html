@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+	<meta charset = "utf-8">
+	
+	<title>Day-10 - Form tags </title>
+
+  </head>
+  
+	<body>
+		
+		<form method="post" id="login-form" action = "https://www.google.com/process.php" autocomplete="off">
+			<label for="username-1">Username: </label> <input type="text" id="username-1">
+			<label for="password-1">Pasword: </label> <input type="password" id="username-1">
+			
+			<label for="">Remember me</label> <input type="checkbox" id="rememer-1" checked>
+			
+			<input type="submit" value="SEND">
+		</form>
+		
+		<form method="post" action = "https://www.google.com/process.php" tabindex="2"  id="form-signup">
+			
+			<fieldset>
+				<legend>Personal Info</legend>
+				
+				<div>
+					<label for="user-name">Name:</label> 
+					<input type="text" id="user-name" disabled>
+				</div>
+				
+				<div>
+					<label for="user-name">Full Name</label> 
+					<input type="text" id="user-name" maxlength="10" required>
+				</div>
+				
+				<div>
+					<label for="user-address">State:</label> 
+					<input type="text" id="user-address" list="state-list">
+				</div>
+				
+				<div>
+					<label for="user-name">Gender:</label>
+				
+					<input type="radio" name="group1" value="male" id="option-1"> 	
+					
+					<label for="option-1">Male </label>
+				
+					<input type="radio" name="group1" value="2" id="option-2">
+					<label for="option-2">Female </label>
+	
+				</div>
+				
+				<input type="email">
+				<input type="file">
+				<input type="number">
+				<input type="range">
+				
+			</fieldset>
+				
+			<br/>
+				
+			<p>Please fill your education details</p>
+			
+			<fieldset>
+				<legend>Educational skills </legend>
+				Skills: 
+				<input type="checkbox" name="skills" id="skill-1"> 
+				<label for="skill-1">Programming</label>
+				
+				<input type="checkbox" name="skills" id="skill-2"> 
+				<label for="skill-2">Web development</label>
+				
+				
+				<input type="checkbox" name="skills" id="skill-3"> 
+				<label for="skill-3">Animation</label>
+				
+			</fieldset>
+				
+			<datalist id="state-list">
+				<option value="mh" selected> Maharashtra </option>
+				<option value="up"> UP </option>
+				<option value="kn"> Karntaka </option>
+				<option value="od"> Odisha </option>
+				<option value="tl"> Telangana </option>
+			</datalist>
+			
+			
+			<p>Learning Next tags 16-Sept-2019</p>
+			
+			<select id="droplist-1">
+				<option value=""> </option>
+				
+				<optgroup label="BE Subjects" name="states-1" value="BE" id="" title="" tabindex="" dir="" lang="">
+					<option value="ss"> Signal System </option>
+					<option value="na"> Network Analysis </option>
+					<option value="na"> Micro-electronics </option>
+				</optgroup>
+				
+				<optgroup label="Subjects">
+					<option value="mh"> Math </option>
+					<option value="up"> Science </option>
+					<option value="mh"> History </option>
+					
+				</optgroup>
+
+			</select>
+			
+			<br/>
+			Message:<br>
+			
+			<textarea cols="30" rows="5"></textarea>
+			
+			<input type="text" value="signup-form" hidden>
+			
+			<p>click submit button </p>
+			<div>
+				<input type="submit" value="SEND">
+				<input type="reset" value="RESET">
+			</div>
+					
+		</form>
+		
+		<form target=""> </form>
+		<form autocomplete="on"> </form>
+		<form autocomplete="off"> </form>
+		
+		
+		
+		<datalist>	 
+			<option value="mh"> </option>
+		</datalist>
+		
+		<fieldset>
+			<legend> title </legend>
+		</fieldset>
+		
+		<pre>
+			type="checkbox"
+			type="radio"
+			type="button"
+			type="password"
+			
+			type="number"
+			type="email"
+			type="image"
+			type="file"
+		
+		</pre>
+		
+	</body>
+	
+</html>

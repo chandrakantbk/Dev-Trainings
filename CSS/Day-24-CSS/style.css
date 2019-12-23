@@ -1,0 +1,33 @@
+.container{  
+	margin: 10px 15px 20px 25px; /** margin: top right bottom left */ 
+	padding: 30px 20px; /** margin: top-bottom | right-left */ 
+}
+
+.sub-container{ height: 400px; color: black; }
+
+.box{ 
+	border: 5px solid black; 
+	height: 250px;
+	width: 250px;
+	background-color: yellow;
+	display: inline-block;
+}
+
+.navigation-container{
+
+}
+
+.menu-buttons{ 
+	border: 5px solid #99d9ea;
+	background-color: #22b14c;
+	color: black;
+	
+	width: 135px;
+	height: 25px;
+	padding: 20px;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	
+	
+}

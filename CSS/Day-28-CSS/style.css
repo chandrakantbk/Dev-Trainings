@@ -1,0 +1,44 @@
+body{
+	padding: 1px; 
+	background: #f0f0f0; 
+}
+
+.container{
+	height: 500px;
+    margin: 400px 50px;
+	
+	background: url('../srcMedia/sample-bg.png') no-repeat fixed 0px 0px #c0f58b;
+	
+	position: relative;
+	
+}
+
+.box{ 
+	background: yellow;
+	height: 100px; 
+	width: 150px;
+	border: 1px solid black; 
+
+}
+
+#box-1{ float: left; }
+
+#external-boxes-4{ background: green; }
+#external-boxes-4{ display: none; }
+#paragraph-2{ clear: both; }
+	
+#box-3{ 
+	
+	/* display: none; */
+	
+	visibility: hidden;
+	
+	background-color: rgba(255, 0, 0, 1);
+	
+	color: white; 
+	position: absolute; 
+	top: 20px; 
+	right: 20px;
+	padding: 10px; 
+
+}

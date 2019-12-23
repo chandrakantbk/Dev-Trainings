@@ -1,0 +1,46 @@
+CSS
+
+display
+height
+width
+margin
+position
+float
+font-family
+font-size
+color
+background
+overflow: auto | scroll
+
+CSS3:
+animation
+transform
+
+transition
+
+@media
+@keyframes
+
+
+css selector
+
+.class-name{ }
+#id-name{ }
+h2{ }
+*
+
+
+
+
+head
+style, title, meta, link, script
+
+body
+table
+div, h1-h6
+p, span, b, strong, i, u, img, map, iframe
+form
+input, textarea, button, fieldset, legend, label, select, option
+video, audio, 
+canvas
+svg

@@ -1,0 +1,130 @@
+
+body{ font-size: 20px; font-family: sans-serif; }
+
+.blue-bg{background-color: rgba(71, 75, 218, 0.6);  /** #474bda; */ }
+.white-bg{background-color: rgba(255, 255, 255, 0.8); color: #000; }
+
+
+.my-white-bg{  
+	background: #fff;
+}
+
+$standard-f-size = 16px;
+$white-bg-color = background-color: rgba(255, 255, 255, 0.8);
+
+$defaults = { font-size : 18px; display: inline-block; vertical-align: top;   }
+
+
+.container{ font-size: $standard-f-size; }
+
+.container{ font-size : 18px; display: inline-block; vertical-align: top;;  background-color: $white-bg-color; }
+
+
+.main-body{padding: 20px;  }
+
+.container{
+	padding: 50px;
+    height: 100vh;
+    position: relative;
+}
+
+p{ margin-bottom: 10px; }
+
+.my-animated-box{
+    height: 120px;
+    width: 260px;
+	
+    background-color: #4ccc5c;
+    padding: 50px 20px;
+    color: #fff6f6;
+    position: absolute;
+   
+    right: 0px;
+    bottom: 0px;
+	
+	
+	
+    text-align: center;
+
+	animation-name: change-position;
+	
+	animation-duration: 4s;
+	
+	animation-iteration-count: 2;
+	
+	animation-delay: 2s;
+	
+	overflow: hidden;
+	
+}
+
+
+
+@keyframes change-position{
+	from{background-color: red; opacity: 0; }
+	
+	to{background-color: #d0c115; transform: scale(2); opacity: 1; left: 0px; top: 0px; margin: auto; }
+} 
+
+
+
+
+@keyframes change-position{
+	0%{background-color: red; opacity: 0; }
+	
+	50%{transform: scale(1); }
+	
+	100%{background-color: #d0c115; transform: scale(2); opacity: 1; left: 0px; top: 0px; margin: auto; }
+} 
+
+
+@keyframes akashy-color{
+	from{ background-color: red; }
+	
+	to{background-color: #d0c115; }
+	
+}
+
+
+
+@keyframes bg-change{
+	from{background-color: green; }
+	
+	to{ background-color: red;  }
+	
+}
+
+
+
+@media screen and (min-width: 812px ) and (orintation: landscape) {
+	 /** */
+	
+}
+
+
+
+@media screen and (min-width: 1280px ){
+	 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes changebgcolors {
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+}

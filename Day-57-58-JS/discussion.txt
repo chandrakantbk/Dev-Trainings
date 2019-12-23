@@ -1,0 +1,103 @@
+2 Months
+	|
+	|HTML5
+		|HTML tags
+			table
+			img alt="nam"
+			a
+			p
+			div
+			body
+			head
+			title
+			meta <meta name="keyword" content="my page, shop, pune">
+				 <meta http-equiv = "X-UA-Compatible" content= "IE=Edge" >
+			video
+			audio
+			
+			
+			Forms
+				input type="checkbox"
+				input type="text"
+
+				<input type="text" required>
+
+				Name: -------
+				
+				
+		CSS
+			display: inline-block;
+			display: inline;
+			dispplay: block;
+			display: flex;
+			display: grid;
+			display: table;
+			
+			float: left;
+			
+			animation: anim-name 0.5 ease;
+			
+			animation-name: demo;
+			
+			@keyframes demo{
+			
+				from{background: red;  }
+				to{background: yellow; }
+			}
+			
+			
+			transform: 
+			
+			
+			.className
+			#id
+			*
+			tagname{ }
+			
+			
+			Selectors
+			
+			
+			
+			CSS3 ==> w3scools
+			
+			HTML/HTML5 ==> w3scools
+			
+			Bootstrap ==> Youtube kudvenkat
+			
+			Javascript 
+			
+			
+			HTML Forms
+			
+			 validation using bootstrap
+			 
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+				
+				
+				

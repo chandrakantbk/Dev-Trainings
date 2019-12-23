@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset = "utf-8">
+		
+		<title>Day-23 - CSS - display, vertical-align, text-align </title>
+		
+		<style>
+			
+			div{ background-color: bisque; }
+			
+			header{ 
+				border: 5px; 
+				background-color: #1fa6ad; 
+				
+				padding: 25px; 
+				color: #fff;
+				
+				margin: 40px;
+			
+				display: block; 
+
+			}
+			
+			.menu-buttons{ 
+				color: black;
+				width: 135px;
+				height: 25px;
+				
+				display: inline-block;
+				
+				background-color: #22b14c;
+				
+				border-width: 5px;
+				border-style: solid;
+				border-color: #99d9ea;
+				
+				text-align: center;
+				
+				padding: 20px;
+				
+				vertical-align: middle;
+				
+			}
+			
+			.box{  
+			
+				border: 5px solid black; 
+				
+				height: 250px;
+				width: 250px;
+				
+				background-color: yellow;
+				
+				color: white;
+				
+				display: inline-block;  
+			
+			}
+			
+			#box-a{
+				background-color: #ec3939;
+			}
+			
+			
+		</style>
+		
+	</head>
+
+	<body>
+		
+		<div class="container">
+		
+			<section> 
+				
+				<header> 
+					<img src="../srcMedia/comfort.jpg" id="logo-1" width="150"/>
+					
+					<h2>Webpage Development using CSS </h2>
+					<h3>Training by CUBKs Trainings</h3>
+					<h5>Email: cubks@gmail.com</h5>
+					<h5>Phone number: 258147963</h5>
+					
+					
+				</header>
+				
+				<nav>
+					<a href="#" class="menu-buttons" >Home </a>
+					
+					<a href="#" class="menu-buttons">Development Section </a>
+					
+					<a href="#" class="menu-buttons">Register </a>
+					
+					<a href="#" class="menu-buttons">Products </a>
+					
+					<a href="#" class="menu-buttons">Services </a>
+					<a href="#" class="menu-buttons">Careers </a>
+					<a href="#" class="menu-buttons">Blog </a>
+					
+				</nav>
+				
+				
+			</section>
+			
+			
+			<section>
+			
+				<div id="box-a" class="box"> text data  </div>
+				
+				<div id="box-b" class="box"> text data  2 </div>
+				
+				<div id="box-c" class="box"> text data  3 </div>
+				
+			</section>
+			
+			
+		</div>
+		
+				
+	</body>
+	
+</html>

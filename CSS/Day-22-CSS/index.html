@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset = "utf-8">
+		<title>Day-22 - CSS - display </title>
+		
+		<!-- External CSS -->
+		<link rel="stylesheet" type="text/css" href="style.css">
+		
+		<style>
+			.main-container{
+				font-size: 18px; 
+				
+				background: #f0f0f0;
+				
+				margin: 10px; 
+			    padding: 15px;
+				width: auto; 
+				display: block; 
+			}
+			
+			
+			.child-container{ 
+				padding: 15px;
+				display: inline-block;
+			}
+			
+			#child-1{background: blue; color: white;   }
+			#child-2{background: red;  }
+			#child-3{background: yellow; color: black;  }
+			
+			td{ background: blue; color: white; padding: 15px; }
+			table{width: 100%; }
+			
+			
+			.main-table{
+				display: table; 
+				width: 100%;
+			}
+			
+			.main-table-row{ 
+				display: table-row; 
+			}
+			
+			.data-cell{
+				display: table-cell; 
+				
+				background: #83ec6f; 
+				padding: 15px;
+				border: 2px solid #fff; 
+			}
+			
+			
+		</style>
+		
+	</head>
+
+	<body>
+	
+		<div class="main-container">
+		
+			<div class="child-container" id="child-1">
+				Paragraph 1
+			</div>
+			
+			
+			<div class="child-container" id="child-2">
+				Paragraph 2
+			</div>
+			
+			<div class="child-container" id="child-3">
+				Paragraph 3
+			</div>
+			
+			
+		</div>
+		
+		
+		<h1>Using display property </h1>
+		
+		<div class="main-table">
+		
+			<div class="main-table-row">
+				
+				<div class="data-cell">
+					Div Para 1
+					
+				</div>
+				
+				<div class="data-cell">
+					Div Para 2
+					
+				</div>
+				
+				<div class="data-cell">
+					Div Para 3
+					
+				</div>
+				
+			</div>
+			
+		</div>
+		
+		
+		
+		
+		<hr />
+		
+		<br />
+		
+		<h1>Using table tag </h1>
+		
+		<table>
+			<tr> <th> </th> </tr>
+			<tr>
+				<td>table Para 1 </td>
+				<td>table Para 2 </td>
+				<td>table Para 3 </td>
+			</tr>
+			<tr>
+				<td>table Para 1 </td>
+				<td>table Para 2 </td>
+				<td>table Para 3 </td>
+			</tr>
+		</table>
+		
+	</body>
+	
+</html>

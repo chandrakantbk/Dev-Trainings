@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset = "utf-8">
+		
+		<title>Day-31 - CSS border, position, margin assignment </title>
+		
+		 
+		<style>
+			.main-rectangle-box{ 
+			
+				width: 400px;
+				height: 200px;
+				margin: 10px auto 110px;
+				background-color: #f7bcbc;
+				position: relative;
+			}
+			
+			.circle{ 
+				width: 60px;
+				height: 60px;
+				margin: 0px auto;
+				border-radius: 50%;
+				background-color: #f0f0f0
+			}
+	
+			.left-trangle{  
+				width: 0;
+				height: 0;
+				border: 5px solid #000;
+				border-width: 40px;
+				border-top-color: transparent;
+				border-bottom-color: transparent;
+				border-right-color: cadetblue;
+				border-left-width: 0px;
+				position: absolute;
+				top: 50%;
+				margin-top: -40px;
+				left: -40px;
+			
+			}
+			
+			.bottom-trangle{ 
+				width: 0;
+				height: 0;
+				border: 40px solid #000;
+				border-top-width: 0px;
+				border-left-color: transparent;
+				border-right-color: transparent;
+				position: absolute;
+				left: 50%;
+				margin-left: -40px;
+				top: -40px;
+			}
+			
+			.small-rect{
+				width: 150px;
+				height: 50px;
+				border: 5px solid #000;
+				position: absolute;
+				bottom: -95px;
+				left: 50%;
+				margin-left: -75px;
+			}
+			h2{text-align: center; }
+		</style>
+		
+	</head>
+
+	<body>
+		 
+		<div class="container">
+			
+			<div class="main-rectangle-box">
+			
+				<div class="circle"> </div>
+				
+				<div class="left-trangle"></div>
+				
+				
+				<div class="small-rect"> 
+					<div class="bottom-trangle"> </div>
+				</div>
+				
+			</div>
+			
+			
+			
+			<h2>Practice Session 2 </h2>
+			
+		</div>
+		
+				
+	</body>
+	
+</html>

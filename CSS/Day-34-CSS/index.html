@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset = "utf-8">
+		
+		<title>Day-34 - Transform, z-index </title>
+		
+		<link rel="stylesheet" type="text/css" href="style.css" >
+		
+		<style>
+			*{box-sizing: border-box; }
+			
+			.container{ 
+				background: url(../srcMedia/poster.jpg);
+				margin: 10px;
+				padding: 10px;
+				height: 400px; 
+				transform-style: preserve-3d;
+			}
+			
+			.my-box{
+				height: 200px;
+				width: 240px;
+				background-color: #f0f0f0;
+				padding: 30px;
+				font-size: 18px;
+				margin: 10px;
+				
+				display: inline-block;
+				vertical-align: top;
+			
+				position: relative;
+				
+				transform: translate(-30px, 10px);
+	
+			}
+			
+			.green{  
+				background-color: #4CAF50;
+				z-index: 11;
+			}
+			
+			.yellow{
+				background-color: #FFC107;
+				z-index: 12;
+			}
+			
+			
+			.blue{ 
+				background-color: rgba(0, 62, 255, 0.51);
+				z-index: 15;
+			}
+			
+			.transform-box{  
+				transform: rotate(45deg);
+				transform-origin: center bottom;
+			}
+			
+		
+		</style>
+		
+	</head>
+
+	<body>
+		 
+		<div class="container">
+			
+			<div class="my-box yellow"> Box 1 </div>
+			<div class="my-box green"> Box 2 </div>
+			<div class="my-box blue"> Box 3 </div>
+			
+		</div>
+		
+				
+	</body>
+	
+</html>
