@@ -23,6 +23,67 @@ var b_test = true;
 
 var result; //undefined
 
+var g_userInput; //undefined
+var myAction;
+
+
+
+
+
+
+
+
+
+
+//	1			   everytime  contion + 1 
+//for( assignment; condition; excution ) 
+//2 phase
+
+
+var index = 50;
+
+for(; ; index++ ){
+	
+	//break
+	//continue
+	
+	console.log("I am in for loop: " + index );
+	
+	g_userInput = index;
+	
+	myAction = getAction();
+	
+	result = Calculator(10, 20, myAction );
+	
+	console.log( result )
+	
+}
+
+//while(  ){
+	
+	
+//}
+
+
+console.log( index )
+
+
+function getAction(){
+	
+	var a_actionSet = [ "add", "sub", "mul", "div" ];
+	var action; //undefined
+	
+	if( g_userInput !== "undefined" ){
+		
+		action = a_actionSet[ g_userInput ];
+		
+		return action;
+	}
+	 
+	return null;
+	
+}
+
 
 function Calculator( param1, param2, action ){ //2 Arguments
 	/** Function Body */
@@ -47,7 +108,15 @@ function Calculator( param1, param2, action ){ //2 Arguments
 		
 		_answer = left - right;
 		
-	} else { 
+	} else if( action == "mul" ) {
+		
+		_answer = left * right;
+		
+	} else if( action == "div" ) {
+		
+		_answer = left / right;
+		
+	} else {
 		
 		_answer = "no action defined "
 		
@@ -57,9 +126,9 @@ function Calculator( param1, param2, action ){ //2 Arguments
 	
 }
 
-result = Calculator(10, 20, "sub"); //2  pamameters
 
 //result = getPositiveVal( Calculator(10, 20, "sub")  ) ; //2  pamameters
+
 
 function getPositiveVal( param ){
 	
