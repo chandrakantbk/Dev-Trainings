@@ -1,0 +1,22 @@
+/** Live Assignment */
+
+var testMarks = 0;
+
+math = 100;
+phy = 100;
+bio = 100;
+eng = 100;
+
+
+A  35   60   80    60
+B  50   40   92    72
+C  40   30   60    40
+D  80   40   100   80
+
+T% = get/totl * 100;
+
+A %
+B %
+C %
+D %
+
