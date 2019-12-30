@@ -1,35 +1,54 @@
 /**
 * @Auther: Chandrakant
 * @Description: Looping expamle
-* @Date: 25-Dec-2019
+* @Date: 25-26-Dec-2019
 *
 * @Copyright: MIT Licence
 *
 */
 
-var index = 0; 
+//for(assinment; contidion; backback ){   }
 
-while( index < 100 ){
+/*for(var i = 0; i < 1; backback ){  
+	1
+	2
+	3
+
+} 
+*/
+
+var index = 0;
+
+while( index < 99 ){
 	
-	index++;
+	index++; //index  =  index + 1;
 	
-	if( index % 2 == 0 ){
+	if( index % 2 == 0 ){ //even
 		continue;
 	}
 	
 	if(index == 21 ){
+		
 		break;
+		
 	}
 	
-	console.log( index )
+	console.log( index );
+		
+	
 	
 }
 
 
+/*
 
+do {
+	console.log( "do while loop " )
+	console.log( index )
+	
+} while( index < 21 )
 
-
-
+*/
 
 
 /* Logincal Operators */

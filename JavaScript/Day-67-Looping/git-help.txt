@@ -1,0 +1,28 @@
+
+echo "# Practice" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/chandrakantbk/Practice.git
+git push -u origin master
+
+git remote add origin https://github.com/chandrakantbk/Practice.git
+git push -u origin master
+
+
+=============
+
+
+git remote add origin <remote repository URL>
+
+
+git rebase -i --root
+
+git commit --amend --author="chandrakantbk <chandrakantbk.cs@gmail.com>" --no-edit
+
+
+git push -f
+
+git push -f origin master
+
+
