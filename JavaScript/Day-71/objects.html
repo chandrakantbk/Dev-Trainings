@@ -1,0 +1,79 @@
+<!DCOTYPE html>
+<html lang="en"> 
+	<head>
+		<title>Day-71 Object </title>
+		
+		<meta name="viewport" content="width = device-width, initial-scale=1, maximum-scale=1">
+		
+		<meta http-equiv="X-UA-Compatible" content = "IE = Edge">
+		
+		<script> 
+		
+		/**
+			What is object?
+			
+			data type: Primitive datatypes
+						var c = 10
+						var str = "trr"
+						var b = false
+						var f = 1.23
+						
+						console.log(  str )
+			
+			special data types: Object, Array
+			
+								Object: 
+									declare :  obj = { key: value }
+												
+												obj.key = 100
+												
+											obj = { name: "CUBKS" }	
+												
+											obj.name =  "SSSS"
+											obj["name"] //CUBKS
+											
+		*/
+			
+		var person = {
+					   age: 90,
+					   name: "CK",
+					   address: "Pune"
+					 }									
+						
+		
+		var myValue = getDetails( "city" );
+		
+		console.log(myValue)
+		
+		function getDetails( _param ){
+			
+			console.log("inside function");
+			
+			var _temp;
+
+			if( person.hasOwnProperty( _param ) ){
+				
+				_temp = person[ _param ]; 
+			
+			} else {
+				
+				_temp = _param + " is not availble";
+			
+			}
+			
+			//console.log("value in _temp: " + _temp)
+			
+			return _temp;
+			
+			
+		}							
+		
+		</script>
+		
+	</head>
+	
+	<body>
+		<p>This is test paragraph. SEE Console log. </p>
+		 
+	</body>
+</html>
