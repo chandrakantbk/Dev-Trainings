@@ -1,7 +1,7 @@
 <!DCOTYPE html>
 <html lang="en"> 
 	<head>
-		<title>Day-71 Object </title>
+		<title>Day-71-72 Object </title>
 		
 		<meta name="viewport" content="width = device-width, initial-scale=1, maximum-scale=1">
 		
@@ -39,15 +39,22 @@
 					   name: "CK",
 					   address: "Pune"
 					 }									
-						
+		
+		/** 
+			//Immutable Data Structure			
+		
+			//Object.freeze(person) : You can not modify object (both, key and values)
+			
+			//Object.seal(person ) : You can not modify object structure( keys )
+			
+			
+		*/
 		
 		var myValue = getDetails( "city" );
 		
 		console.log(myValue)
 		
 		function getDetails( _param ){
-			
-			console.log("inside function");
 			
 			var _temp;
 
@@ -61,12 +68,36 @@
 			
 			}
 			
-			//console.log("value in _temp: " + _temp)
-			
 			return _temp;
 			
-			
 		}							
+		
+		function setDetails(key, value){ 
+			
+			var _tempObj = person;
+					
+			_tempObj[key] = 10;
+			
+			return _tempObj;
+			
+		}
+		
+		
+	    function getBirthYear(){
+			var year;
+			
+			year = 2020 - person.age;
+			
+			person.birthYear = year;
+			
+			return person;
+			
+		}
+		
+		
+		
+		
+		
 		
 		</script>
 		
