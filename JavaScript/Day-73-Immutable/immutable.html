@@ -1,0 +1,85 @@
+<!DCOTYPE html>
+<html lang="en"> 
+	<head>
+		<title>Day-73 Object Immutable </title>
+		
+		<meta name="viewport" content="width = device-width, initial-scale=1, maximum-scale=1">
+		
+		<meta http-equiv="X-UA-Compatible" content = "IE = Edge">
+		
+		<script> 
+			var i = 30; //mutable
+			
+			var obj = { name: "CUBKS", age: 40,   }  // #180004
+			 
+		
+				/**
+					Object.freeze(data); //block write access
+					Object.seal(obj) //
+					
+					//Ref: https://github.com/immutable-js/immutable-js
+				*/
+						
+			/**
+				obj2 = obj; // #18000
+				
+				obj2 // #18000
+
+				this ====>>>> {  } // === fun
+					
+				var smart = this// #18000 //this
+				
+				this.something = 10;
+				this.age = 10;
+				
+
+			*/			
+			
+			var smart = new fun(); // {a: 20, name: "ck", age: 20 }
+			
+			function fun(){
+				var i = 10;
+				
+				this.a = 20;
+				this.name = "ck";
+				this.age = 20;
+				
+				console.log("inside fun");
+	
+			}
+			
+			var person_1 = new CreateData("Akshay", 25 ); //{ name: "Akshay", age: 25 }
+			var person_2 = new CreateData("Anuja", 15 ); //{name: "Anuja", age: 15 }
+			var person_3 = new CreateData("SK", 10  );//{name: "SK", age: 10 }
+			
+			function CreateData(p_name, p_age ){
+				
+				this.name = p_name;
+				
+				this.age = p_age;
+				
+				
+			}
+			
+			
+			/** 
+				// Assignment: Get Data from three diffrent sources and return single object 
+			
+				sources
+				#1: personal details 
+				#2: validity
+				#3: eduction background
+				
+				return: person {object}
+					
+		    */			
+		
+		</script>
+		
+	</head>
+	
+	<body>
+		<p>This is test paragraph. SEE Console log. </p>
+		 
+	</body>
+</html>
