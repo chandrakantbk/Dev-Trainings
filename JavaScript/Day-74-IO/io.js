@@ -10,7 +10,19 @@ function calc(){
 	
 	//answer = "10" + "20" ==>> 1020 //typeof : string
 	
-	answer = Number( num1 ) + Number( num2 );
+	//answer = Number( num1 ) + Number( num2 );
+	
+	if( isNaN( num1 )  || isNaN( num1)  ){
+		
+			answer = num1  + num2 ;
+			
+	} else {
+		
+		answer = Number( num1 ) + Number( num2 );
+	
+	}
+	
+	
 	
 	document.getElementById("output-1").value = answer;
 	
