@@ -4,19 +4,55 @@ document.addEventListener("DOMContentLoaded", startProcessing)
 
 function startProcessing(event){
 	
+	var isMouseDown = false;
+	
+	var img = document.getElementById('img-1');
+	
 	document.onmousemove = function( event ){  
 		
-		
-		
-		if(event.x > 100 && event.y < 200){
+		if( isMouseDown==true ){
+			/*
 			
-			console.table( [event.x, event.y] );
-			
-		}
+			if(event.x > 100 && event.y < 200){
+				console.log("X : " + event.x + " ::  Y: " + event.y );
+			}
+				
+				*/
+				
+				
+				/** Using position property */
+				/*
+					img.style.left =  event.x;
+					img.style.top =  event.y;
+					img.style.position = 'absolute';
+					
+				*/
+				
+				/** Using transform */
+				
+				var x =  event.x +"px";
+				var y  = event.y  + "px";
+				
+				img.style.transform = "translateX(" + x + ") translateY("+ y + ")";
+				
+				
+	}
 		
 				
 	}
 	
+	document.onmousedown = function( event ){  
+		isMouseDown = true;
+		console.log("Mouse button down");
+
+	}
+	
+	
+	document.onmouseup = function( event ){  
+		isMouseDown = false;
+		console.log("Mouse button onmouseup")
+		
+	}
 	
 	var i = 0;
 		
