@@ -36,6 +36,12 @@ function startProcessing(event){
 		
 	} );
 	
+	document.onmousemove = function( event ){  
+		
+		console.log(event);
+				
+	} );
+	
 	imgObj.addEventListener("mouseleave", function( event ){  
 		
 		//console.log(event);
