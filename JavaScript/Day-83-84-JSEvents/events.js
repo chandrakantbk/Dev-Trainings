@@ -34,6 +34,34 @@ function addMyEvents(){
 		event.preventDefault();
 	}
 	
+	
+	
+	document.addEventListener("mouseup", function( event ){ 
+		console.log(event);
+		
+		if(event.which==3){
+			
+			//alert("Right Button Clicked");
+			
+			
+		}
+		
+	});
+	
+	
+	document.addEventListener("contextmenu", function( event ){ 
+		
+		event.preventDefault();
+		
+		return true;
+				
+		console.log(event);
+		
+	});
+	
+	
+	
+	
 	var i = 0;
 		
 	document.ondblclick = async function( event ){  
@@ -113,6 +141,39 @@ function addMouseEvents() {
 		console.log("Mouse button onmouseup")
 		
 	}
+	
+}
+
+
+
+function innerbox(event){
+	
+	console.log("Inner Box clicked")
+	console.log(event)
+	
+	event.stopPropagation();
+	
+	//event.stopImmediatePropagation();
+	
+	alert("Inner Box clicked");
+	
+	
+}
+
+function outerbox(event){
+	
+	console.log("outerbox Box clicked")
+	console.log(event)
+	
+	
+	//event.stopPropagation();
+	
+	//event.stopImmediatePropagation();
+	
+	
+	alert("outerbox Box clicked");
+	
+	
 	
 }
 

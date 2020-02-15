@@ -1,7 +1,7 @@
 <!DCOTYPE html>
 <html lang="en"> 
 	<head>
-		<title>Day-83-84 Working with Events </title>
+		<title>Day-83-84-85 Working with Events </title>
 		
 		<meta name="viewport" content="width = device-width, initial-scale=1, maximum-scale=1">
 		
@@ -16,7 +16,9 @@
 			
 			p{  background-color: red;  }
 			
+			.border-box{ border: 5px solid #000; max-height: 220px; max-width: 500px; padding: 20px;  box-sizing: border-box;  }
 			
+			.red{ background-color: #f00; }
 		 
 		 </style>
 		
@@ -39,10 +41,26 @@
 		<hr >
 		
 		<input type="text" width="200" id="output-1" disabled placeholder="0">
+		<button id="time-btn" onclick="addMyEvents()">Add Events </button>
 		
 		<hr>
+		<br>
+		<br>
+		<br>
 		
-		<button id="time-btn" onclick="addMyEvents()">Add Events </button>
+		<div class="border-box" id="outer-box"   onclick="outerbox()"  >
+			
+			<div class="border-box" id="inner-box"   onclick="innerbox()"> 
+			
+				Inner Box 
+				
+				<p onclick="alert('paragraph clicked ')">This is paragram </p>
+			
+			</div>
+			
+		</div>
+		
+		
 		
 		
 	</body>
