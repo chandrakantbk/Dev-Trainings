@@ -4,6 +4,9 @@ document.addEventListener("DOMContentLoaded", startProcessing)
 
 function startProcessing(event){
 	
+	//1. Capturing
+	//2. Target
+	//3. Bubbling phase
 	
 	//addMyEvents();
 	
@@ -151,12 +154,12 @@ function innerbox(event){
 	console.log("Inner Box clicked")
 	console.log(event)
 	
-	event.stopPropagation();
+	//event.stopPropagation();
 	
 	//event.stopImmediatePropagation();
 	
 	alert("Inner Box clicked");
-	
+		
 	
 }
 
@@ -166,7 +169,7 @@ function outerbox(event){
 	console.log(event)
 	
 	
-	//event.stopPropagation();
+	event.stopPropagation();
 	
 	//event.stopImmediatePropagation();
 	
