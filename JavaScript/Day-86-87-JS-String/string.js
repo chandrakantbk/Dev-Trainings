@@ -95,7 +95,19 @@ function myString( ){
 	who use the Console to experiment with new JavaScript code.`
 	
 	
+	var str2 = `hiii 
+
+
+
+
+	iii`
 	
+	
+	var myHtml = '<div class="myclass"> '
+	
+	
+	
+	var myhtml2=  `${num}`
 	
 	
 	
@@ -104,7 +116,7 @@ function myString( ){
 	
 	
 	
-	1] step1: indexOf("0") return > -1
+	1] step1: pos = indexOf("0") return > -1
 	2] remember pos 
 	3] again start search from pos+1 
 	4] check step 1 else end

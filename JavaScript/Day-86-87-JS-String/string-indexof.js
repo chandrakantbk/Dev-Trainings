@@ -12,3 +12,36 @@ while ( 1 ) {
   
   pos = foundPos + 1; // continue the search from the next position
 }
+
+
+/*
+
+let target = [ "bad", "am", "student" ]  //'am'; // let's look for it
+let no_of_times  = 0;
+
+let pos = 0;
+  
+  for( let ch in target){
+	
+     let searchVal = target[ch]; //bad
+	  
+	 while ( true ) {
+		 
+		  var foundPos = str.indexOf(searchVal, pos);
+		 
+		  if (foundPos == -1) break;
+
+		  console.log( "Found at "+foundPos );
+		  
+		  pos = foundPos + 1; // continue the search from the next position
+		  
+		  no_of_times++;
+		  
+	 }
+	 
+	console.log( searchVal + ": found :"+no_of_times );
+	 	 
+  }
+  
+  
+  */
