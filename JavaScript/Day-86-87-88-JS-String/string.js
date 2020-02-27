@@ -1,7 +1,7 @@
 /** 
 *@Author: CK
 *@Desciption: Working with string methods
-*@Function: myString()
+*@Function: myString() 
 *@Retuns: <number> 
 */
 
