@@ -8,7 +8,7 @@ while ( 1 ) {
   let foundPos = str.indexOf(target, pos);
   if (foundPos == -1) break;
 
-  alert( `Found at ${foundPos}` );
+  console.log( `Found at ${foundPos}` );
   
   pos = foundPos + 1; // continue the search from the next position
 }
@@ -20,6 +20,8 @@ let target = [ "bad", "am", "student" ]  //'am'; // let's look for it
 let no_of_times  = 0;
 
 let pos = 0;
+  
+  // for-in
   
   for( let ch in target){
 	

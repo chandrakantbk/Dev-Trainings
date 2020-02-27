@@ -123,9 +123,12 @@ function myString( ){
 	
 	var occurences = 0;
 	
-	for(let index = 0; index < str.length; index++ ){\
+	//for loop
+	for(let index = 0; index < str.length; index++ ){
 	
 			current_char  = str.charAt( index );
+			
+			//current_char  =  str[ index ]
 			
 			if(current_char == "0" ){
 				
@@ -137,10 +140,10 @@ function myString( ){
 		
 	}
 	
-	
+	// for-of loop
 	for(let ch of str){
 		
-		
+		console.log( ch );
 	}
 	
 	var cur_pos = -1;
