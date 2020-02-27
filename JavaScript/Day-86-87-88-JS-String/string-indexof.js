@@ -1,5 +1,5 @@
 let str = 'Hello, I am from oman. I am a student and as a student I study hard.';
-
+ 
 let target = 'a'; // let's look for it
 
 let pos = 0;
