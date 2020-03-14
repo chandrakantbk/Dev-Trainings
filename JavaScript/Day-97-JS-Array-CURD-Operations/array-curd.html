@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>day 97 CURD Operation using Array methods </title> 
+			<script src="array.js"></script>
+			<script src="database.curd.operation.js"></script>
+			
+	</head>
+	
+	<body onload="updateWebPage()">
+		
+		<div style="display: flex; justify-content: space-around; border: 1px solid #000" >
+			<div style="padding: 30px">
+				<p>Enter data to Instert in database: </p> 
+				
+				<label for="name-input">Name: </label> <input type = "text"   id="name-input" >  <br><br>
+				
+				<label for="marks-input">Marks:</label>
+				<input type = "number" id="marks-input" >  <br><br>
+				
+				<button id="create-btn"  onclick="handleCreate()" > Create New Record </button>
+			</div>
+			
+			<div style="padding: 30px"> 
+				<p>Delete Record: Enter ID </p>
+				
+				<input type = "number" id="delete-input" placeholder="Enter ID number "> 
+				
+				<button id="delete-btn"  onclick="deleteRecord()" > Delete Record </button>
+				
+			</div>
+			
+		</div>
+		
+		<table border="2" width="600" id="data-table">
+				
+		</table>
+		 
+		 <hr>
+		 
+		<p>List of students greter than 80% </p>
+		
+		<p id="students"> </p>
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+	</body>
+</html>
