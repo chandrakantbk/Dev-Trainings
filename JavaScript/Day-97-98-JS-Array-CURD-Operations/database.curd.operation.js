@@ -8,6 +8,23 @@
 		
 **/
 
+function handleSubmit(){
+	var query_val = document.querySelector("#update-input").value;
+	var my_choice = document.getElementById("dropdown").value;
+	
+	var s_name = document.querySelector("#name-input").value;
+	var s_marks = document.querySelector("#marks-input").value;
+
+	if( query_val && my_choice){
+		updateRecord( query_val,  my_choice )
+		
+	}else{ 
+		handleCreate();
+	}
+
+	
+}
+
 
 function handleCreate(){
 	/** Create a new record */
@@ -15,6 +32,7 @@ function handleCreate(){
 	
 	var s_name = document.querySelector("#name-input").value;
 	var s_marks = document.querySelector("#marks-input").value;
+
 
 	/*	
 		if(isNaN( s_marks ) || s_name == 'undefined' || s_name == "" ){
@@ -60,15 +78,18 @@ function deleteRecord(){
 	
 	var my_new_arr;
 	
+	//my_new_arr = database.filter( function( item ){  let flag =  (item !=  record_id ); return flag;   } )
+	
+	
 	my_new_arr = database.filter( function(item){      
 		
-		if( item.id == record_id){
+		if( item.id != record_id){
+				return true;
 			
-			return false;
 			
 		} else {
-			
-			return true;
+			return false;
+		
 			
 		}
 		
@@ -82,6 +103,48 @@ function deleteRecord(){
 	updateWebPage();
 	
 	
+}
+
+function updateRecord(query_val, key ){
+	
+	var match_query = query_val || document.getElementById("update-input").value;
+	
+	var key_choice  = key || "id";
+	
+	var index = getIndex(key, match_query, database);
+	
+	if( index == -1){
+		alert("No Record Found");
+		return false;
+	}
+	
+	var s_name = document.querySelector("#name-input").value;
+	var s_marks = document.querySelector("#marks-input").value;
+	
+	database[index].name = s_name;
+	database[index].mark = s_marks;
+	
+	updateWebPage();
+	
+	//array.splice(  )
+	
+}
+
+
+function getIndex(key, value, array){
+
+	for(let index = 0;  index < array.length; index++){
+	
+		if( array[ index ][key] == value ){		
+		
+			return index;
+			
+		}
+		
+	}
+	
+	return -1;
+
 }
 
 
