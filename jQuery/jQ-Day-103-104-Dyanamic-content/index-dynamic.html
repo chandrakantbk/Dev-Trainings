@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Day 104 - jQuery Dynamic Content </title>
+
+    <link href="../../srcMedia/bootstrap.min.css" rel="stylesheet">
+
+    <script src="../jquery-3.4.1.js"></script>
+
+    <script src="api-data.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <button class="btn btn-primary" onclick="getPhotos()">Load Images </button>
+        <hr>
+
+        <div class="d-flex justify-content-center" id="data-holder" style="flex-wrap: wrap;">
+
+
+        </div>
+
+    </div>
+
+    <img src="../../srcMedia/straight-loader.gif" alt="loader image" class="loder-img d-none" style="width: 200px; margin: 0 auto;">
+
+</body>
+
+</html>
