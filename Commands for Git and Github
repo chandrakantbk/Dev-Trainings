@@ -1,0 +1,19 @@
+
+
+git clone https://github.com/chandrakantbk/PythonPractice.git
+
+git config --local user.email "chandrakat@gmail.com"
+
+git config --local user.name "Chandrakant K"
+
+git branch
+
+git checkout master
+
+git status
+
+git add .
+
+git commit -m "My Massage"  
+
+git push
