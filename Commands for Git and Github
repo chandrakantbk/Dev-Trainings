@@ -16,4 +16,6 @@ git add .
 
 git commit -m "My Massage"  
 
+git pull
+
 git push
