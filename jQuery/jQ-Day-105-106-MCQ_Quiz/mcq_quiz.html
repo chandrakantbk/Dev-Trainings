@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCQ Quiz day 105</title>
+    <link href="../../srcMedia/bootstrap.min.css" rel="stylesheet" />
+    <script src="../jquery-3.4.1.js"></script>
+
+    <link href="mcq.style.css" rel="stylesheet">
+
+    <script>
+        function checkResult() {
+
+            /* var correctAns = {
+                q1: 'ak',
+                q2: 'delhi'
+            }
+            
+            */
+            var correctAns = ["ck", 'delhi']
+
+            var userAnsArray = [];
+
+            var my_selected_option = $("input:checked");
+
+            if ($(my_selected_option).length == 0) {
+                alert("Please select options before submit");
+                return false;
+            }
+
+            /** If all question answers has been given/attemted */
+            if ($(my_selected_option).length < $(".question-holder").length) {
+                alert("Please attempt all questions");
+                return false;
+            }
+
+            console.log(my_selected_option)
+
+            $.each(my_selected_option, function(index) {
+                console.log($(this).val())
+                console.log(index)
+
+                userAnsArray[index] = $(this).val();
+
+            })
+
+            console.log("checking result with user ansewer array");
+            console.log(userAnsArray);
+
+            if (userAnsArray.toString() == correctAns.toString()) {
+                console.log("result is true");
+                $(".result-box").html("<p class='text-success'>Your are passed</p>")
+
+            } else {
+                console.log("result is failed");
+                $(".result-box").html("<p class='text-danger'>Your are Failed</p>")
+            }
+
+        }
+    </script>
+
+</head>
+
+<body>
+    <div class="container pt-4 pb-4">
+        <div class="row">
+            <div class="col-8">
+                <div class="question-holder bg-dark text-white p-4">
+                    <h2>Q1. What is your Name </h2>
+
+                    <div class="options-container pl-5 mt-3">
+                        <div>
+                            <input type="radio" name="q_1_options" value="ck" id="q_1_options-1" data-answer="false">
+                            <label for="q_1_options-1"> CK </label>
+                        </div>
+                        <div>
+                            <input type="radio" name="q_1_options" value="sk" id="q_1_options-2" data-answer="true">
+                            <label for="q_1_options-2"> SK </label>
+                        </div>
+                        <div>
+                            <input type="radio" name="q_1_options" value="ak" id="q_1_options-3" data-answer="false">
+                            <label for="q_1_options-3"> Akshay </label>
+                        </div>
+                        <div>
+                            <input type="radio" name="q_1_options" value="sn" id="q_1_options-4" data-answer="false">
+                            <label for="q_1_options-4"> Sanjay </label>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="question-holder bg-dark text-white p-4">
+                    <h2>Q2. What is Capital of India? </h2>
+
+                    <div class="options-container pl-5 mt-3">
+                        <div>
+                            <input type="radio" name="q_2_options" value="delhi" id="q_2_option_1" data-answer="true">
+                            <label for="q_2_option_1"> Delhi </label>
+                        </div>
+                        <div>
+                            <input type="radio" name="q_2_options" value="mumbai" id="q_2_option_2" data-answer="false">
+                            <label for="q_2_option_2"> Mumbai </label>
+                        </div>
+                        <div>
+                            <input type="radio" name="q_2_options" value="pune" id="q_2_option_3" data-answer="false">
+                            <label for="q_2_option_3"> Pune </label>
+                        </div>
+                        <div>
+                            <input type="radio" name="q_2_options" value="nagpur" id="q_2_option_4" data-answer="false">
+                            <label for="q_2_option_4"> Nagpur </label>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="text-center ">
+                    <button class="btn btn-primary " onclick="checkResult() ">Submit</button>
+                </div>
+            </div>
+            <div class="col-4">
+                <p>Your Result: </p>
+                <div class="result-box d-flex p-5 border border-dark">
+                    <p class="text-secondary">Result will be shown here</p>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+</body>
+
+</html>
