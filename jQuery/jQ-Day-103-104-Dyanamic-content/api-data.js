@@ -52,3 +52,34 @@ function updateWebpage(dataArray) {
 
     $("#data-holder").html(viewHtml);
 }
+
+function search() {
+    /*
+    1 => 40,000
+    10 => 40,000
+    100 => 40,000
+    1000 => 40,000
+
+    debouncing
+    throtlling
+
+            var timer;
+            search(val){
+              
+
+                //10
+                
+        clearTimeout(timer);
+        timer = setTimeout(function(){ 
+            
+            data.filter(  (e)=> return e.id==val   );
+            
+            console.log("searching ")
+
+        }, 500 )
+    */
+
+
+
+
+}
