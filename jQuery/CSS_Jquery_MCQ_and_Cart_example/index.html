@@ -1,74 +1,81 @@
 <!doctype html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="css/style.css" rel="stylesheet"/>
-	<script src="js/jquery-1.11.3.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="js/jquery-1.11.3.js"></script>
 </head>
+
 <body>
-	<div class="container">
-		<div class="button_container"> 
-			<div class="button" id="button_01" data="Laptop"><a class="circle">Laptop</a></div>
-			<div class="button" id="button_02" data="Mobile"><a class="circle">Mobile</a></div>
-			<div class="button" id="button_03" data="Watch"><a class="circle">Watch</a></div>
-			<div class="button" id="button_04" data="TV"><a class="circle">TV</a></div>
-		</div>
-				
-		<div class="result">
-			<div class="show_box" id="result_01">01. Laptop. This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.</div>
-			<div class="show_box" id="result_02">
-				<p>02. Mobile. If you still see this message, the online Help service might be temporarily unavailable. Try to connect again later.</p>
-				<p>You can pin apps, websites, people, and folders to Start to easily get to what you use most. Tiles and notifications show what’s new, so you can get important info and updates at a glance.</p>
-				<p>There are lots of ways to get to Start, but here are a few quick ones:</p>
-				<p>From Start, you don't have to bring up the charms to begin a search—start typing to search for what you want. You can choose results from your apps, files, PC settings, and Bing.</p>
-				<p>Google Chrome can’t display the webpage because your computer isn’t connected to the Internet.</p>
-				<p>To move a tile on your Start screen, press and hold the tile you want to move. (If you're using a mouse, click and hold the tile.) Then, drag the tile to where you want to place it.</p>
-				<p>To resize a tile on your Start screen, press and hold the tile you want to resize. (If you're using a mouse, right-click the tile.) Tap or click Resize, and then choose the size you want.</p>
-			</div>
-			<div class="show_box" id="result_03">
-				<p>03. Watch. From Start, you don't have to bring up the charms to begin a search—start typing to search for what you want. You can choose results from your apps, files, PC settings, and Bing.</p>
-				<p>Swipe in from the right edge of the screen, tap Settings, and then tap Change PC settings. (If you're using a mouse, point to the lower-right corner of the screen, move the mouse pointer up, click Settings, and then click Change PC settings.) </p>
-			</div>
-			<div class="show_box" id="result_04">
-				<p>04. TV. Swipe in from the right edge of the screen, tap Settings, and then tap Change PC settings. (If you're using a mouse, point to the lower-right corner of the screen, move the mouse pointer up, click Settings, and then click Change PC settings.) </p>
-				<p>04. From Start, you don't have to bring up the charms to begin a search—start typing to search for what you want. You can choose results from your apps, files, PC settings, and Bing.</p>
-			</div>
-		</div>
-		<div class="notice">No items in cart </div>
-	</div>
+    <div class="container">
+        <div class="button_container">
+            <div class="button" id="button_01" data="Laptop"><a class="circle">Laptop</a></div>
+            <div class="button" id="button_02" data="Mobile"><a class="circle">Mobile</a></div>
+            <div class="button" id="button_03" data="Watch"><a class="circle">Watch</a></div>
+            <div class="button" id="button_04" data="TV"><a class="circle">TV</a></div>
+        </div>
+
+        <div class="result">
+            <div class="show_box" id="result_01">01. Laptop. This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later
+                version.</div>
+            <div class="show_box" id="result_02">
+                <p>02. Mobile. If you still see this message, the online Help service might be temporarily unavailable. Try to connect again later.</p>
+                <p>You can pin apps, websites, people, and folders to Start to easily get to what you use most. Tiles and notifications show what’s new, so you can get important info and updates at a glance.</p>
+                <p>There are lots of ways to get to Start, but here are a few quick ones:</p>
+                <p>From Start, you don't have to bring up the charms to begin a search—start typing to search for what you want. You can choose results from your apps, files, PC settings, and Bing.</p>
+                <p>Google Chrome can’t display the webpage because your computer isn’t connected to the Internet.</p>
+                <p>To move a tile on your Start screen, press and hold the tile you want to move. (If you're using a mouse, click and hold the tile.) Then, drag the tile to where you want to place it.</p>
+                <p>To resize a tile on your Start screen, press and hold the tile you want to resize. (If you're using a mouse, right-click the tile.) Tap or click Resize, and then choose the size you want.</p>
+            </div>
+            <div class="show_box" id="result_03">
+                <p>03. Watch. From Start, you don't have to bring up the charms to begin a search—start typing to search for what you want. You can choose results from your apps, files, PC settings, and Bing.</p>
+                <p>Swipe in from the right edge of the screen, tap Settings, and then tap Change PC settings. (If you're using a mouse, point to the lower-right corner of the screen, move the mouse pointer up, click Settings, and then click Change PC settings.)
+                    </p>
+            </div>
+            <div class="show_box" id="result_04">
+                <p>04. TV. Swipe in from the right edge of the screen, tap Settings, and then tap Change PC settings. (If you're using a mouse, point to the lower-right corner of the screen, move the mouse pointer up, click Settings, and then click Change
+                    PC settings.) </p>
+                <p>04. From Start, you don't have to bring up the charms to begin a search—start typing to search for what you want. You can choose results from your apps, files, PC settings, and Bing.</p>
+            </div>
+        </div>
+        <div class="notice">No items in cart </div>
+    </div>
 </body>
 <script type="text/javascript">
-	$(document).ready(function(){
-		var cart=[];
-		var choices = [];
-		var len = $(".button").length;
-		for (var i = 0; i<len; i++){
-			choices[i]=[];
-		}
-		console.log(choices);
-		
-		$(".button").click(function(){
-			if($(this).hasClass("selected")){return false;}
-			//$(".button").removeClass("selected disabled");
-			$(this).addClass("disabled selected");
-			//$(".button").not(this).addClass("disabled")
-			
-			var id= $(this).attr('id').split("button_")[1];
-			console.log(id);
-			
-			$(".show_box").hide();
-			$("#result_"+id).slideDown(500);
-			cart.push(id+" "+$(this).attr('data'));
-			console.log(cart.toString());
-			regx= /[,]/g;
-			$(".notice").html("<span style='color:black; font-weight:bold;'>Your Cart Items:</span> "+(cart.toString()).replace(regx,', '));
-			
-		});
-		
-		
-	});
+    $(document).ready(function() {
+        var cart = [];
+        var choices = [];
+        var len = $(".button").length;
+        for (var i = 0; i < len; i++) {
+            choices[i] = [];
+        }
+        console.log(choices);
 
+        $(".button").click(function() {
+            if ($(this).hasClass("selected")) {
+                return false;
+            }
+            //$(".button").removeClass("selected disabled");
+            $(this).addClass("disabled selected");
+            //$(".button").not(this).addClass("disabled")
+
+            var id = $(this).attr('id').split("button_")[1];
+            console.log(id);
+
+            $(".show_box").hide();
+            $("#result_" + id).slideDown(500);
+            cart.push(id + " " + $(this).attr('data'));
+            console.log(cart.toString());
+            regx = /[,]/g;
+            $(".notice").html("<span style='color:black; font-weight:bold;'>Your Cart Items:</span> " + (cart.toString()).replace(regx, ', '));
+
+        });
+
+
+    });
 </script>
+
 </html>
