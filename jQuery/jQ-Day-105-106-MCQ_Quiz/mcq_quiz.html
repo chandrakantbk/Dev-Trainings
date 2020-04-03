@@ -5,52 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MCQ Quiz day 105</title>
+
     <link href="../../srcMedia/bootstrap.min.css" rel="stylesheet" />
+
     <script src="../jquery-3.4.1.js"></script>
 
     <link href="mcq.style.css" rel="stylesheet">
 
     <script>
-        function checkResult() {
-
-            /* var correctAns = {
-                q1: 'ak',
-                q2: 'delhi'
-            }
-            
-            */
+        function checkResult(param) {
             var correctAns = ["ck", 'delhi']
-
             var userAnsArray = [];
 
-            var my_selected_option = $("input:checked");
+            var my_selected_options = $("input:checked");
 
-            if ($(my_selected_option).length == 0) {
+            if ($(my_selected_options).length == 0 && !param) {
                 alert("Please select options before submit");
                 return false;
             }
 
+            var no_of_attempted = $(my_selected_options).length;
+            var no_of_questions = $(".question-holder").length;
+
             /** If all question answers has been given/attemted */
-            if ($(my_selected_option).length < $(".question-holder").length) {
-                alert("Please attempt all questions");
+            if (no_of_attempted < no_of_questions && !param) {
+                alert("Please attempt all questions.\nNo. of qsn attemted: " + no_of_attempted);
                 return false;
             }
 
-            console.log(my_selected_option)
+            console.log(my_selected_options)
 
-            $.each(my_selected_option, function(index) {
+            /** Loop though each selected radio button and store it's value in userAnsArray*/
+            $.each(my_selected_options, function(idx) {
+                console.log(idx)
                 console.log($(this).val())
-                console.log(index)
-
-                userAnsArray[index] = $(this).val();
-
+                userAnsArray[idx] = $(this).val();
             })
 
             console.log("checking result with user ansewer array");
             console.log(userAnsArray);
-
+            /** Compare if userAnsArray is equal to correct answer array*/
             if (userAnsArray.toString() == correctAns.toString()) {
                 console.log("result is true");
+
                 $(".result-box").html("<p class='text-success'>Your are passed</p>")
 
             } else {
@@ -59,12 +56,17 @@
             }
 
         }
+        /** submit result automatically after 1 min */
+        setTimeout(function() {
+            checkResult("auto")
+        }, 60000);
     </script>
 
 </head>
 
 <body>
     <div class="container pt-4 pb-4">
+
         <div class="row">
             <div class="col-8">
                 <div class="question-holder bg-dark text-white p-4">
@@ -77,6 +79,7 @@
                         </div>
                         <div>
                             <input type="radio" name="q_1_options" value="sk" id="q_1_options-2" data-answer="true">
+
                             <label for="q_1_options-2"> SK </label>
                         </div>
                         <div>
@@ -116,7 +119,7 @@
                 </div>
 
                 <div class="text-center ">
-                    <button class="btn btn-primary " onclick="checkResult() ">Submit</button>
+                    <button class="btn btn-primary" onclick="checkResult()">Submit</button>
                 </div>
             </div>
             <div class="col-4">
