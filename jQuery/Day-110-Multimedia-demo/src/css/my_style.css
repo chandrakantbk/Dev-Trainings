@@ -1,0 +1,30 @@
+a {
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+.player-btn {
+    display: inline-block;
+    font-size: 45px;
+}
+
+.player-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.progress-bar {
+    height: 10px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.filled-area {
+    height: 100%;
+    width: 10%;
+}

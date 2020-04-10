@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery UI day-1 </title>
+
+    <link href="../../srcMedia/bootstrap.min.css" rel="stylesheet">
+    <script src="../jquery-3.4.1.js"></script>
+
+    <!-- <script src="../jquery-ui.min.js"></script> -->
+
+
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+
+
+
+    <script>
+        function bounceCards() {
+            $(".card").effect("pulsate", "slow")
+        }
+
+        function clipCards() {
+            $(".card").toggle("clip", "slow")
+        }
+
+        function shakeCards() {
+            $(".card").toggle("shake", "slow")
+        }
+
+        function foldCards() {
+            $(".card").toggle("fold", "slow")
+        }
+
+        function setAcordion() {
+            $(".accordion-box").accordion();
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container pt-4 pb-4">
+        <button class="btn btn-primary" onclick="bounceCards()">Bounce</button>
+        <button class="btn btn-primary" onclick="clipCards()">Clip</button>
+        <button class="btn btn-primary" onclick="shakeCards()">Shake</button>
+        <button class="btn btn-primary" onclick="foldCards()">fold</button>
+        <button class="btn btn-primary" onclick="setAcordion()">Accordion </button>
+
+    </div>
+    <div class="container d-flex" style="flex-wrap: wrap;">
+
+        <div class="card" style="width: 270px; margin: 15px; ">
+            <div class="card-body">
+                <div class="card-text">
+                    <p>This is example text</p>
+                    <p>This is example text</p>
+                    <p>This is example text</p>
+                    <p>This is example text</p>
+                    <p>This is example text</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" style="width: 170px; margin: 15px; ">
+            <div class="card-body">
+                <div class="card-text">
+                    <p>This is example text</p>
+                    <p>This is example text</p>
+                    <p>This is example text</p>
+                    <p>This is example text</p>
+                    <p>This is example text</p>
+                </div>
+            </div>
+        </div>
+        <div class="card" style="width: 170px; margin: 15px; ">
+            <div class="card-body">
+                <div class="card-text">
+                    <p>This is example text</p>
+                    <p>This is example text</p>
+                    <p>This is example text</p>
+                    <p>This is example text</p>
+                    <p>This is example text</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="container mt-4">
+
+        <div class="accordion-box">
+
+            <h3 class="p-2 bg-primary texr-white mt-2">Title</h3>
+            <div class="bg-secondary text-white p-4">
+                <p>This is example text</p>
+                <p>This is example text</p>
+                <p>This is example text</p>
+                <p>This is example text</p>
+                <p>This is example text</p>
+            </div>
+
+            <h3 class="p-2 bg-primary texr-white mt-2">Title</h3>
+            <div class="bg-secondary text-white p-4">
+                <p>This is example text</p>
+                <p>This is example text</p>
+                <p>This is example text</p>
+                <p>This is example text</p>
+                <p>This is example text</p>
+            </div>
+            <h3 class="p-2 bg-primary texr-white mt-2">Title</h3>
+            <div class="bg-secondary text-white p-4">
+                <p>This is example text</p>
+                <p>This is example text</p>
+                <p>This is example text</p>
+                <p>This is example text</p>
+                <p>This is example text</p>
+            </div>
+
+            <h3 class="p-2 bg-primary texr-white mt-2">Title</h3>
+            <div class="bg-secondary text-white p-4">
+                <p>This is example text</p>
+                <p>This is example text</p>
+                <p>This is example text</p>
+                <p>This is example text</p>
+                <p>This is example text</p>
+            </div>
+
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
