@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="lib/jquery-3.4.1.js"></script>
+    <script src="src/js/cubks_player.js"></script>
+    <link href="lib/icons_style.css" rel="stylesheet">
+    <link href="lib/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="d-flex">
+            <div class="card card-1" style="width: 48%; margin: 15px;">
+                <div class="card-body ">
+                    <video src="assets/intro_flight.mp4" class="my-video" style="width:100%"> </video>
+                </div>
+                <button class="btn btn-primary playbtn">Play/Pause</button>
+
+                <div class="d-flex">
+                    <span class="my-current-time p-2 d-inline-block"> </span>
+                    <span class="my-duration p-2 d-inline-block"> </span>
+                </div>
+
+                <div class="bg-secondary">
+                    <div class="progress-fill bg-primary" style="height:10px; width: 0;"></div>
+                </div>
+
+            </div>
+
+
+            <div class="card card-2" style="width: 48%; margin: 15px;">
+                <div class="card-body ">
+                    <video src="assets/intro_flight.mp4" class="my-video" style="width:100%"> </video>
+                </div>
+                <button class="btn btn-primary playbtn">Play/Pause</button>
+
+                <div class="d-flex">
+                    <span class="my-current-time p-2 d-inline-block"> </span>
+                    <span class="my-duration p-2 d-inline-block"> </span>
+                </div>
+
+                <div class="bg-secondary">
+                    <div class="progress-fill bg-primary" style="height:10px; width: 0;"></div>
+                </div>
+
+            </div>
+
+            <div class="card position-relative card-3" style="width: 48%; margin: 15px;">
+                <div class="card-body ">
+                    <video src="assets/intro_flight.mp4" class="my-video" style="width:100%"> </video>
+                </div>
+                <button class="btn btn-primary playbtn">Play/Pause</button>
+
+                <div class="d-flex">
+                    <span class="my-current-time p-2 d-inline-block"> </span>
+                    <span class="my-duration p-2 d-inline-block"> </span>
+                </div>
+
+                <div class="bg-secondary">
+                    <div class="progress-fill bg-primary" style="height:10px; width: 0;"></div>
+                </div>
+                <div class="my-adevertise position-absolute p-2 rounded-1" style="display:none; top: 0; width: 50%; right: 0; background-color: rgba(0,0,0,0.5);">
+                    <h3 class="text-white">My Adevetise </h3>
+                    <p class="text-white">Thi sis text</p>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <script>
+        /*
+        var myvideo1 = new player();
+        myvideo1.initialise({
+            container: '.card-1',
+            videoElement: '.my-video',
+            playPauseBtn: '.playbtn',
+            progress: '.progress-fill',
+            currentTimer: '.my-current-time',
+            durationTimer: '.my-duration',
+            isAutoEvents: true
+        });
+
+        var myvideo2 = new player();
+        myvideo2.initialise({
+            container: '.card-3',
+            videoElement: '.my-video',
+            playPauseBtn: '.playbtn',
+            progress: '.progress-fill',
+            currentTimer: '.my-current-time',
+            durationTimer: '.my-duration',
+            isAutoEvents: true,
+            adversiseTimes: [2, 5, 8],
+            advertiseContainer: ".my-adevertise"
+        });
+        */
+
+
+        $.each($(".card"), function(idx) {
+            var myvideo1 = new player();
+            myvideo1.initialise({
+                container: '.card-' + (idx + 1),
+                videoElement: '.my-video',
+                playPauseBtn: '.playbtn',
+                progress: '.progress-fill',
+                currentTimer: '.my-current-time',
+                durationTimer: '.my-duration',
+                isAutoEvents: true,
+                adversiseTimes: idx == 2 ? [2, 5, 8] : [],
+                advertiseContainer: idx == 2 ? ".my-adevertise" : ''
+            });
+        });
+    </script>
+
+</body>
+
+</html>

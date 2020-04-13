@@ -1,12 +1,27 @@
 /** Creating Video Player 
  * Author: CUBKS 
  */
+
 const player = function() {
     let self = this;
+
     self.isEventAdded = false;
+
     var vid = $(config.videoElement).get(0);
     vid.onloadeddata = function() {
         self.addMediaEvents();
+    }
+
+    self.play = function() {
+        if (vid.paused) {
+            $(config.advertiseContainer).slideUp();
+            vid.play();
+            $(this).addClass(config.icons.puase).removeClass(config.icons.play);
+
+        } else {
+            vid.pause();
+            $(this).addClass(config.icons.play).removeClass(config.icons.puase);
+        }
     }
 
     self.addMediaEvents = function() {
@@ -18,17 +33,12 @@ const player = function() {
         var currentProgress = 0;
 
         $(config.playPauseBtn).on("click", function() {
-            $(config.durationTimer).html(Math.round(vid.duration));
-
-            if (vid.paused) {
-                $(config.advertiseContainer).slideUp();
-                vid.play();
-                $(this).addClass(config.icons.puase).removeClass(config.icons.play);
-
-            } else {
-                vid.pause();
-                $(this).addClass(config.icons.play).removeClass(config.icons.puase);
+            if ($(this).hasClass("disabled")) {
+                return false;
             }
+            $(config.durationTimer).html(Math.round(vid.duration));
+            self.play();
+
         });
 
         $(config.videoElement).on('timeupdate', function(event) {
@@ -68,13 +78,19 @@ const player = function() {
             $(config.playPauseBtn).addClass(config.icons.play).removeClass(config.icons.puase);
         });
 
-        player.isEventAdded = true;
+        self.isEventAdded = true;
 
+    }
+
+    self.removeEvents() {
+        $(config.playPauseBtn).addClass("disabled");
     }
 
 }
 
-
 $(document).ready(function() {
-    player();
+    //player(); //normal function invoke
+
+    var player_1 = new player();
+
 })
