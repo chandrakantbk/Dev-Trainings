@@ -12,28 +12,46 @@
     <script src="lib/jquery-3.4.1.js"></script>
     <script src="lib/jquery-ui.min.js"></script>
 
+    <script src="src/js/config.js"></script>
     <script src="src/js/cubks_player.js"></script>
 
 
 </head>
 
 <body>
-    <div class="container p-5">
-        <div class="player-container">
-            <video style="width:100%" class="player-video">
-                <source src="assets/intro_flight.mp4" type="video/mp4"/>
-            </video>
-
-            <div class="player-footer">
-                <a href="javascript:void(0);" class="player-btn playpause-btn icon-play3"> </a>
-                <div class="progress-bar bg-secondary">
-                    <div class="filled-area bg-primary"></div>
+    <div class="container pl-5 pr-5">
+        <div class="player-container pl-5 pr-5">
+            <div class="player-screen position-relative">
+                <video style="width:100%" id="" class="player-video">
+                    <source src="assets/intro_flight.mp4" type="video/mp4"/>
+                </video>
+                <div class="advertise-container p-5">
+                    <h3 class="text-center"> <strong>This is advertise text </strong> </h3>
+                    <p>click on play button to start again </p>
                 </div>
             </div>
+
+
+            <div class="player-footer row">
+                <div class="col">
+                    <a href="javascript:void(0);" class="player-btn playpause-btn icon-play3 disabled"> </a>
+                </div>
+
+                <div class="progress-bar bg-secondary col-10">
+                    <div class="filled-area bg-primary"></div>
+                </div>
+
+                <div class="col text-right">
+                    <span class="current-time">0</span>::<span class="duration-time">0</span>
+                </div>
+            </div>
+
+
 
         </div>
 
     </div>
+
 </body>
 
 </html>

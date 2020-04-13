@@ -7,24 +7,50 @@ a:focus {
     text-decoration: none;
 }
 
-.player-btn {
+.player-container {
+    position: relative;
+}
+
+.player-container .player-btn {
     display: inline-block;
     font-size: 45px;
 }
 
-.player-footer {
+.player-btn.disabled {
+    color: gray;
+}
+
+.player-container .player-footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.progress-bar {
+.player-container .progress-bar {
     height: 10px;
     border-radius: 10px;
     width: 100%;
+    position: relative;
 }
 
-.filled-area {
+.progress-bar .filled-area {
     height: 100%;
-    width: 10%;
+    width: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 0.5s ease-in;
+}
+
+
+/** advertise css */
+
+.player-container .advertise-container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    top: 0;
+    display: none;
 }
