@@ -4,6 +4,7 @@
 
 const player = function() {
     let self = this;
+
     self.isEventAdded = false;
     self.isVideoLoaded = false;
 
@@ -33,6 +34,7 @@ const player = function() {
     }
 
     self.initialise = function(settings) {
+        
         if (settings) {
             $.extend(config, settings);
         }
@@ -40,7 +42,10 @@ const player = function() {
         console.log("initialised");
 
         advertiseContainer = $(config.container).find(config.advertiseContainer);
+        
+        /** this statement restrict player to play first video */
         videoElement = $(config.container).find(config.videoElement).get(0);
+
         playPauseBtn = $(config.container).find(config.playPauseBtn);
         progressBar = $(config.container).find(config.progressBar);
         progress = $(config.container).find(config.progress);
@@ -50,6 +55,8 @@ const player = function() {
 
         videoElement.onloadeddata = function() {
             self.isVideoLoaded = true;
+            $(durationTimer).html(Math.round(videoElement.duration));
+
             if (config.isAutoEvents) {
                 self.addMediaEvents();
             }
@@ -57,6 +64,9 @@ const player = function() {
 
     }
 
+   self.pause = function(){
+      videoElement.pause();
+   }
 
     self.play = function() {
         if (videoElement.paused) {
@@ -77,10 +87,10 @@ const player = function() {
         var currentProgress = 0;
 
         $(playPauseBtn).on("click", function() {
+            
             if ($(this).hasClass("disabled")) {
                 return false;
             }
-            $(durationTimer).html(Math.round(videoElement.duration));
             self.play();
         });
 

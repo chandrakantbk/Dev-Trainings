@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Player library </title>
+
+    <link href="lib/bootstrap.min.css" rel="stylesheet">
+    <link href="lib/icons_style.css" rel="stylesheet">
+    
+    <script src="lib/jquery-3.4.1.js"></script>
+    <script src="src/js/cubks_player.js"></script>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="d-flex justify-align-center">
+            <div class="card player-holder" style="width :50%">
+                <div class="card-body">
+                    <video src="assets/intro_flight.mp4" style="max-width: 100%;"></video>
+                    <button class="btn">Play/Pause</button>
+                    <div class="bg-secondary">
+                        <div class="bg-danger" style="width:10px">
+                            <p id="current" class="m-0">0</p>
+                        </div>
+                    </div>
+                    <p>Duration : <span id="videolength"> 0 </span></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        var v1 = new player();
+        v1.initialise({
+            container: '.player-holder',
+            videoElement: 'video',
+            playPauseBtn: '.btn',
+            progress: '.bg-danger',
+            currentTimer: '#current',
+            durationTimer: '#videolength',
+            isAutoEvents: true,
+        })
+    </script>
+</body>
+</html>
