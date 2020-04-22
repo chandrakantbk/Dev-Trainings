@@ -1,0 +1,26 @@
+.pinned-messages {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    overflow: auto;
+    box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    font-size: 12px;
+    right: 0;
+    top: 0;
+}
+
+.mark-text {
+    float: right;
+    font-size: 12px;
+}
+
+.message-container {
+    height: 300px;
+    overflow-y: auto;
+    width: 50%;
+}
+
+.new_message-box {
+    width: 50%;
+}

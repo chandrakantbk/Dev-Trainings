@@ -1,0 +1,26 @@
+<div class="container-fluid p-5 position-relative">
+
+    <!-- Directive ngFor -->
+    <div class="message-container">
+        <div class="card" style="width: 100%;" *ngFor="let item of chat_messages">
+            <div class="card-body">
+                <span> {{ item.name }} : {{ item.message }}  </span>
+
+                <a class="mark-text" href="javascript:void(0)" (click)="addToImportantChat(item)">Mark</a>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="new_message-box">
+        <textarea rows="2" class="w-100"></textarea>
+        <button class="btn btn-primary">SEND</button>
+    </div>
+
+    <div class="pinned-messages">
+        <p *ngFor="let item of pinned_chat_list">
+            {{item.name}}: {{item.message }}
+        </p>
+    </div>
+
+</div>

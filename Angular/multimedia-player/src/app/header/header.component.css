@@ -1,0 +1,12 @@
+h2 {
+    color: red;
+}
+
+.bg-black {
+    background-color: black;
+    color: #fff;
+}
+
+.btn {
+    margin: 0px 10px;
+}

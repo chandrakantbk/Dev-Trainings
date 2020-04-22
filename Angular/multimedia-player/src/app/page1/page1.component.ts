@@ -1,0 +1,31 @@
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-page1',
+  templateUrl: './page1.component.html',
+  styleUrls: ['./page1.component.css']
+})
+
+export class Page1Component implements OnInit {
+  name = "Akshay";
+  path = "/assets/logo.jpg";
+
+  s_name = 'SK';
+
+  constructor() { }
+
+  ngOnInit() {
+    
+    console.log(" ng Init called ")
+  }
+
+  typeName(event){
+    console.log(event);
+    this.path = "";
+
+
+  }
+
+  
+
+}

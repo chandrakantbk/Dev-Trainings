@@ -1,0 +1,10 @@
+<table width="500" class="table table-striped">
+    <tr>
+        <th>Name</th>
+        <th>City </th>
+    </tr>
+    <tr *ngFor="let item of data_list; let idx = index ">
+        <td [class.bg-danger]="idx == 1"> {{item.name}} </td>
+        <td [ngClass]="{'bg-danger': idx == 1}"> {{item.city }} </td>
+    </tr>
+</table>
