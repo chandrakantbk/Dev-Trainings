@@ -14,6 +14,11 @@ import { ChattingPageComponent } from './chatting-page/chatting-page.component';
 import { GrowthComponent } from './growth/growth.component';
 import { ChildComponent } from './child/child.component';
 
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFireStorageModule } from '@angular/fire/storage'
+import { environment } from 'src/environments/environment';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +36,10 @@ import { ChildComponent } from './child/child.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    AngularFireModule,
+    AngularFirestoreModule,
+    AngularFireStorageModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
