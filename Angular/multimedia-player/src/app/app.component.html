@@ -2,24 +2,11 @@
     <div class="header">
         <app-header></app-header>
     </div>
-
-
-    <!-- two way binding ngModel -->
-    <!-- Event Binding  -->
-    <div *ngIf="isShow">
-        Filter: <input type="text" name="filter" [(ngModel)]="filter_string" (keyup)="updateStudntList($event)">
-        <hr>
-        <app-child [data_list]=table_data></app-child>
-        <hr>
-    </div>
-
-    <div class="contaienr-fluid" style="min-height: 300px; ">
+    <div class="contaienr-fluid content-body">
         <router-outlet></router-outlet>
     </div>
 
-
-
-    <div class="footer bg-secondary">
+    <div class="footer bg-dark">
         <app-footer-part> </app-footer-part>
     </div>
 

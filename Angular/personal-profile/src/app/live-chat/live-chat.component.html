@@ -2,7 +2,7 @@
 
     <div class="row">
         <div class="col-8">
-            <div class="card" style="width: 100%;" *ngFor="let item of chat_messages | async">
+            <div class="card" style="width: 100%;" *ngFor="let item of chat_messages">
                 <div class="card-body">
                     <span> {{ item.name }} : {{ item.message }}  </span>
                     <a class="mark-text" href="javascript:void(0)" (click)="addToImportantChat(item)">Mark</a>
@@ -24,8 +24,6 @@
             </div>
 
         </div>
-
-        {{ chat_messages | async | json }}
 
         <div class="col-4">
             <p *ngFor="let item of pinned_chat_list">

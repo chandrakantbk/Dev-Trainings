@@ -1,5 +1,27 @@
 .container {
     width: 90%;
     margin: 0px auto;
-    padding: 15px;
+    position: relative;
+    min-height: 100vh;
+    padding: 80px 15px;
+}
+
+.header {
+    top: 0;
+    left: 0;
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+}
+
+.footer {
+    left: 0;
+    bottom: 0px;
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+}
+
+.content-body {
+    position: relative;
 }

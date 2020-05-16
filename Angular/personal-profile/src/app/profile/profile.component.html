@@ -1,0 +1,26 @@
+<div class="container-fluid p-5">
+    <div class="bg-success p-4 text-white">
+        <div class="row">
+            <div class="col-4">
+                Name
+            </div>
+            <div class="col-8">
+                CUBKS Technologies
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-4">
+                Education:
+            </div>
+            <div class="col-8">
+                <ul>
+                    <li *ngFor="let item of educations">
+                        {{ item.year }} - {{ item.title }}
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</div>

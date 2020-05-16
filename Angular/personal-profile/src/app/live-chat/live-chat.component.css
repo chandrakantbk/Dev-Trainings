@@ -1,0 +1,12 @@
+.mark-text {
+    float: right;
+    font-size: 12px;
+}
+
+.message-container {
+    height: 300px;
+    overflow-y: auto;
+    width: 50%;
+    margin-bottom: 20px;
+    border: 1px solid #808080;
+}

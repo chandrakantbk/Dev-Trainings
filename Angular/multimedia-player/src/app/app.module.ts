@@ -15,8 +15,8 @@ import { GrowthComponent } from './growth/growth.component';
 import { ChildComponent } from './child/child.component';
 
 import { AngularFireModule } from '@angular/fire';
-import { AngularFirestoreModule } from '@angular/fire/firestore';
-import { AngularFireStorageModule } from '@angular/fire/storage'
+import { AngularFireDatabaseModule } from '@angular/fire/database';
+import { AngularFirestoreModule } from '@angular/fire/firestore'
 import { environment } from 'src/environments/environment';
 
 @NgModule({
@@ -37,9 +37,10 @@ import { environment } from 'src/environments/environment';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    AngularFireModule,
+    AngularFireModule.initializeApp(environment.db_config),
+    AngularFireDatabaseModule,
     AngularFirestoreModule,
-    AngularFireStorageModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

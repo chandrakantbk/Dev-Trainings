@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { AngularFireDatabase } from '@angular/fire/database';
+import { AngularFirestore } from '@angular/fire/firestore';
 
 @Component({
   selector: 'app-chatting-page',
@@ -9,18 +12,24 @@ import { Component, OnInit } from '@angular/core';
 export class ChattingPageComponent implements OnInit {
   pinned_chat_list = [];
   myMessage = "";
+  user_name = '';
 
-  chat_messages:any = [
-      {id: 1, name: 'SK', message: 'Hi' },
-      {id: 2, name: 'Akshay', message: 'Hi' },
-      {id: 3, name: 'SK', message: 'what are you doing?' },
-      {id: 4, name: 'Akshay', message: 'Learning to develop chat app' },
-  ]
-   
-  constructor() { }
+  chat_messages: Observable<any>;
+  
+  constructor(private live_db: AngularFirestore, private db: AngularFireDatabase) { 
+    //this.chat_messages = this.db.list('Users_chat').valueChanges()
+    
+    this.chat_messages = this.live_db.collection('Users_Chat').doc('111.80196333336401').snapshotChanges();  
+    
+    this.chat_messages.subscribe( (data)=> {
+      console.log(data)
+    })
+
+  }
 
   ngOnInit() {
-    
+    console.log(this.chat_messages);
+  
   }
 
   addToImportantChat(item){
@@ -29,8 +38,15 @@ export class ChattingPageComponent implements OnInit {
 
   sendMessage(){
     console.log(this.myMessage);
-    
-    this.chat_messages.push({ name: 'SK', message: this.myMessage  });
+    console.log(this.chat_messages);
+
+    ///this.db.list('Users_Chat').push({name: this.user_name, message: this.myMessage})
+    // this.chat_messages.push({name: this.user_name, message: this.myMessage});
+
+    let guid = Math.random() * 16 + new Date().getMilliseconds() + '';
+
+    this.live_db.collection('Users_chat').doc(guid).set({name: this.user_name, message: this.myMessage});
+    this.user_name = ''
     this.myMessage = '';
   
   }
