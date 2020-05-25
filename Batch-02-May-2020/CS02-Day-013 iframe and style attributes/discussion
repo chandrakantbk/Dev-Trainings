@@ -1,0 +1,37 @@
+sandbox = ""
+
+    allow-popups-to-escape-sandbox
+    allow-same-origin
+    allow-scripts
+    allow-forms
+
+
+loading="lazy"
+
+iframe 
+    attributes
+    
+    sandbox = "value" ====> Security
+    loading = "auto | lazy | eager" ===> Performance
+
+Style attribute
+Style tag 
+
+<a href="path" target="myframe">
+
+<iframe src="path" name="myframe" width="50%" loading="" sandbox="" style="">
+
+download content only if user is intent to view content
+
+loading="lazy" ==> user scrolls and reach near that content
+
+
+complete download contents 
+
+loading="eager"==> try to load first priority than others
+loading="auto"
+
+
+iframe: sandbox  =>> secure ==> you can decide what to allow inside your iframe 
+        
+        sandbox="allow-same-origin"

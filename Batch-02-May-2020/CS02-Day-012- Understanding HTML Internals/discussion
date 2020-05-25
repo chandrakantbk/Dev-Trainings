@@ -1,0 +1,83 @@
+
+Can I use my user defined (own) html tag? yes
+
+Why I need to learn HTML?
+
+Why Browser shows document without writing html tag?
+
+Why Browser shows wrong HTML? 
+    
+    HTML Parser ==> DOM treee
+
+Why < this symbol
+
+Syntax forgiving
+Not case sensetive
+
+=======================================================
+SGML
+
+HTML : Markup Language
+
+    <!-- -->
+
+    <tagname> </tagname>
+    <namrata> </namrata>
+    <sk> </sk>
+    
+    Javascript, jQuery, Angular
+
+
+
+
+
+    Hypertext markup Language
+
+
+
+
+Markup 
+
+    Annotation: pattern which shows something
+
+        manuscript
+
+Group
+    <!-- -->
+    <>  </>
+
+    <tag> </tag>
+
+
+<h1>Heading </h1>  
+
+    Proposed Draft: <h1> text should be larger than rest of the text content
+
+    Group (Name)
+        yes 
+        documentation
+            |
+            |
+            |-Browser developers [ Companies: Mozilla Foundation, Google, Microsoft, ]
+                |
+                |-Browser [ Application reads html tags and shows webpage ]
+                    |
+                    |-Develop Web pages using HTML 
+                            |
+                            |-Learn HTML Tags 
+                                |
+                                |- <h1> : Heading
+                                
+                                HTML4
+
+                                HTML5 
+                                
+
+CSS: It apply some good styles to our web page [to html tags ]
+
+
+We Write HTML
+    |
+    |-Browser show 
+        |
+        |-Standard Tag 
