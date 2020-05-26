@@ -19,7 +19,7 @@ Style tag
 
 <a href="path" target="myframe">
 
-<iframe src="path" name="myframe" width="50%" loading="" sandbox="" style="">
+<iframe src="path" name="myframe" width="50%" loading="" sandbox=" allow-same-origin" style="">
 
 download content only if user is intent to view content
 

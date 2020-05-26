@@ -1,0 +1,25 @@
+2 types of lists are there in HTML
+
+OL  ==>> ordered list with number
+UL ===> Underdered list
+    type = "disc"
+    type = "square"
+    type = "circle"
+
+
+OL comes with numbers 
+    order's number types
+    type = capital later: A 
+    type = capital later: a 
+    type = "1" 
+    type="i"  ==> small later in roman number system
+    type="I" ==> capital later in roman number system
+
+reversed list can be shown using a attribute: reversed
+
+
+style  ==> we can apply different styles on the elements
+
+background ===>>       background-color: [html color name] | color values
+text color ====>       color: [html color name]
+text size ====>        font-size: 30px
