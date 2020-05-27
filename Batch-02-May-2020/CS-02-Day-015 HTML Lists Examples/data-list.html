@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Day 15: More about HTML lists (Right To Left content) </title>
+</head>
+
+<body style="font-size: 25px;">
+    <h1>Top 5 List of places:</h1>
+    <ul type="square">
+        <li>Pune 1</li>
+        <li>Sagar 1</li>
+        <li>Indore 1</li>
+        <li>Bangalore 1</li>
+        <li>Delhi 1</li>
+    </ul>
+
+    <h1 dir="rtl">قائمة أفضل 5 أماكن: </h1>
+    <ul dir="rtl">
+        <li>بيون 1 </li>
+        <li>ساجار 1 </li>
+        <li>إندور 1 </li>
+        <li>بنغالور 1 </li>
+        <li>دلهي 1 </li>
+    </ul>
+
+    <h1 dir="rtl">قائمة أفضل 5 أماكن: </h1>
+
+    <ol style="list-style: arabic-indic;" dir="rtl">
+        <li>بيون 1 </li>
+        <li>ساجار 1 </li>
+        <li>إندور 1 </li>
+        <li>بنغالور 1 </li>
+        <li>دلهي 1 </li>
+    </ol>
+
+    <p>Example list</p>
+
+    <ol dir="rtl" style="list-style: arabic-indic;">
+        <li>بيون 1 </li>
+        <li>بيون 1 </li>
+        <li>بيون 1 </li>
+    </ol>
+
+    <h3>Using bdi tag (no semantic meaning as dir attribute) </h3>
+    <bdi>
+        <ul>
+            <li>بيون 1 </li>
+            <li>ساجار 1 </li>
+            <li>إندور 1 </li>
+            <li>بنغالور 1 </li>
+            <li>دلهي 1 </li>
+        </ul>
+    </bdi>
+
+</body>
+
+</html>
