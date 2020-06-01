@@ -1,0 +1,30 @@
+
+
+To show video on webpage
+
+use video tag
+
+<video>
+    <source src="" type="video/mp4">
+    your old broser doesn't support video 
+</video>
+
+controls
+poster="path-to-image" ===> you can decide your video thumbnail image
+autoplay     ===> on load of the video, it plays video automatically
+muted       ==> video will be mute 
+loop      ==> plays video in infinite loop
+loop = "3"
+webkit-playsinline
+
+
+Browser Support
+
+Browser	    MP4	    WebM	Ogg
+------------------------------------
+Edge/IE	    YES	    NO	    NO
+Safari	    YES	    NO	    NO
+
+Chrome	    YES	    YES	    YES
+Firefox	    YES	    YES	    YES
+Opera	    YES	    YES	    YES

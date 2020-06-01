@@ -1,0 +1,54 @@
+video 
+audio
+
+
+<img> 
+
+HTML5
+    video ==> video show on webpage, play
+    audio ==> audio show on webpage, play
+
+Video files
+.m4v 
+.mp4
+
+.ogg
+.webM
+
+500MB  ===> Convert HTML5 supported
+
+
+.avi
+.wmv
+
+Audio files:
+.mp3
+.m4a
+
+image:
+.png
+.jpg
+.bmp
+
+
+
+<img src="">
+
+<video width="640" height="480" src="..path-to.video.file.mp4">
+
+
+2007==> Internet Explorer 8
+
+
+HTML5  ==>> 2014
+
+<video width="640" height="480">
+    <source src="path-to.video.file.mp4" type="">
+
+    <source src="path-to.video.file.ogg" type="">
+
+    <p>Video is not supported on your old browser </p>
+</video>
+
+
+

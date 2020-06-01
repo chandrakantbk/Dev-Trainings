@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 18: Video Tag with attributes </title>
+</head>
+
+<body>
+
+    <!-- <video controls width="800">
+            <source src="../media/nature_video.mp4" type="video/mp4">
+        </video> -->
+
+
+    <!-- <p>Using poster image to change video thumbnail</p>
+        <video controls width="800" poster="../media/river.gif">
+            <source src="../media/nature_video.mp4" type="video/mp4">
+        </video> -->
+
+    <!-- <p>Autoplay video </p>
+        <video width="800" poster="../media/river.gif" controls autoplay muted loop>
+            <source src="../media/nature_video.mp4" type="video/mp4">
+        </video> -->
+
+    <div style="position: relative; height: 100vh; overflow: hidden;">
+        <div style="left: 0; position: absolute; z-index: 10; padding: 20px; font-size: 30px; color:white; text-align: center; width: 100%;">
+            <h1>This is my webpage </h1>
+            <p>Hello World</p>
+
+        </div>
+
+        <video width="100%" autoplay muted loop webkit-playsinline>
+            <source src="../media/nature_video.mp4" type="video/mp4">
+        </video>
+
+        <div style="background-color: rgba(0,0,0,0.5); position: absolute; height: 100%; width: 100%; top:0; "></div>
+    </div>
+
+</body>
+
+</html>
