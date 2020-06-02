@@ -1,0 +1,30 @@
+First Name
+Last Name 
+
+Submit  ==> data ===> server (computer which is connected to internet)
+                        |
+                        |-Database  
+                            |
+                            |-create
+                                First Name  Last Name 
+
+                            |-update
+
+
+send ===> server 
+            |
+            |-Database (storage)
+                |
+                |-delete 
+                |-create(new add )
+
+
+<form>
+ First Name: ___________________
+ 
+ Last Name: ___________________
+
+
+ [ SUBMIT ]
+
+</form>    
