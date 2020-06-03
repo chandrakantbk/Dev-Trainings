@@ -1,0 +1,21 @@
+form 
+    action==> url [server side page]
+    method 
+        |
+        |-GET ===>  later card
+        |-POST ==> packed cover 
+
+form
+ action==> form will be submitted
+ method ==> GET / POST
+ 
+input
+    type = "text"
+    type = "number"
+    type = "submit"
+    type = "reset"
+    type = "radio"
+
+
+
+
