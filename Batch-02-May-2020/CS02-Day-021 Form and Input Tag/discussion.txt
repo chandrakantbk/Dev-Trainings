@@ -1,0 +1,41 @@
+                                    querystring
+
+http://www.google.com/processme.php?myname=cubks&city=pune
+
+
+Raj==>  https://www.google.com/
+
+
+[  firstname=cubks & city=pune  ]====> database 
+
+
+response
+
+ftp://
+https://
+
+<form method="post" action="http://www.google.com/processme.php">
+
+    First name: <input type="text" name="myname"> 
+
+    Last Name <input type="text" >
+
+    City <input type="text" name="city">
+
+    <input type="submit">
+
+</form>
+
+GET
+    request querystring 
+POST 
+     request  body [ ]
+
+
+input
+    type="password"
+    type="email"   alphanumeb@domain.com   
+    maxlength ==>> input content charector length max  limit
+    minlength ==>  input content charector length min limit
+    style="width: 400px;   display: inline-block; "
+    required        ===> this will make your inout box as mandatory to fill 
