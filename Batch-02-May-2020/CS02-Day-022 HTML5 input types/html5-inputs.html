@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Day 22: Registration Form 3 </title>
+</head>
+
+<body>
+    <form action="#" method="GET">
+        <label for="">Full Name: </label>
+        <input type="text" value="" id="input-1" name="fullname" placeholder="Enter your full Name" maxlength="40" size="50">
+        <br>
+        <br>
+
+        <label for="input-2">Choose your color </label>
+        <input type="color" value="#FF0000" id="input-2" name="colorcode">
+
+        <br>
+        <br>
+
+        <label for="input-3">Tel </label>
+        <!-- if browser doesn't support then it will behave as input type = text -->
+        <input type="tel" id="input-3" name="telephone" pattern="[1-9]{10}">
+
+        <br>
+        <br>
+        <h1> Select All your Certifications </h1>
+        <div>
+            <input type="checkbox" value="BCA" id="input-4" name="certficate"> <label for="input-4">BCA</label>
+        </div>
+        <div>
+            <input type="checkbox" value="CCC" id="input-5" name="certficate"> <label for="input-5">CCC</label>
+        </div>
+        <div>
+            <input type="checkbox" value="DCA" id="input-6" name="certficate"> <label for="input-6">DCA</label>
+        </div>
+        <div>
+            <input type="checkbox" value="other" id="input-7" name="certficate"> <label for="input-7">Other</label>
+        </div>
+
+        <br> <br>
+
+        <h1> Choose your Degree </h1>
+        <div>
+            <input type="radio" value="BCA" id="input-8" name="degre"> <label for="input-8">BCA</label>
+        </div>
+        <div>
+            <input type="radio" value="BCOM" id="input-9" name="degre"> <label for="input-9">BCOM</label>
+        </div>
+        <div>
+            <input type="radio" value="MCOM" id="input-10" name="degre"> <label for="input-10">MCOM</label>
+        </div>
+
+        <br><br>
+
+        <input type="submit" value="REGISTER ME">
+        <input type="reset" value="RESET">
+
+    </form>
+
+</body>
+
+</html>

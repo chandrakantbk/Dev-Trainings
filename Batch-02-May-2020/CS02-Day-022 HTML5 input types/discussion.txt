@@ -1,0 +1,105 @@
+Form   >>>  Server
+
+Form  action=url  method=""
+
+Submit Event
+       
+         action
+Client  >>>>>>>>   Server
+
+Client Side  ========>              Server Side 
+                                        |
+                                        |-PHP
+                                        |-ASPX
+                                        |-Python
+===========================================================
+                                        |-Node.js
+Technology:
+    HTML
+        form 
+            input type
+                text
+                password
+                radio
+                reset
+                submit
+
+                checkbox
+                button
+                image
+                
+        Windows 7 ==> Internet Explorer 11 (IE)
+        iphone 4
+        HTML5 ( 2014 )
+                search
+                number
+                url
+                tel 
+                file
+                email
+                range
+                month
+                datetime-local
+                color
+
+
+
+    CSS
+    Javascript
+
+
+Form
+Fill
+    |
+    |-Submit (click Event)
+        |
+        |-Action Submit (Form Submit Event)
+                    |
+                    |-Look at action attribute
+                    |
+                    |- look at method (how to send)
+                        |
+                        |-Method
+                            |
+                            |-GET/POST
+                                |
+                                |-querystring/request body
+                                    |
+                                    |-url 
+                                        |
+                                        |-if get add ? at the end of url 
+                                            |
+                                            |-send data to server url(https://)
+                                                                    |
+                                                                    |-Internet trasfer 
+                                                                            |
+                                                                            |-protocol (carries your form data)
+                                                                                |
+                                                                                |-Request to Server 
+                                                                                    |
+                                                                                    |-method
+                                                                                        |-querystring/request body
+                                                                                            
+[               Process on your Data                 ]
+
+
+Front-end developer (Client)
+
+Server Side 
+
+Fullstack developer (client + server side) 
+
+==========================
+
+00F
+
+R           G           B 
+Red         Green       Blue
+0 - 255
+
+
+
+
+
+
+
