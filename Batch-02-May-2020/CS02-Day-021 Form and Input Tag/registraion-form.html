@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Day 21: Registration form 2</title>
+</head>
+
+<body>
+    <h1>Register yourself</h1>
+
+    <form name="registration-form" action="#" method="GET">
+
+        <div>
+            <label style="width: 150px; display: inline-block" for="input-1">Full Name: </label>
+
+            <input style="width: 500px;" type="text" name="fullname" id="input-1" placeholder="Enter your full name" maxlength="20" required>
+
+        </div>
+
+        <hr>
+
+        <label style="width: 150px; display: inline-block;" for="input-2">Email: </label>
+        <input type="email" name="user-email" id="input-2" style="width: 500px;">
+
+        <hr>
+
+        <label style="width: 150px; display: inline-block" for="input-3">Password:</label>
+        <input type="password" name="user-password" id="input-3" minlength="8" maxlength="16" style="width: 500px;">
+
+        <br>
+
+        <div style="text-align: center; margin-top: 20px;">
+            <input type="submit" value="Register Me">
+            <input type="reset" value="CLEAR">
+        </div>
+
+    </form>
+
+
+</body>
+
+</html>
