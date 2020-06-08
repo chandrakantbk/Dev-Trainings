@@ -1,0 +1,41 @@
+
+
+HTML5
+<input type="search">
+<input type="color">
+<input type="tel">
+<input type="email">
+<input type="number">
+<input type="date">
+<input type="datetime-local">
+<input type="file">
+<input type="month">
+<input type="range">
+<input type="time">
+<input type="url">
+<input type="week">
+
+<input type="checkbox">
+<input type="radio">
+<input type="reset">
+<input type="submit">
+<input type="hidden">
+<input type="button">
+<input type="image">
+
+
+Cross Browser Development
+
+Browser Compatablity
+
+Current Time Most used input tags
+
+<input type="text">
+<input type="number" max="100">
+<input type="password">
+<input type="checkbox">
+<input type="radio">
+<input type="reset">
+<input type="submit">
+<input type="hidden">
+<input type="button">

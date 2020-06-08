@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Day 23: Registration Form 4 </title>
+</head>
+
+<body>
+
+    <form method="GET" action="http://examindia.com/">
+        <input type="text" name="fullname" placeholder="Enter your full Name" size="50" maxlength="20">
+        <br> Select your country:
+
+        <select name="country" id="country-1" autocomplete="off">
+            <option value="in"> India </option>
+            <option value="us"> US </option>
+            <option value="uk"> UK </option>
+            <option value="fr"> France </option>
+            <option value="ir"> Iran </option>
+        </select>
+
+        <h3>Search the required product </h3>
+
+        <input type="search" list="product-category" name="product">
+
+        <datalist id="product-category">
+            <option value="laptop"> Laptop in Digital Media </option>
+            <option value="mobile"> Mobile in Electronics </option>
+            <option value="charger"> Charger in Electronics</option>
+            <option> Mic in Electronics</option>
+            <option> Earphones in Electronics</option>
+        </datalist>
+
+        <br><br>
+        <input type="submit">
+
+    </form>
+
+</body>
+
+</html>
