@@ -1,0 +1,71 @@
+fieldset ===> group of the form elements
+legend  ==> we can label group name
+disabled ==> Make input control disabled so that user can not enter/select values
+<textarea>  ==> accept multiple lines from user
+
+
+Job application
+
+Full Name:   [        ]
+DOB      :   [        ]
+
+Adress   :   |         |
+             |         |
+             |         |
+
+City      :  [         ]
+Email     :  [         ]
+Mob:      :  [         ] 
+
+
+Gender    :  
+        () Male
+        () Female
+        () Other
+
+
+Education Details  
+
+Graduation: dropdown list [      ]
+
+Select Skills:  
+    [ ] HTML
+    [ ] CSS
+    [ ] Javascript
+    [ ] Bootstrap
+    [ ] Angular 2+
+
+Graduation Percentage: [        ]
+
+
+Hobbies and others
+
+Hobbies list ( comma, seperated):  [            ]  
+
+
+
+
+
+
+<input type="text" list="hobbies">                      
+<datalist id="hobbies">
+    <option>
+</datalist>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 026: Sample form </title>
+</head>
+
+<body>
+    <!--method="post"   enctype="multipart/form-data" -->
+
+    <form action="https://google.com" method="get" novalidate>
+
+        <fieldset name="educational_data">
+            <legend>Educational Information </legend>
+
+
+            Fill name:
+
+            <input type="text" name="fullname" autofocus required>
+
+            <p>Paasing date should be less than 1-Jun-2021 and greater than 1-Jun-2018</p>
+            <p>YYYY-MM-DD</p>
+
+            <div>
+                Passing year:
+                <input type="date" name="passing_year" id="passing_year" max="2021-06-01" min="2018-06-01" required>
+            </div>
+
+            <p></p>
+            <div>
+                Score: <input type="number" name="score" id="score" autofocus>
+            </div>
+
+            <p></p>
+            <div>
+                Pin Code: <input type="text" pattern="[0-999]{3}-[0-999]{3}">
+            </div>
+            <p></p>
+
+            <input type="checkbox" name="special" id="special"> <label for="special">I am from Special Category</label>
+
+            <p></p>
+            <p>Note: Submit your form </p>
+            <input type="submit">
+
+
+
+        </fieldset>
+
+    </form>
+
+
+</body>
+
+</html>

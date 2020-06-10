@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day: 25 Job Application Form</title>
+</head>
+
+<body style="font-size: 20px;">
+    <h3>Please fill the form to apply for Jr. Developer Job </h3>
+
+    <form action="http://google.com/" method="get">
+        <fieldset style="margin-bottom: 20px;">
+            <legend>Personal Information</legend>
+
+            <div style="margin-bottom: 20px;">
+                <label style="display: inline-block; width: 200px;" for="input-1">Full Name: </label>
+                <input type="text" id="input-1">
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <label style="display: inline-block; width: 200px;" for="input-2">DOB: </label>
+                <input type="date" id="input-2">
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <label style="display: inline-block; width: 200px;" for="input-2">Address: </label>
+                <textarea cols="40" rows="3"></textarea>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <label style="display: inline-block; width: 200px;" for="input-3">City</label>
+                <input type="text" id="input-3">
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <label style="display: inline-block; width: 200px;" for="input-4">Email</label>
+                <input type="email" id="input-4">
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <label style="display: inline-block; width: 200px;" for="input-5">Mob No</label>
+                <input type="number" id="input-5">
+            </div>
+
+            <p>Select Gender</p>
+            <div style="margin-bottom: 20px;">
+                <input type="radio" name="gender" id="input-6" value="male" required>
+                <label for="input-6">Male</label>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <input type="radio" name="gender" id="input-7" value="female">
+                <label for="input-7">Female</label>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <input type="radio" name="gender" id="input-8" value="other">
+                <label for="input-8">Other </label>
+            </div>
+        </fieldset>
+
+        <br>
+
+
+        <!-- <h3>Educational Details</h3> -->
+
+        <fieldset disabled>
+            <!-- disabled will not work IE 11, Safari 6 -->
+            <legend>Educational Details </legend>
+
+            <p>Select Graduation:</p>
+            <select name="graduation">
+                <option>BE</option>
+                <option>Bcom</option>
+                <option>BSc</option>
+                <option>BA</option>
+                <option>BBA</option>
+                <option>BCS</option>
+                <option selected>BCA</option>
+            </select>
+
+            <p>Select Skills: </p>
+
+            <input type="checkbox" value="html" name="skill"> HTML
+            <br>
+            <input type="checkbox" value="css" name="skill"> CSS
+            <br>
+            <input type="checkbox" value="js" name="skill"> Jacascript
+            <br>
+
+        </fieldset>
+
+        Disabled Number Box: <input type="number" name="test_number" disabled required>
+
+        <BR>
+        <BR>
+
+        <input type="submit">
+
+
+        <BR>
+        <BR>
+
+    </form>
+
+
+
+</body>
+
+</html>
