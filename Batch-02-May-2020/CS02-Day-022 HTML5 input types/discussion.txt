@@ -55,7 +55,7 @@ Fill
         |
         |-Action Submit (Form Submit Event)
                     |
-                    |-Look at action attribute
+                    |-Look at action attribute   : # no action attrubute 
                     |
                     |- look at method (how to send)
                         |

@@ -9,40 +9,60 @@
 
 <body>
     <!--method="post"   enctype="multipart/form-data" -->
+    <h3>Indian student must fill this form </h3>
 
-    <form action="https://google.com" method="get" novalidate>
+    <form method="get">
 
-        <fieldset name="educational_data">
+        <fieldset name="educational_data" title="Educational Information">
             <legend>Educational Information </legend>
 
+            <label for="fullname">Full name:</label>
+            <input type="text" tabindex="1" accesskey="n" name="fullname" id="fullname" placeholder="Enter your full name" title="Enter your full Name" autofocus required>
 
-            Fill name:
-
-            <input type="text" name="fullname" autofocus required>
-
-            <p>Paasing date should be less than 1-Jun-2021 and greater than 1-Jun-2018</p>
-            <p>YYYY-MM-DD</p>
+            <p tabindex="2">Paasing date should be less than 1-Jun-2021 and greater than 1-Jun-2018</p>
+            <p tabindex="3">YYYY-MM-DD</p>
 
             <div>
-                Passing year:
-                <input type="date" name="passing_year" id="passing_year" max="2021-06-01" min="2018-06-01" required>
+                <label for="passing_year-1">Passing year:</label>
+                <!-- tag inline level -->
+                <input type="date" tabindex="4" accesskey="y" name="passing_year" id="passing_year-1" max="2021-06-01" min="2018-06-01" required>
+            </div>
+
+            <p></p>
+            <!-- block level tag -->
+            <div>
+                Score: <input type="number" accesskey="s" tabindex="6" name="score" id="score" maxlength="10" pattern="[0-9]{1,10}">
             </div>
 
             <p></p>
             <div>
-                Score: <input type="number" name="score" id="score" autofocus>
-            </div>
-
-            <p></p>
-            <div>
-                Pin Code: <input type="text" pattern="[0-999]{3}-[0-999]{3}">
+                Pin Code: <input type="text" tabindex="5" pattern="[0-999]{3}-[0-999]{3}">
             </div>
             <p></p>
 
-            <input type="checkbox" name="special" id="special"> <label for="special">I am from Special Category</label>
+            <p> <label>Select your vehicle </label> </p>
+            <select id="vehicle-list" accesskey="v">
+                <optgroup label=" Car Types ">
+                    <option>Alto</option>
+                    <option>Audi</option>
+                    <option>Maruti </option>
+                    <option>Honda City </option>
+                </optgroup>
+
+                <optgroup label="Carrier Types ">
+                    <option>Bus</option>
+                    <option>Truck</option>
+                    <option>Carrier vehicle</option>
+                </optgroup>
+            </select>
+
+            <input type="checkbox " name="special " id="special "> <label for="special ">I am from Special
+                Category</label>
 
             <p></p>
+
             <p>Note: Submit your form </p>
+
             <input type="submit">
 
 
@@ -51,6 +71,47 @@
 
     </form>
 
+    <h3>Fill the following form if you are NRI student </h3>
+    <form action="https://google.com " method="get " novalidate>
+
+        <fieldset name="educational_data ">
+            <legend>Educational Information </legend>
+
+            Full name:
+
+            <input type="text " name="fullname " autofocus required>
+
+            <p>Paasing date should be less than 1-Jun-2021 and greater than 1-Jun-2018</p>
+            <p>YYYY-MM-DD</p>
+
+            <div>
+                Passing year:
+                <input type="date " name="passing_year " id="passing_year " max="2021-06-01 " min="2018-06-01 " required>
+            </div>
+
+            <p></p>
+            <div>
+                Score: <input type="number " name="score " id="score " autofocus>
+            </div>
+
+            <p></p>
+            <div>
+                Pin Code: <input type="text " pattern="[0-999]{3}-[0-999]{3} ">
+            </div>
+            <p></p>
+
+            <input type="checkbox " name="special " id="special "> <label for="special ">I am from Special
+                Category</label>
+
+            <p></p>
+            <p>Note: Submit your form </p>
+            <input type="submit ">
+
+
+
+        </fieldset>
+
+    </form>
 
 </body>
 

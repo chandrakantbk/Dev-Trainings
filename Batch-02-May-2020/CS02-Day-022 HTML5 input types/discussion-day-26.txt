@@ -1,0 +1,10 @@
+title
+tabindex ===> foucs on that element
+input type number fails most of the expected validations
+javascript programming
+<optgroup>
+
+accessblity 
+Screen Narrator
+
+jaw scren reader
