@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 28: Using Image Map </title>
+</head>
+
+<body>
+    <h1>This webpage uses image map</h1>
+
+    <p>Let's learn about <a href="https://en.wikipedia.org/wiki/Moon" target="_blank">moon</a> </p>
+    <p>Sample Image: </p>
+    <a href="https://en.wikipedia.org/wiki/Moon" target="_blank">
+        <img src="../media/plannets.jpg" width="100" title="Planets ">
+    </a>
+
+
+    <p>Image with Image Mapping </p>
+
+    <!-- 
+
+    <img src="../media/plannets.jpg" width="100%" title="Planets" usemap="#planets-map">
+
+    <map name="planets-map">
+
+        <area shape="circle" coords="180, 150, 150" href="https://en.wikipedia.org/wiki/Sun" title="Know more about Sun"
+            target="_blank">
+
+        <area shape="circle" href="https://en.wikipedia.org/wiki/Moon" coords="500, 150, 150" title="moon">
+
+        <area shape="circle" href="https://en.wikipedia.org/wiki/Earth" coords="850, 150, 130" title="Earth">
+
+    </map> -->
+
+
+
+    <img src="../media/plannets.jpg" usemap="#mymap">
+
+    <map name="mymap">
+
+        <area alt="Know more about Sun" title="Know more about Sun" href="https://en.wikipedia.org/wiki/Sun"
+            coords="108,89,76" shape="circle" target="_blank">
+
+        <area alt="Know more about moon" title="Know more about moon" href="https://en.wikipedia.org/wiki/Moon"
+            coords="300,88,78" shape="circle" target="_blank">
+
+        <area alt="Know more about earth" title="Know more about earth" href="https://en.wikipedia.org/wiki/Earth"
+            coords="495,88,73" shape="circle" target="_blank">
+
+        <area alt="Know about mars" title="Know about mars" href="https://en.wikipedia.org/wiki/Mars" coords="685,88,75"
+            shape="circle" target="_blank">
+
+    </map>
+
+
+
+
+
+
+
+
+</body>
+
+</html>

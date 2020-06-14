@@ -1,0 +1,9 @@
+Image Map 
+
+<img usemap="#mapname">
+<map>
+    <area shape="circle" cords=""  href=""  title=""  alt="" target="iframe-1">
+
+
+
+
