@@ -1,0 +1,59 @@
+<label for="control_id">Full Name </label>
+<input type="text" id="control_id" name="fullname">
+
+
+<a href="http://google.com" target="myiframe">Click Here </a>
+
+<iframe src="html" name="myiframe">
+
+Image Mapping
+
+<img src="planets.jpg" usemap="#planets-map">
+
+<map name="planets-map">
+    <area shape="circle" coords="x,y, r">
+    
+    <area shape="rect" >
+    <area shape="poly">
+</map>
+
+
+
+using # for a href
+
+# in web pages
+
+issue with using # in html
+
+
+<main>
+<article>
+<aside>
+<section>
+<header>
+<footer>
+<nav>
+
+<time>
+<details>
+<summary>
+<mark>
+<figure>
+<figcaption>
+
+
+
+<body>
+    <p>lhaksdf</p>
+    
+    <article>
+        <h1>Title</h1>
+        <p>
+        <p>
+        <p>
+        <p>
+    </artcle>
+
+
+</body>
+
