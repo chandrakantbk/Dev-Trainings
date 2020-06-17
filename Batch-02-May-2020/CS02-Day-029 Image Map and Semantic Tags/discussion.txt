@@ -32,7 +32,8 @@ issue with using # in html
 <section>
 <header>
 <footer>
-<nav>
+<nav> </nav>
+
 
 <time>
 <details>
