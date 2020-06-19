@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Title will on browser's tab</title>
+    <head>
+
+    <body>
+        <h1> </h1>
+        
+        <small>
+        <big>
+
+        10 <sup> th </sup>
+        H2O
+
+        H<sub>2</sub>O
+
+        <strong> 
+        <b> 
+        <i> 
+        <em> 
+        <del>   
+        <ins>
+        <mark>
+        <u>Underlined text </u>
+        <code> 
+
+        <table border="2" cellspacing="" cellpadding="">
+            <tr>
+                <th colspan="2">Name & Addresss </th>
+                <th rowspan="2">Adress </th>
+            </tr>
+
+            <tr>
+                <td> CK </td>
+                <td> Pune </td>
+                <td> 5202582 </td>
+            </tr> 
+
+        </table>
+
+        <a href="../.../pages/file.html" target="frameName">LInk Text</a>
+        <iframe src="http://sandipmaheshwari.com" name="frameName" width="50%" height="500" loading="lazy">
+
+
+        <img src="nature.png" alt="nature image" title="nature image tooltip" loading="lazy">
+        <img src="nature.png" alt="nature image" title="nature image tooltip" loading="eager">
+        <img src="nature.png" alt="nature image" title="nature image tooltip" loading="lazy">
+        <img src="nature.png" alt="nature image" title="nature image tooltip" loading="lazy">
+        <img src="nature.png" alt="nature image" title="nature image tooltip" loading="lazy">
+
+        1024 KB  ===> 1MB
+        1024 MB  ===> 1GB 
+
+        tinypng 
+
+
+        list of items
+
+        <ol type="1" style="" start="1000" revered>
+
+        <ol>
+
+        <ul type="circle/disk/squre">
+            <li>Pune 1 </li>
+            <li>Pune 1 </li>
+            <li>Pune 1 </li>
+            <li>Pune 1 </li>
+            <li>Pune 1 </li>
+        <ul>
+
+        <form action="url" method="get/post">
+            <input type="" maxlength="10"  size="50" required disabled readonly hidden>
+
+                hidden
+                button
+                text
+                email
+                passowrd
+                date
+                week
+                datetime-local 
+                submit
+                reset
+                range
+                tel
+                checkbox
+                radio
+                color
+                number                          maxlength     pattern     Javascript
+
+                <textarea rows="" cols=""> </textarea>
+
+                <select>
+                    <option> </option>
+                </select>
+
+                <datalist>
+
+        </form>
+
+
+        <progress> <meter>
+
+    mp4
+    mp3
+
+
+        <video src="" controls autoplay muted loop> 
+            <SOURCE SRC="" type="video/mp4">
+        </video>
+       
+        <audio src="" controls >
+
+500MB   ==> 10MB   =>5min
+
+        easyhtml5 converter
+
+
+
+
+
+    sematic
+
+        <div>
+
+        <article>
+        <section>
+        
+        <footer>
+        <header>
+        <aside>
+        <nav>
+
+        <details>
+        <summary>
+
+        <base>
+
+
+    </body>
+
+</html>
+
+Monday ==>>  CSS 
+
+
+30 days
+
+img 
+video 
+span
+a 
+p 
+div
+ul 
+ol 
+form 
+input 
+button
+
+
+
+<meter value="45" min="0" max="100" low="20" high="47" optimum="27">
+
+
+temp: 0   100
+
+temp: 45
+
+20
+15
+
+
+<progress value="20" min="0" max="100">

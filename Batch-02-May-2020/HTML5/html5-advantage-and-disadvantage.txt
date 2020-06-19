@@ -1,0 +1,42 @@
+
+HTML5 
+
+Advantages: 
+1. Rich user experience and for developers it's easy to implement functionality 
+    <input type="date">
+
+2. SEO bcz of sematic elements
+
+3. HTML5 provides API's for developers
+    GeoLoation
+    Storage 
+    VIDEO
+    AUDIO
+    
+4. Offline Web Application supports
+
+    Device (Storage)
+
+
+Disadvantage:
+
+1. Latest Browsers which supoorts HTML5 
+2. Cross Browser Compatiblity
+3. Work in progress
+
+
+
+
+    Google:
+        Chrome
+
+    Mozilla Foundation:
+        Firefox
+
+    Microsoft:
+        Edge
+        Internet Explorer
+
+    Apple:
+        Safari
+
