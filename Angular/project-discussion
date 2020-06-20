@@ -1,0 +1,43 @@
+
+Website (Muliti languge)
+    |
+    |-Home >> Description
+    |-Know about us
+        |
+        |-History
+        |-Biography
+    |
+    |-Photo Gallary
+    |-Video Gallary
+    |
+    |
+    |-Live Events
+        |
+        |-Events videos
+                |
+                |-Youtube
+                |-Website page
+    |
+    |-Registration
+        |
+        |-Appointments
+            |
+            |-Calendar >>> Material
+            |
+        |-Contact/Send message admin
+    |
+    |
+    |-Firebase
+    |-MongoDB
+    |-Express.js
+
+    
+    
+    MEAN Stack development
+ 
+    MongoDB    Express.js    Angular    Node 
+
+    Bitbucket / Github
+
+        CI/CD
+        Jira Application/Issue Reporting

@@ -1,0 +1,80 @@
+Form tag attr?
+HTML = ?
+Cellspacing vs Cellpadding
+how you will send data into url itself
+sandbox
+
+&gt; used for?
+&lt; ? 
+th, tr, td
+colspan vs rowspan
+submit button
+
+Why doctype?  no  DTD 
+BR tag?
+why don't we use <p> instead of br : no
+without code, can we write text and save file wig .html
+two types of path? no 
+
+Post vs Get?
+HTML?
+colspan use?
+5 types of input tag? input type=" "
+table tag child elements?
+
+
+
+
+
+K: 1 min 14Sec
+N        54 Sec 
+================
+    2min 8 Sec   ==> 1 Wrong
+
+
+
+S: 1 min 32 Sec 
+P: 1 Min 21 Sec 
+================
+    2 min 53 Sec
+
+Why doctype?  no  DTD 
+BR tag?
+why don't we use <p> instead of br : no
+without code, can we write text and save file wig .html
+two types of path? no 
+
+
+
+
+Post vs Get?
+HTML?
+colspan use?
+5 types of input tag? input type=" "
+table tag child elements?
+
+2 Min 50
+
+
+
+
+&gt; used for?
+&lt; ? 
+th, tr, td
+colspan vs rowspan
+submit button
+
+
+K:  1 Min  31 sec
+           44 Sec 
+==================
+    2 Min  15 Sec
+
+
+
+Input type=date
+default date format is what?
+
+DD-MM-YYYY or YYYY-MM-DD 
+
+if using min and max attribute?

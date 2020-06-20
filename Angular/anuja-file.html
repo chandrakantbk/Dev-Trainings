@@ -1,0 +1,27 @@
+<div class="container">
+    <form action="http://exa.com/process.apsx" method="GET">
+
+        <div class="row">
+            <div class="col-md-6">
+                <lebel for="fullname">full name</lebel>
+            </div>
+            <div class="col-md-6">
+                <input name="fullname" id="fullname" placeholder="Enter fullname" maxlength="10">
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <lebel for="phone">phone</lebel>
+            </div>
+            <div class="col-md-6">
+                <input type="number" id="phone" onkeyup="validate(this.value)">
+            </div>
+        </div>
+
+        <input type="submit">
+
+    </form>
+</div>
+
+var phoneField var max=10 function validate(text){ var ph_field = text.toString(); if(ph_field.length > max){ phoneField.value = ph_field.substring(0, max); } }
