@@ -1,0 +1,14 @@
+GLobal css style: we can use style tag
+TO select any element, we can use "selector" to select that element(tag)
+Selector can be tag name or id or class
+
+tag name ex: p, div, li
+
+id ex: #heading-1
+      <h1 id="heading-1">
+
+class ex: .my-text
+
+    <h1 class="my-text">
+
+

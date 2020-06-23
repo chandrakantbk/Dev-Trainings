@@ -1,0 +1,26 @@
+4 Ways to apply css on webpage:
+    using style attribute
+
+
+    using style tag
+    using css file
+    using javascript
+
+
+    style=" property: value; property: value; property: value; "
+
+<h1 style=" color: red; font-size: 80px; ">
+
+<h1 style=" color: red; font-size: 80px; ">
+
+<h1 style=" color: red; font-size: 80px; ">
+
+<h1 style=" color: red; font-size: 80px; ">
+
+color: red ===> sets text color 
+
+property: value;
+
+property: value;
+property: value;
+property: value;
