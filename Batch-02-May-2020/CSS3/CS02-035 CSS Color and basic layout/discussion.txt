@@ -1,0 +1,40 @@
+selector{
+    css property
+}
+
+tagname {
+  css property
+}
+
+#id{
+  css property
+}
+
+.text-red{
+    css property
+}
+
+CSS Basic Selectors
+tagname 
+
+class  .
+id     #
+
+<p class="text-red">
+
+
+layout  
+    Graphics Designers
+    Adobe, Photoshop
+
+color:
+System defined color name: green, black, white,
+
+HEX: #f0f
+HEX: #f0ff00
+
+color: green;
+color: #00ff00;
+color: RGB(0, 255, 0);
+color: hsl(119deg 37% 50%)
+

@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <title>CSS Color Property and layout</title>
+    <style>
+        .green-text {
+            /* color: green;  */
+            /* css comment  */
+            /* R G B:  0-9 and A-F ==>>   HEX Format*/
+            /* color: #00ff09; */
+            color: #52af50;
+            font-size: 20px;
+        }
+        
+        .address-box {
+            padding: 20px;
+            margin: 40px;
+            background-color: green;
+            color: white;
+        }
+        /*
+            CSS Specifity rule  
+            inline style > #id css > .class-css > tagname
+        */
+        
+        p {
+            color: red;
+        }
+        
+        .text {
+            color: yellow;
+        }
+        
+        #my-id {
+            color: royalblue;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Let's learn color property</h2>
+
+    <div class="address-box">
+        <h2 class="green-text">My Personal Information</h2>
+        <p class="text">Hello There, I am a web developer. You may contact me at cubks@gmail.com </p>
+        <p class="green-text">City: Bhopal</p>
+    </div>
+
+    <h2>CSS Specificity Rule: </h2>
+    <h3>style attribute color:black > class="text" > id="my-id" </h3>
+
+    <p class="text" id="my-id" style="color:black">
+        Lorem lipsun ddf dliyopr iri[ptb rigturt tipeh fttikmg tyotfy. Hello There, I am a web developer. You may contact me at
+    </p>
+
+    <p>Lorem lipsun ddf dliyopr iriptb rigturt tipeh fttikmg tyotfy. Hello There, I am a web developer. You may contact me at</p>
+    <p>Dliyopr fttikmg tyotfy. Lorem lipsun ddf, I am a web developer. You may contact me at</p>
+
+</body>
+
+</html>
