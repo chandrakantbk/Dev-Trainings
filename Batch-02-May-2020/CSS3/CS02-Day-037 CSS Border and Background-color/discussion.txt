@@ -1,0 +1,15 @@
+background-color: value 
+border-style: solid
+              ridge
+              dashed
+              dotted
+              double
+              groove
+              inset
+              outset
+              ridge
+              
+              unset
+              hidden
+              none
+
