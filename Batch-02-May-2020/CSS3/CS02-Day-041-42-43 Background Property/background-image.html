@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Background parallax effect</title>
+    <style>
+        .container {
+            padding: 40px;
+            background-image: url('../../media/nature-1.jpg');
+            background-size: 40px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: #d0d0d0;
+            height: 400px;
+            background-attachment: fixed;
+        }
+        
+        #no-image {
+            background-image: none;
+            padding: 20px;
+            background-color: cadetblue;
+            height: 240px;
+            color: #fff;
+        }
+        
+        .box {
+            padding: 40px;
+            color: #fff;
+            background: url('../../media/nature-2.jpg') no-repeat 0px 0px/100% darkred;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Let's learn CSS Background parallax effect</h1>
+        <p>THis si sample paragraph</p>
+    </div>
+
+    <div id="no-image">
+        <h1>Let's learn CSS Background parallax effect</h1>
+        <p>THis si sample paragraph</p>
+    </div>
+
+
+    <div class="box">
+        <p>This sis anothker ton lkshdf vhlfhe khgr </p>
+        <p>This sis anothker ton lkshdf vhlfhe khgr </p>
+        <p>This sis anothker ton lkshdf vhlfhe khgr </p>
+        <p>This sis anothker ton lkshdf vhlfhe khgr </p>
+        <p>This sis anothker ton lkshdf vhlfhe khgr </p>
+        <p>This sis anothker ton lkshdf vhlfhe khgr </p>
+    </div>
+
+
+</body>
+
+</html>

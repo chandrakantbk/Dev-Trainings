@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 40: Using image as a border</title>
+
+    <style>
+        body {
+            background-color: #d0d0d0;
+            padding: 40px;
+            margin: 0px;
+        }
+        
+        .myborder {
+            border-style: solid;
+            border-width: 13px;
+            border-image: url(../../media/decoration.png) 30 round;
+        }
+        
+        .image-border {
+            border-image: url('../../media/borderimg-enlarge.png') 20 repeat;
+            border-style: solid;
+        }
+        
+        .round-border {
+            background-color: yellow;
+            padding: 10px;
+            border: 10px solid #b51f1f;
+            border-radius: 26px;
+        }
+        
+        .circle {
+            background-color: yellow;
+            padding: 50px;
+            border: 10px solid #b51f1f;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 class="myborder">Let's learn about border-image css </h1>
+
+    <div class="image-border">
+        text inside border
+    </div>
+
+    <div class="round-border">
+        1
+    </div>
+
+    <div class="circle">
+        100
+    </div>
+
+</body>
+
+</html>
