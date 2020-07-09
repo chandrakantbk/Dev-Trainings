@@ -1,0 +1,5 @@
+background-attachment: fixed  ===> paralox effect. Image will be fixed, and only content will scroll
+
+background: url() no-repeat 0px 0px/100% #000;
+
+CSS Shadow effect 

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day: 45 Background-postion and box-shadow example</title>
+    <style>
+        /* * {
+            margin: 0px;
+            padding: 0px
+        }
+        
+        body {
+            padding: 10px;
+        } */
+        
+        .section {
+            padding: 40px;
+            border: 1px solid #000;
+            width: 50%;
+            margin: 0px auto 40px auto;
+            /* box-shadow: inset 2px 7px 11px 4px rgb(96 177 242); */
+            box-shadow: 2px 7px 11px 4px rgb(96 177 242);
+        }
+        
+        .icon {
+            background: url('../../media/icons-strip.jpg') no-repeat 0px 0px transparent;
+            background-size: 563px;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 1px solid #000;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        
+        .icon-1 {
+            background-position: -180px 0px;
+        }
+        
+        .icon-2 {
+            background-position: -364px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Let's use Background-postion and box-shadow</h1>
+
+    <div class="section">
+        <div class="icon icon-1"> </div>
+
+        Hello World
+    </div>
+
+    <div class="section">
+        <div class="icon icon-2"> </div>
+        Best web developers.
+    </div>
+
+    <div class="section">
+        <div class="icon"> </div>
+        We are commited
+    </div>
+
+    <div>
+        &copy; CUBKS Trainings
+    </div>
+
+</body>
+
+</html>
