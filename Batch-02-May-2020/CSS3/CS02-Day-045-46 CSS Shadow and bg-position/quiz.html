@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label {
+            font-size: 25px;
+        }
+        
+        .quiz-container {
+            padding: 0px 100px 50px;
+        }
+        
+        .question-container {
+            /* border: 1px double #000; */
+            border-radius: 10px;
+            padding: 10px 30px 30px 40px;
+            margin-bottom: 20px;
+        }
+        
+        header {
+            padding: 20px;
+            font-size: 40px;
+            text-align: center;
+            background-color: #E91E63;
+            color: #fff;
+            border-radius: 5px;
+            margin-bottom: 40px;
+        }
+        
+        .shadow {
+            box-shadow: 1px 3px 8px 1px rgb(56 55 55 / 64%);
+        }
+        
+        .icon {
+            width: 70px;
+            height: 70px;
+            background: url('../../media/tick-icon-160.jpg') no-repeat 0px 0px crimson;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        
+        .radio-button {
+            background-position: -80px 0px;
+        }
+        
+        .option {
+            border: 1px solid #000;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px;
+        }
+        
+        .radio-checked {
+            background-position: -80px -66px;
+        }
+        
+        .tick-checked {
+            background-position: 0px -66px;
+        }
+        /** you can make it little dynamic to show tick or checked image icons */
+        
+        input {
+            display: none;
+        }
+        
+        input:checked~.icon {
+            background-position: 0px -66px;
+        }
+        
+        input:checked~.radio-button {
+            background-position: -80px -66px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="shadow">
+        Welcome to ABC Board Online Exam
+    </header>
+
+    <div class="quiz-container">
+
+        <div class="question-container shadow">
+            <h1>Q1. What is 20 + 20 </h1>
+
+            <div class="option">
+                <input type="radio" value="10" id="q1_option_1" name="q1_answer">
+
+                <div class="icon radio-button"></div>
+                <label for="q1_option_1">10</label>
+            </div>
+
+            <div class="option">
+                <input type="radio" value="20" id="q1_option_2" name="q1_answer">
+                <div class="icon radio-button "></div>
+                <label for="q1_option_2">20</label>
+            </div>
+
+            <div class="option">
+                <input type="radio" value="40" id="q1_option_3" name="q1_answer">
+
+                <div class="icon radio-button"></div>
+                <label for="q1_option_3">40</label>
+            </div>
+        </div>
+
+
+        <div class="question-container shadow">
+            <h1>Q2. Name two cities in India </h1>
+
+            <div class="option">
+                <input type="checkbox" value="Jaipur" id="q2_option_1">
+
+                <div class="icon"></div>
+                <label for="q2_option_1">Jaipur</label>
+            </div>
+
+
+            <div class="option">
+                <input type="checkbox" value="Mumbai" id="q2_option_2">
+
+                <div class="icon"></div>
+                <label for="q2_option_2">Mumbai</label>
+            </div>
+
+            <div class="option">
+                <input type="checkbox" value="New York" id="q2_option_3">
+
+                <div class="icon tick-checked"></div>
+                <label for="q2_option_3">New York</label>
+            </div>
+
+            <div class="option">
+                <input type="checkbox" value="Numba" id="q2_option_4">
+                <div class="icon"></div>
+                <label for="q2_option_4">Numba</label>
+            </div>
+
+        </div>
+
+
+        <div class="question-container shadow">
+            <h1>Q3. Name two countries </h1>
+
+            <div class="option">
+                <input type="checkbox" value="Jaipur" id="q3_option_1">
+
+
+                <div class="icon tick-checked"> </div>
+
+                <label for="q3_option_1">India</label>
+            </div>
+
+            <div class="option">
+                <input type="checkbox" value="Mumbai" id="q3_option_2">
+                <div class="icon"></div>
+                <label for="q3_option_2">Pakistan</label>
+            </div>
+
+            <div class="option">
+                <input type="checkbox" value="New York" id="q3_option_3">
+                <div class="icon"></div>
+                <label for="q3_option_3">Amerika</label>
+            </div>
+
+
+            <div class="option">
+                <input type="checkbox" value="Numba" id="q3_option_4">
+                <div class="icon"></div>
+                <label for="q3_option_4">Ghana</label>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
