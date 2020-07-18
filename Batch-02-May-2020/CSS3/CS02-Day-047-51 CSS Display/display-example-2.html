@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day: 50 - Display Property </title>
+
+    <style>
+        header {
+            border: 1px solid #000;
+            padding: 30px 40px;
+            font-size: 30px;
+            text-align: center;
+            border-radius: 15px;
+        }
+
+        .container {
+            width: 80%;
+            border: 1px solid gray;
+            margin: 0px auto;
+        }
+
+        .img-box {
+            border: 1px solid #000;
+            width: 150px;
+            height: 150px;
+            display: inline-block;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .img-box-holder {
+            text-align: center;
+            margin: 20px 0px;
+        }
+
+        .mytable {
+            display: table;
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 30px;
+        }
+
+        .mytable-cell {
+            display: table-cell;
+            padding: 20px;
+            border: 1px solid #000;
+        }
+
+        .section {
+            display: inline-block;
+            width: 49%;
+        }
+
+        .bg-gold {
+            background-color: gold;
+        }
+
+        .bg-gray {
+            background-color: gainsboro;
+        }
+
+        .bg-white {
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <header class="bg-gold">
+            Header Part
+        </header>
+
+        <div class="img-box-holder">
+            <div class="img-box">
+                <img src="../../media/actor.png" alt="actor image">
+            </div>
+
+            <div class="img-box">
+                <img src="../../media/actor.png" alt="actor image">
+            </div>
+            <div class="img-box">
+                <img src="../../media/actor.png" alt="actor image">
+            </div>
+
+            <div class="img-box">
+                <img src="../../media/actor.png" alt="actor image">
+            </div>
+        </div>
+
+        <div class="mytable">
+            <div class="mytable-cell">
+                Cell 1
+            </div>
+
+            <div class="mytable-cell bg-gold">
+                Cell 2
+            </div>
+
+            <div class="mytable-cell">Cell 3 </div>
+
+        </div>
+
+        <div class="section">
+            <h1>Heading 1</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.</p>
+        </div>
+
+        <div class="section">
+
+            <h1 class="bg-gold">Heading 2</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
