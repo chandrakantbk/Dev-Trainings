@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 51-52: CSS Box Model, text-align and vertical-align css proerties</title>
+    <style>
+        .container {
+            border: 2px solid #000;
+            width: 460px;
+            height: auto;
+            margin: 10px auto;
+        }
+        
+        .box {
+            height: 150px;
+            width: 150px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        
+        .block {
+            height: 150px;
+            width: 150px;
+        }
+        
+        .bg-red {
+            background-color: red;
+        }
+        
+        .bg-yellow {
+            background-color: yellow;
+            margin-left: 150px;
+        }
+        
+        .bg-blue {
+            background-color: indigo;
+        }
+        
+        .bg-green {
+            background-color: lawngreen;
+        }
+        
+        .m-left {
+            margin-left: 150px;
+        }
+        
+        .m-top {
+            margin-top: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Let's learn css box model</h1>
+
+    <div class="container">
+        <div class="box bg-red"> Box 1 </div>
+        <div class="box bg-yellow"> Box 2 </div>
+        <div class="box bg-green m-left"> Box 3 </div>
+        <div class="box bg-blue m-top"> Box 4 </div>
+    </div>
+
+
+    <div class="container">
+        <div>
+            <div class="box bg-red"> Box 1 </div>
+            <div class="box bg-yellow"> Box 2 </div>
+        </div>
+
+        <div style="text-align: center;">
+            <div class="box bg-green"> Box 3 </div>
+        </div>
+
+        <div style="text-align: right;">
+            <div class="box  bg-blue"> Box 4 </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div>
+            <div class="box bg-red"> Box 1 </div>
+            <div class="box bg-yellow"> Box 2 </div>
+        </div>
+
+        <div class="block center bg-green" style="margin: 0px auto;"> Box 3 </div>
+        <div class="block bg-blue" style="margin-left: auto;"> Box 4 </div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 53: Layout using display property</title>
+
+    <style>
+        .container {
+            background-color: gold;
+            border: 1px solid #000;
+            text-align: center;
+        }
+        
+        .thumbnail-holder {
+            display: inline-block;
+            vertical-align: top;
+        }
+        
+        .desc-holder {
+            display: inline-block;
+            width: 1100px;
+            background-color: grey;
+            text-align: left;
+        }
+        
+        .table {
+            margin-top: 40px;
+            display: table;
+            width: 100%;
+            background-color: yellow;
+        }
+        
+        .table-cell {
+            display: table-cell;
+            vertical-align: top;
+        }
+        
+        .p-left {
+            padding-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="thumbnail-holder">
+            <img src="../../media/pic-1.jpg" alt="image">
+        </div>
+
+        <div class="desc-holder">
+            <h2>Use your Credit Card wisely</h2>
+
+            <p>Credit cards come with legal contracts. Hence, it is important that you are aware of their terms and conditions, when you sign up for them.</p>
+            <p>
+                <strong>Explore features and learn about T&Cs:</strong> Please read your credit card application carefully to know about your card’s features and associated Terms and Conditions. The information mentioned in small prints may have big impacts
+                on your fees, charges and usage conditions. While some T&Cs are similar on all cards, there are many others that may be particular to the ones you are applying for, so we recommend that you go through all of them.
+            </p>
+
+            <p><strong>Understand liabilities:</strong> If your card has multiple users, know about the liabilities shared by secondary users. Also, if you have applied for Add-on cards, understand the added responsibilities that come with them such as who
+                will manage the cards, pay bills and debts, etc.</p>
+        </div>
+    </div>
+
+    <h1>Anothoer way to do the same thing</h1>
+
+    <div class="table">
+
+        <div class="table-cell">
+            <img src="../../media/pic-1.jpg" alt="image">
+        </div>
+
+        <div class="table-cell p-left">
+            <h2>Use your Credit Card wisely</h2>
+
+            <p>Credit cards come with legal contracts. Hence, it is important that you are aware of their terms and conditions, when you sign up for them.</p>
+            <p>
+                <strong>Explore features and learn about T&Cs:</strong> Please read your credit card application carefully to know about your card’s features and associated Terms and Conditions. The information mentioned in small prints may have big impacts
+                on your fees, charges and usage conditions. While some T&Cs are similar on all cards, there are many others that may be particular to the ones you are applying for, so we recommend that you go through all of them.
+            </p>
+
+            <p><strong>Understand liabilities:</strong> If your card has multiple users, know about the liabilities shared by secondary users. Also, if you have applied for Add-on cards, understand the added responsibilities that come with them such as who
+                will manage the cards, pay bills and debts, etc.</p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
