@@ -1,0 +1,20 @@
+vertical-align
+text-align
+css box model
+
+dispaly: 
+    inline
+    inline-block
+    block 
+    none 
+    table
+    table-row
+    table-cell
+
+    flex
+    grid
+
+box-sizing: CSS BOX Model
+                Border
+                Padding
+                content
