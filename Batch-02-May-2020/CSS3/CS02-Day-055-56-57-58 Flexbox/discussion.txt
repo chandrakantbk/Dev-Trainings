@@ -1,0 +1,26 @@
+
+Flex Container
+        Flex-item
+        Flex-item
+        Flex-item
+        Flex-item
+
+Flex Container
+    Flex-flow
+    Flex-direction
+    Flex
+    Justify-content
+    Align-items
+
+
+Div 
+    Display: flex 
+             Flex-direction: row
+             flex-wrap: nowrap;
+             align-items: stretch;
+
+
+    div >>Flex-item
+    div >>Flex-item
+    div >>Flex-item
+    div >>Flex-item
