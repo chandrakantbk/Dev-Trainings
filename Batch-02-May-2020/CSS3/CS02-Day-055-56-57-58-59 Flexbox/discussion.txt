@@ -8,9 +8,9 @@ Flex Container
 Flex Container
     Flex-flow
     Flex-direction
-    Flex
+    flex-wrap
     Justify-content
-    Align-items
+    align-items
 
 
 Div 
