@@ -1,0 +1,12 @@
+
+display: grid;
+
+
+template ====> pre-defined structure 
+
+column 
+row
+
+grid-template-rows: 100px 200px 400px;
+grid-template-columns: 100px 200px 400px;
+                        1fr 2fr 1fr

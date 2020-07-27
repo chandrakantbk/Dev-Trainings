@@ -6,7 +6,7 @@ Flex Container
         Flex-item
 
 Flex Container
-    Flex-flow
+    Flex-flow: Flex-direction wrap;
     Flex-direction
     flex-wrap
     Justify-content
@@ -23,4 +23,76 @@ Div
     div >>Flex-item
     div >>Flex-item
     div >>Flex-item
-    div >>Flex-item
+    div >>Flex-item 
+            align-self: 
+            flex-grow: 1
+            flex-shrink: 1
+            flex-basis:   
+
+
+Display: 
+        None >>>> don't show element 
+        block ===> Block level element 
+        inline ===> span, b, strong, makes element as inline element 
+        inline-block  =====> vertical-align: top |middle | bottom
+        table 
+        table-row
+        table-cell 
+
+        Flex 
+            flex-direction: row | row-reverse | columns | columns-reverse 
+
+            Main axis                       Cross Axis 
+            ===============================================
+            Justify-content:                align-content
+                                            align-items
+                                            align-self
+
+flex: 0 1 300px
+
+
+
+
+Display: Grid
+
+
+div{
+    Display: inline;
+    vertical-align: top;
+}
+
+
+
+
+div ===> table 
+        div ===> table-cell 
+        div ===> table-cell 
+        div ===> table-cell 
+
+
+    div =====> table-row 
+        div ===> table-cell 
+        div ===> table-cell 
+        div ===> table-cell 
+    </div>
+
+     div =====> table-row 
+        div ===> table-cell 
+        div ===> table-cell 
+        div ===> table-cell 
+
+
+Display: grid 
+
+
+Div ====> grid 
+          grid-template-columns: 100px 100px 100px
+
+
+
+div  ===> grid 
+    div ===> table-cell 
+    div ===> table-cell 
+    div ===> table-cell 
+
+    div ===> table-cell 

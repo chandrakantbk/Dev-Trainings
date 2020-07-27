@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 60: Wrap up of Display flex </title>
+
+    <link href="utility-style.css" rel="stylesheet">
+
+    <style>
+        .flex {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: stretch;
+        }
+        
+        .flex-item {
+            /* 
+                flex-grow: 1;
+                flex-shrink: 0;
+                flex-basis: 250px;
+             */
+            flex: 1 0 250px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="flex">
+        <div class="flex-item bg-yellow"> Text 1 </div>
+        <div class="flex-item bg-gold"> Text 2 </div>
+        <div class="flex-item bg-green"> Text 3 </div>
+        <div class="flex-item bg-red"> Text 4 </div>
+    </div>
+</body>
+
+</html>
