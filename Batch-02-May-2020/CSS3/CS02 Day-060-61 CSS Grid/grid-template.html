@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 61: Grid </title>
+
+    <link href="../CSS/utility-style.css" rel="stylesheet">
+
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 2fr 2fr;
+            grid-column-gap: 20px;
+            grid-row-gap: 20px;
+        }
+        
+        .item {
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="item bg-gold"></div>
+        <div class="item bg-white"></div>
+        <div class="item bg-red"></div>
+
+        <div class="item bg-green"></div>
+        <div class="item bg-gold"></div>
+        <div class="item bg-yellow"></div>
+
+        <div class="item bg-green"></div>
+        <div class="item bg-red"></div>
+        <div class="item bg-gold"></div>
+
+    </div>
+
+</body>
+
+</html>
