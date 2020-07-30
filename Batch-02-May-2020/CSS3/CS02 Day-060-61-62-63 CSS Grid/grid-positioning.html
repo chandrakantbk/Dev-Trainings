@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Positioning</title>
+    <link href="../CSS/utility-style.css" rel="stylesheet">
+    <style>
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, [col-start] 1fr);
+            grid-template-rows: [row-1-start col-start] minmax(40px, 130px) [row-1-end row-2-start] 1fr [row-2-end row-3-start] 1fr;
+            height: 400px;
+            width: 90%;
+            margin: 40px auto;
+            grid-gap: 10px 10px;
+            grid-template-areas: "l-header m-header m-header r-header"
+                "l-side l-side . r-side"
+                "footer footer footer footer";
+        }
+
+        .item {}
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <div class="item item-1 bg-green">Box 1</div>
+        <div class="item item-2 bg-yellow">Box 2</div>
+        <div class="item item-3 bg-red">Box 3</div>
+        <div class="item item-4 bg-gold">Box 4</div>
+
+        <div class="item item-4 bg-gold">Box 6</div>
+        <div class="item item-3 bg-red">Box 7</div>
+        <div class="item item-2 bg-yellow">Box 5</div>
+        <div class="item item-1 bg-green">Box 8</div>
+
+        <div class="item item-3 bg-red">Box 9</div>
+        <div class="item item-2 bg-yellow">Box 12</div>
+        <div class="item item-1 bg-green">Box 10</div>
+        <div class="item item-4 bg-gold">Box 11</div>
+
+    </div>
+</body>
+
+</html>
