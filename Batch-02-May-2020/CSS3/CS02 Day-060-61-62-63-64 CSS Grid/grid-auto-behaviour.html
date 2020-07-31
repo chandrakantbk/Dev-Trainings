@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 64: Grid wrap up with repeat() minmax() and fit-content() </title>
+    <link href="../CSS/utility-style.css" rel="stylesheet">
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 100px 1fr);
+            grid-template-rows: 1fr 1fr 1fr;
+            height: 400px;
+            width: 800px;
+            margin: 40px auto;
+            border: 2px solid #000;
+        }
+        
+        .col-span-2 {
+            grid-area: 3/3/4/5;
+        }
+        
+        .grid-container-2 {
+            display: grid;
+            grid-template-columns: [col-start] 1fr [col-1-end col-2-start] 1fr [col-2-end];
+            /* grid-template-rows: 100px 150px; */
+            grid-template-rows: [row-1-start] 100px [row-1-end row-2-start] 150px [row-2-end];
+            width: 60%;
+            margin: 40px auto;
+            border: 2px solid green;
+            grid-gap: 10px;
+        }
+        
+        .bg-green {
+            /* grid-column-start: 2;
+            grid-column-end: 3; */
+            grid-column: col-2-start/col-2-end;
+            grid-row: row-2-start/row-2-end;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="grid-container">
+        <div class="item bg-red col-span-2">
+            span items
+        </div>
+        <div class="item bg-green"></div>
+        <div class="item bg-yellow"></div>
+        <div class="item bg-white"></div>
+
+        <div class="item bg-yellow"></div>
+        <div class="item bg-white"></div>
+        <div class="item bg-red"></div>
+        <div class="item bg-green"></div>
+
+        <div class="item bg-green">
+            1000
+        </div>
+    </div>
+
+
+    <h1>Using line names </h1>
+
+    <div class="grid-container-2">
+        <div class="item bg-green">
+            move this to end
+        </div>
+        <div class="item bg-yellow"></div>
+        <div class="item bg-red"></div>
+
+        <div class="item bg-yellow"></div>
+        <div class="item bg-red"></div>
+
+    </div>
+
+</body>
+
+</html>
