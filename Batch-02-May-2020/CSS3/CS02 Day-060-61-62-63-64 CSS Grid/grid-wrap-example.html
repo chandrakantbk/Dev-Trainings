@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container {
+            display: grid;
+            width: 80%;
+            margin: 40px auto;
+            grid-auto-rows: 100px;
+            grid-gap: 10px;
+            border: 2px solid #000;
+            grid-template-columns: repeat(auto-fill, 150px);
+            justify-content: center;
+        }
+        
+        .item:nth-child(2n+1) {
+            background-color: gold;
+            color: #fff;
+        }
+        
+        .item:nth-child(2n+2) {
+            background-color: red;
+            color: #fff;
+        }
+        
+        .form-grid {
+            display: grid;
+            grid-gap: 10px 20px;
+            grid-template-columns: 150px auto;
+            width: 510px;
+            margin: 0 auto;
+            border: 10px solid #000;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+
+
+    <form class="form-grid">
+
+        <label>Title</label>
+        <input type="text">
+
+        <label>Mob</label>
+        <input type="text">
+
+        <label>Address</label>
+        <input type="text">
+
+    </form>
+
+
+
+</body>
+
+</html>
