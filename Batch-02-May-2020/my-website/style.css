@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    padding: 10px;
+    border: 1px solid #000;
+    margin: 40px auto;
+}
+
+.menu-item {
+    display: inline-block;
+    height: 40px;
+    width: auto;
+    padding: 10px;
+    background: gold;
+    flex-shrink: 0;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    background: #c5c5c5;
+    box-shadow: 0px 2px 7px 1px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    z-index: 1;
+}
+
+.link {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 5;
+}
+
+.box-item {
+    background-color: #c5c5c5;
+    padding: 40px;
+    box-shadow: 0px 2px 7px 1px rgba(0, 0, 0, 0.5);
+    border: 1px solid #000;
+    margin: 0px 10px;
+    position: relative;
+}
+
+.bg-gold {
+    background-color: gold;
+    color: #000;
+}
+
+.bg-white {
+    background-color: white;
+    color: #000;
+}
+
+.content {
+    display: flex;
+    margin: 60px auto;
+}
+
+.bg-image-content {
+    height: 400px;
+    background: url('assets/assorted-spices.jpg') no-repeat fixed 0px 0px/cover;
+    margin: 100px auto;
+}
+
+.trangle {
+    height: 0px;
+    width: 0px;
+    border-style: solid;
+    border-width: 40px 40px 0px;
+    border-color: #000 transparent;
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    margin-left: -40px;
+}
+
+.btn {
+    height: 40px;
+    background-color: #3F51B5;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #fff;
+    position: fixed;
+    /* top: 0;
+    left: 0; */
+    right: 10px;
+    bottom: 20px;
+}

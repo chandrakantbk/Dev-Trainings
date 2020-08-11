@@ -1,0 +1,48 @@
+@mixin media-min($min) {
+    @media screen and (min-width: $min) {
+        @content;
+    }
+}
+
+@function get-width($val, $total, $unit) {
+    @return ($val / $total) * 100*$unit;
+}
+
+$colors_map: (main: #000, second: gray);
+.container {
+    display: grid;
+    /*
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px 20px;
+        grid-template-rows: 100px 100px;
+    */
+    grid: {
+        template: {
+            columns: repeat(3, 1fr);
+            rows: 100px 100px;
+        }
+        gap: 10px 20px;
+    }
+    width: 80%;
+    margin: 40px auto;
+    .item-1 {
+        grid-column: 2/4;
+        grid-row: 1/3;
+    }
+    @include media-min(460px) {
+        .item-1 {
+            font-size: 15px;
+            color: map-get($colors_map, main);
+            border: 1px solid map-values($colors_map);
+        }
+    }
+    @include media-min(960px) {
+        .item-1 {
+            font-size: 40px;
+            width: get-width(50, 100, 1px);
+        }
+        .item-2 {
+            width: get-width(100px, 800px, 1%);
+        }
+    }
+}

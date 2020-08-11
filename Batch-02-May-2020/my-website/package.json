@@ -1,0 +1,15 @@
+{
+    "name": "my-website",
+    "version": "1.0.0",
+    "description": "this is a sample website",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "lite-server"
+    },
+    "author": "ck",
+    "license": "ISC",
+    "dependencies": {
+        "lite-server": "^2.5.4"
+    }
+}
