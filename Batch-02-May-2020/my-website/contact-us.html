@@ -5,91 +5,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Day- 71 CSS Position Property Example </title>
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-        
-        .container {
-            width: 80%;
-            height: 350px;
-            margin: 50px auto;
-            background-color: gold;
-            color: #000;
-            font-size: 18px;
-            border: 5px solid #000;
-            position: relative;
-        }
-        
-        .box {
-            width: 150px;
-            height: 80px;
-            /* 170  */
-            border: 1px solid #000;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            box-sizing: border-box;
-            /* display: inline-block; */
-        }
-        
-        .bg-white {
-            background-color: white;
-        }
-        
-        .bg-orange {
-            background-color: #FF9800;
-        }
-        
-        #box-4 {
-            position: fixed;
-            bottom: 20px;
-            right: 40px;
-            z-index: 10;
-        }
-        
-        #box-3 {
-            position: absolute;
-            bottom: 0px;
-            right: 0px;
-        }
-    </style>
+    <link href="style.css" rel="stylesheet">
 </head>
 
 <body>
-
     <div class="container">
-        <div class="box bg-white" id="box-1"> 1 </div>
-        <div class="box bg-orange" id="box-2"> 2 </div>
-        <div class="box bg-white" id="box-3"> 3 </div>
-        <div class="box bg-orange" id="box-4"> 4 </div>
+
+        <div class="graphics-holder">
+            <div class="circle">
+                Address
+            </div>
+            <div class="pointer-arrow"></div>
+        </div>
+
+        <div class="data-container">
+            <address>
+                <h1>Pune Location</h1>
+                <p>Hinjewadi, Pune</p>
+            </address>
+
+        </div>
+
     </div>
 
     <div class="container">
-        <div class="box bg-white"> Text 1 </div>
-        <div class="box bg-white"> Text 1 </div>
-        <div class="box bg-white"> Text 1 </div>
-        <div class="box bg-white"> Text 1 </div>
-    </div>
 
-    <div class="container">
-        <div class="box bg-white"> Text 1 </div>
-        <div class="box bg-white"> Text 1 </div>
-        <div class="box bg-white"> Text 1 </div>
-        <div class="box bg-white"> Text 1 </div>
-    </div>
+        <div class="graphics-holder">
+            <div class="circle">
+                Contact US
+            </div>
+            <div class="pointer-arrow"></div>
+        </div>
 
-    <div class="container">
-        <div class="box bg-white"> Text 1 </div>
-        <div class="box bg-white"> Text 1 </div>
-        <div class="box bg-white"> Text 1 </div>
-        <div class="box bg-white"> Text 1 </div>
-    </div>
+        <div class="data-container">
+            <form class="contact-from">
 
-    <div class="container">
-        <div class="box bg-white"> Text 1 </div>
-        <div class="box bg-white"> Text 1 </div>
-        <div class="box bg-white"> Text 1 </div>
-        <div class="box bg-white"> Text 1 </div>
+                <label>Email</label>
+                <input type="text">
+
+                <label>Message</label>
+                <textarea cols="30"></textarea>
+
+                <input type="submit" class="form-btn">
+
+            </form>
+        </div>
+
     </div>
 
 </body>
