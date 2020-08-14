@@ -6,52 +6,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Day- 71 CSS Position Property Example </title>
     <link href="style.css" rel="stylesheet">
+    <style>
+        .page-data {}
+        
+        .body-content {
+            background-color: #fff9d9;
+            color: #000;
+            font-size: 18px;
+        }
+        
+        .half-circle {
+            width: 460px;
+            height: 460px;
+            background-color: lightblue;
+            border-radius: 50%;
+            position: absolute;
+            top: 0px;
+            left: -220px;
+            z-index: -1;
+        }
+        
+        .whatsapp-icon {
+            position: fixed;
+            right: 0px;
+            bottom: 0px;
+            background: url(assets/whatsapp.jpg) no-repeat scroll 0 0 transparent;
+            height: 88px;
+            background-position: -20px -20px;
+            width: 86px;
+            display: inline-block;
+        }
+        
+        .page-data {
+            position: relative;
+            height: 460px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    </style>
 </head>
 
-<body>
-    <div class="container">
+<body class="body-content">
+    <div class="nav-bar">
+        <a class="menu-item" href="index.html">Home</a>
+        <a class="menu-item" href="catalogs.html">Catlogs</a>
+        <a class="menu-item" href="#">About Us</a>
 
-        <div class="graphics-holder">
-            <div class="circle">
-                Address
-            </div>
-            <div class="pointer-arrow"></div>
-        </div>
-
-        <div class="data-container">
-            <address>
-                <h1>Pune Location</h1>
-                <p>Hinjewadi, Pune</p>
-            </address>
-
-        </div>
+        <a class="menu-item" href="contact-us.html" target="_blank">Contact Us</a>
 
     </div>
 
-    <div class="container">
+    <div class="page-data">
+        <div class="half-circle"></div>
 
-        <div class="graphics-holder">
-            <div class="circle">
-                Contact US
+        <div class="container">
+
+            <div class="graphics-holder">
+                <div class="circle">
+                    Address
+                </div>
+                <div class="pointer-arrow"></div>
             </div>
-            <div class="pointer-arrow"></div>
+
+            <div class="data-container">
+                <address>
+                    <h1>Pune Location</h1>
+                    <p>Hinjewadi, Pune</p>
+                </address>
+
+            </div>
+
         </div>
 
-        <div class="data-container">
-            <form class="contact-from">
+        <div class="container">
+            <div class="graphics-holder">
+                <div class="circle">
+                    Contact US
+                </div>
+                <div class="pointer-arrow"></div>
+            </div>
+            <div class="data-container">
+                <form class="contact-from">
 
-                <label>Email</label>
-                <input type="text">
+                    <label>Email</label>
+                    <input type="text">
 
-                <label>Message</label>
-                <textarea cols="30"></textarea>
+                    <label>Message</label>
+                    <textarea cols="30"></textarea>
 
-                <input type="submit" class="form-btn">
+                    <input type="submit" class="form-btn">
 
-            </form>
+                </form>
+            </div>
+
         </div>
-
     </div>
+
+    <a href="#" class="whatsapp-icon"> </a>
 
 </body>
 
