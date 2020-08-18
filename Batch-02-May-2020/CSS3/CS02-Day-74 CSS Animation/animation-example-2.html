@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation</title>
+    <style>
+        .container {
+            width: auto;
+            height: 140px;
+            margin: 10px auto;
+            padding: 50px 20px 20px;
+            background-color: #03A9F4;
+            font-size: 20px;
+            position: relative;
+            display: inline-block;
+        }
+        
+        img {
+            display: block;
+        }
+        
+        .box {
+            border: 4px solid #000;
+            width: 200px;
+            height: auto;
+            display: inline-block;
+        }
+        
+        .btn {
+            padding: 10px;
+            background: #3F51B5;
+            border-radius: 5px;
+            color: #fff;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        
+        .product-1 {
+            animation-name: product-1-animation;
+            animation-duration: 5s;
+            animation-fill-mode: forwards;
+        }
+        
+        .product-2 {
+            position: relative;
+            top: 0px;
+            animation-name: product-2-animation;
+            animation-duration: 6s;
+            animation-fill-mode: forwards;
+            animation-delay: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: cubic-bezier(0, 0, 0, 1.27);
+        }
+        
+        .product-3 {
+            animation-name: product-3-animation;
+        }
+        
+        .product-4 {
+            animation-name: product-4-animation;
+        }
+        
+        @keyframes product-1-animation {
+            from {
+                background-color: white;
+            }
+            to {
+                background-color: yellowgreen;
+                font-size: 30px;
+                height: 200px;
+            }
+        }
+        
+        @keyframes product-2-animation {
+            from {
+                top: 0
+            }
+            to {
+                top: 60px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div style="display: grid; grid-template-columns: 1fr 1fr;">
+
+        <div class="container product-1">
+            <div class="box box-1">
+                <img src="../../media/nature-1.jpg" width="100%">
+            </div>
+            <div class="box box-2">
+                <img src="../../media/nature-5.jpg" width="100%">
+            </div>
+            <a href="css-animation.html" class="btn">GET OFFER(P1)</a>
+        </div>
+
+        <div class="container  product-2">
+            <div class="box box-1">
+                <img src="../../media/nature-1.jpg" width="100%">
+            </div>
+            <div class="box box-2">
+                <img src="../../media/nature-5.jpg" width="100%">
+            </div>
+            <a href="css-animation.html" class="btn">GET OFFER(P2)</a>
+        </div>
+
+        <div class="container  product-3">
+            <div class="box box-1">
+                <img src="../../media/nature-1.jpg" width="100%">
+            </div>
+            <div class="box box-2">
+                <img src="../../media/nature-5.jpg" width="100%">
+            </div>
+            <a href="css-animation.html" class="btn">GET OFFER(P3)</a>
+        </div>
+
+        <div class="container  product-4">
+            <div class="box box-1">
+                <img src="../../media/nature-1.jpg" width="100%">
+            </div>
+            <div class="box box-2">
+                <img src="../../media/nature-5.jpg" width="100%">
+            </div>
+            <a href="css-animation.html" class="btn">GET OFFER(P4)</a>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
