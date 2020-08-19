@@ -51,16 +51,35 @@
             animation-duration: 6s;
             animation-fill-mode: forwards;
             animation-delay: 5s;
-            animation-iteration-count: infinite;
+            animation-iteration-count: 1;
             animation-timing-function: cubic-bezier(0, 0, 0, 1.27);
         }
         
         .product-3 {
-            animation-name: product-3-animation;
+            position: relative;
+            animation: 5s 4s product-3-animation forwards alternate infinite cubic-bezier(0.91, -0.02, 0.31, 0.63);
+            /* animation-name: product-3-animation;
+            animation-duration: 5s;
+            animation-delay: 4s;
+            animation-fill-mode: forwards;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-timing-function: cubic-bezier(0.91, -0.02, 0.31, 0.63); */
         }
         
         .product-4 {
             animation-name: product-4-animation;
+        }
+        
+        @keyframes product-3-animation {
+            from {
+                background-color: yellow;
+                left: 0;
+            }
+            to {
+                background-color: green;
+                left: 150px;
+            }
         }
         
         @keyframes product-1-animation {
@@ -70,7 +89,7 @@
             to {
                 background-color: yellowgreen;
                 font-size: 30px;
-                height: 200px;
+                /* height: 200px; */
             }
         }
         
