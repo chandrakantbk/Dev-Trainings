@@ -1,0 +1,55 @@
+.my-cube-container {
+    height: 300px;
+    padding: 20px;
+    border: 3px solid #000;
+    perspective: 600px;
+}
+
+.cube {
+    width: 160px;
+    height: 160px;
+    transform-style: preserve-3d;
+    position: relative;
+    transform: translate(50%, 50%) rotateY(60deg) scale(1);
+}
+
+.side {
+    height: 160px;
+    width: 160px;
+    position: absolute;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.front {
+    transform: translateZ(80px);
+    background-color: rgba(244, 67, 54, 0.68);
+}
+
+.back {
+    transform: translateZ(-80px) rotateX(180deg);
+    background: rgba(63, 81, 181, 0.68);
+}
+
+.left {
+    transform: translateX(-80px) rotateY(-90deg);
+    background: rgba(255, 215, 0, 0.68);
+}
+
+.right {
+    transform: translateX(80px) rotateY(90deg);
+    background: rgb(233 30 99 / 67%);
+}
+
+.top {
+    transform: translateY(-80px) rotateX(90deg);
+    background: rgb(139 195 74 / 74%);
+}
+
+.bottom {
+    transform: translateY(80px) rotateX(-90deg);
+    background-color: rgb(3 169 244 / 49%);
+}
