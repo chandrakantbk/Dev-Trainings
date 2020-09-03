@@ -1,0 +1,15 @@
+{
+    "name": "css-selectors",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "lite-server",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "a      uthor": "",
+    "l     icense": "ISC",
+    "devDependencies": {
+        "lite-server": "^2.5.4"
+    }
+}
