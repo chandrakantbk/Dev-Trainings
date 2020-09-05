@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 82 Transform example</title>
+    <style>
+        .perspective-container {
+            perspective: 800px;
+        }
+        
+        @keyframes album-animation {
+            /* from {
+                transform: rotateY(0deg)
+            }
+            to {
+                transform: rotateY(360deg);
+            } */
+            0% {
+                transform: rotateY(0deg)
+            }
+            50% {
+                transform: rotateY(180deg)
+            }
+            100% {
+                transform: rotateY(360deg)
+            }
+        }
+        
+        .album {
+            transform-style: preserve-3d;
+            height: 400px;
+            width: 100%;
+            animation-name: album-animation;
+            animation-duration: 4s;
+            animation-iteration-count: 2;
+            animation-delay: 2.5s;
+        }
+        
+        .card-img {
+            transform: rotateY(-50deg) translateY(60px);
+            position: absolute;
+        }
+        
+        .card-img:nth-child(2) {
+            left: 210px;
+        }
+        
+        .card-img:nth-child(3) {
+            left: 490px;
+        }
+        
+        p:last-of-type {
+            border-bottom: 2px solid gray;
+            padding-bottom: 10px;
+        }
+        
+        p:first-of-type {
+            border-top: 2px solid gray;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="perspective-container">
+        <div class="album">
+            <img src="../../media/tata-star-platinum-card.png" class="card-img">
+            <img src="../../media/tata-star-platinum-card.png" class="card-img">
+            <img src="../../media/tata-star-platinum-card.png" class="card-img">
+        </div>
+
+        <p>This is paragraph 3</p>
+        <p>This is paragraph 2</p>
+        <p>This is paragraph 1</p>
+        <p>This is paragraph 4</p>
+
+        <div>This sis div</div>
+    </div>
+</body>
+
+</html>

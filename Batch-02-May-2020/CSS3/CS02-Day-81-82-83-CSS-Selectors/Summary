@@ -1,0 +1,16 @@
+Summary
+
+1. parent  child ====> select all child elements
+2. parent > child ===> Select only direct childs
+3. tag[attribute] ==> select only if attribute is availabe
+4. tag[attribute|="value"] ==> select if attr value matches
+5. tagName[attr$=".pdf] 
+
+
+class 
+id 
+tagname 
+
+.homepage-container p{
+    font-size: 18px;
+}

@@ -84,12 +84,6 @@
     color: #000;
 }
 
-.bg-image-content {
-    height: 400px;
-    background: url('assets/assorted-spices.jpg') no-repeat fixed 0px 0px/cover;
-    margin: 100px auto;
-}
-
 .trangle {
     height: 0px;
     width: 0px;
@@ -182,4 +176,88 @@
 
 .btn:hover {
     color: #000;
+}
+
+
+/**  Animation added */
+
+.bg-image-content {
+    height: 400px;
+    background: url('assets/assorted-spices.jpg') no-repeat fixed 0px 0px/cover;
+    margin: 100px auto;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+.bg-image-content:hover {
+    background-position: center center;
+    background-size: 163%;
+}
+
+.bubbles {
+    display: block;
+    width: 20%;
+    background: url(assets/soap_bubbles_PNG45.png) repeat scroll 0px 0px/160px;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    animation-name: bubbles-animation;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.bubble-container {
+    display: flex;
+    position: fixed;
+    justify-content: space-around;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+}
+
+.b-1 {
+    animation-delay: 1s;
+    animation-timing-function: linear;
+    left: 10px;
+}
+
+.b-2 {
+    animation-delay: 1.2s;
+    left: 10%;
+}
+
+.b-3 {
+    animation-delay: 2s;
+    right: 0px;
+}
+
+.b-4 {
+    animation-delay: 3s;
+    left: 50%;
+}
+
+.b-5 {
+    animation-delay: 5s;
+    left: 60%;
+}
+
+.b-6 {
+    animation-delay: 4.5s;
+    left: 80%
+}
+
+.b-7 {
+    animation-delay: 8s;
+    left: 20%
+}
+
+@keyframes bubbles-animation {
+    from {
+        height: 40px;
+    }
+    to {
+        height: 100vh;
+    }
 }
