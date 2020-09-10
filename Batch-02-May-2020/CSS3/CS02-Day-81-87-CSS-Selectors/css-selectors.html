@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors day 81-85</title>
+    <link href="css-selectors.css" rel="stylesheet">
+    <style>
+        .box {
+            height: 200px;
+            width: 200px;
+            background-color: white;
+            box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            position: absolute;
+            left: 50px;
+            display: none;
+        }
+        
+        .container {
+            display: inline-block;
+            vertical-align: top;
+            position: relative;
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- <img src="../../media/nature-2.jpg"> -->
+
+    <p>
+        Click here to watch
+
+        <a class="container" href="https://google.com">
+            <span class="link-text">moon </span>
+            <div class="box">
+                <p>Text </p>
+            </div>
+        </a>
+
+    </p>
+    <h1>
+        Registration
+    </h1>
+
+    Name: <input type="text" placeholder="Enter Name">
+
+    <br> Email: <input type="text" placeholder="Enter email id">
+
+    <br>Date: <input type="date" value="2020-09-07" disabled>
+    <br>
+    <br>
+    <p>Select Degree</p>
+    <input type="checkbox" id="ch-1" name="degree">
+    <label for="ch-1">MBA</label>
+    <br>
+    <input type="checkbox" checked name="degree" id="ch-2"> <label for="ch-2">BE</label>
+
+
+
+    <section>
+
+        <p>Heading level 3 line 1</p>
+
+        <p>selector-point </p>
+
+        <p class="selector-point">Heading level 3 line 2</p>
+
+        <article>
+            <p>artcile</p>
+        </article>
+
+        <p>Heading level 3 line 3</p>
+        <p>ectrsa </p>
+    </section>
+
+
+
+
+    <section>
+        <ul>
+            <li class="item">Programming</li>
+            <li>JS</li>
+            <li>C++</li>
+            <li>C</li>
+            <li>Go</li>
+            <li>Python</li>
+            <li style="background: red;">Anaconda</li>
+        </ul>
+    </section>
+
+
+
+
+
+
+</body>
+
+</html>

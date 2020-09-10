@@ -1,0 +1,212 @@
+div p {
+    background-color: greenyellow;
+}
+
+div>p {
+    background-color: red;
+}
+
+input[disabled] {
+    background-color: yellow;
+}
+
+img {
+    display: none;
+}
+
+img[alt] {
+    display: block;
+}
+
+
+/* p[lang] {
+            background-color: gold;
+        } */
+
+p[lang|="urdu"] {
+    background-color: gold;
+}
+
+img[src|="myphoto.png"] {
+    border: 5px solid #000;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+
+a[href$=".pdf"] {
+    background-color: yellow;
+    padding: 20px;
+    margin: 10px;
+    display: inline-block;
+}
+
+a[href^="https:"],
+a[href^="www:"] {
+    background-color: blanchedalmond;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+}
+
+input[disabled] {
+    background: white;
+    border: 1px gray solid;
+    color: gray;
+}
+
+
+/** Day-83  */
+
+
+/*  select those elements where class name has a word "heading" */
+
+h1[class*="heading"] {
+    background-color: red;
+}
+
+[data-myattr*="for"] {
+    background-color: yellow;
+}
+
+
+/* [data-myattr~="for"] {
+    background-color: red;
+} */
+
+table {
+    width: 100%;
+    border: 1px solid gray;
+    margin-bottom: 100px;
+}
+
+td,
+th {
+    border: 1px solid gray;
+}
+
+.border-box {
+    border: 1px solid gray;
+    padding: 20px;
+}
+
+tr:first-child {
+    background-color: gold;
+}
+
+p::first-child {
+    margin-bottom: 0px;
+}
+
+p:last-child {
+    margin-bottom: 0px;
+}
+
+.selector-point+p {
+    color: red;
+}
+
+li:last-child {
+    background: none !important;
+}
+
+.item~li,
+.item~p {
+    background: yellow;
+}
+
+li:last-child {
+    background: gold !important;
+}
+
+input:focus {
+    border: 5px solid red;
+}
+
+a:visited {
+    color: gray;
+}
+
+a:hover {
+    color: green;
+}
+
+a:active {
+    color: red;
+}
+
+
+/* html:active {
+    background: gold;
+} */
+
+
+/* input+label {
+    background: greenyellow;
+} */
+
+input+strong {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    vertical-align: middle;
+    border: 2px solid red;
+    border-radius: 5px;
+}
+
+input:checked+strong {
+    background: greenyellow;
+    border: 3px solid green;
+}
+
+input:checked+label {
+    background: gold;
+    font-weight: bold;
+}
+
+.box {
+    background: gold;
+    padding: 20px;
+    text-align: left;
+    margin: 20px;
+    position: relative;
+    width: 60%;
+    margin: 20px auto;
+}
+
+.box:before {
+    content: 'my text';
+    color: red;
+    display: block;
+    background: white;
+    width: 100px;
+}
+
+.box:after {
+    content: '';
+    color: red;
+    width: 0px;
+    height: 0px;
+    display: block;
+    border-style: solid;
+    border-color: transparent whitesmoke transparent green;
+    border-width: 30px 0px 30px 30px;
+    position: absolute;
+    top: 10px;
+    right: -29px;
+}
+
+
+/* 
+:last-of-type 
+:first-of-type 
+:nth-of-type() 
+:nth-child()
+
+
+:after 
+
+:before 
+
+
+*/
