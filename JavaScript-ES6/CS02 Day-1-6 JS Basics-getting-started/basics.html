@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS day 6 </title>
+    <script src="js/myprogram.js"></script>
+    <style>
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            border: 5px solid;
+            padding: 40px;
+            width: 60%;
+            margin: 40px auto;
+            grid-gap: 20px;
+            font-size: 20px;
+        }
+        
+        .span-2 {
+            grid-column: span 2;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Let's learn about javascript</h1>
+    <form class="form-grid">
+        <label>Number 1</label>
+        <input type="number" id="num-1">
+
+        <label>Number 2</label>
+        <input type="number" id="num-2">
+
+        <button class="span-2" onclick="addition()">ADD</button>
+    </form>
+
+</body>
+
+</html>

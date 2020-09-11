@@ -1,0 +1,75 @@
+
+if (city == "pune" || city == "mumbai") {
+    // statements
+
+} else if (city == "nagpur") {
+
+} else {
+    // default
+}
+
+
+
+switch (city) {
+    case "pune":
+
+    case "mumbai":
+        alert("Please take care");
+        break;
+
+    case "mumbai":
+        alert("You are from Mumbai");
+        break;
+
+    default:
+        alert("City is not matching");
+        //statement
+}
+
+
+
+
+feeling well
+Not good
+ill
+I don't know
+
+
+
+switch(health_status){
+    case "feeling well" : alert("feeling well"); break;
+    case "Not good" : alert("feeling well"); break;
+    case "feeling well" : alert("feeling well"); break;
+    default: alert("")
+}
+
+
+
+
+User Name 
+Age 60 then 10% discount on the ticket price
+Start: Mumbai
+Destination: 
+     Pune               300Rs
+     Nagpur             550Rs
+     BLR                600Rs
+
+
+Show Price: Total  
+Show confirmation message: Do you want to proceed for payment?
+
+
+
+
+
+
+==================
+Solution
+==================
+We will use prompt() to get input
+
+Get username 
+Get age
+get Destination
+calculate price 
+show total price and get confirmation

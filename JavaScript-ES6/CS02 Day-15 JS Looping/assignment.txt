@@ -1,0 +1,15 @@
+
+Assignment: last 30% emplyees to get early retirement
+
+var total_employess = 1000;
+
+var older_emp_count: 30%;   
+
+var      = 1000;
+
+
+
+earlyRetirement();
+
+
+

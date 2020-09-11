@@ -1,0 +1,213 @@
+
+AND &&
+
+    OR ||
+    NOT!
+
+
+
+    if (marks >= 60 AND age >= 20)
+
+        true AND true == > TRUE
+
+
+if (c_location == "India"
+    OR c_location == "US")
+
+    TRUE OR FALSE == > TRUE
+
+
+
+NOT TRUE === > False
+
+NOT False === > True
+
+
+
+AND == > &&
+
+    TRUE && TRUE == > TRUE
+false && False === > False
+
+
+OR
+
+TRUE || False === > TRUE
+
+F || T == > TRUE
+
+FALSE || FALSE == > FALSE
+
+
+
+    !FALSE === > TRUE
+
+NOT TRUE == > False
+
+NOT "NOT FALSE" === >>> > FALSE
+
+
+NOT
+
+
+    ?
+    ==
+    >
+    Ternary Operator
+
+var is_confirm;
+var marks = 75;
+
+if (marks >= 60) {
+
+    is_confirm = true //"Your admission has been confirmed";
+
+} else {
+
+    is_confirm = false //"NOT Confirm"
+
+};
+
+
+
+var is_confirm = "Your admission has been confirmed" //  marks >= 60 ? this space : "NOT Confirm";
+
+condition truthy value: falsy value
+
+
+if (marks >= 60) { is_confirm = }
+
+
+
+
+
+
+
+
+var a = 10;
+
+
+
+
+city = "Sagar"
+
+var location = "He is from other states" ///city == "pune" ? "He is from MH" : 
+
+
+var a = 20;
+var b = 30;
+
+var final_answer = a > b ? "A is maximum" : a == b ? "Both are equal" : "B is maximum";
+
+
+// is A number is maximum or not?
+
+final_answer = a > b ? : "A is NOT Maximum number"
+
+condtion ? truthy space : falsy space
+
+
+var is_confirm;
+marks = 55;
+
+is_confirm = marks >= 60;
+
+if (!is_confirm) { // false 
+    alert("You are not applicable")
+}
+
+if (!!false) { // true 
+    alert("You are not applicable")
+}
+
+
+
+AND
+OR
+NOT
+Ternary
+
+
+
+
+
+
+var is_confirm = marks >= 60;
+
+is_confirm = false
+
+
+condition AND condition
+true >>> >> will check 2 nd condition
+
+condition OR condition
+false >>> >> will check 2 nd
+
+
+1000 - 1102520 === > true
+
+
+
+if (0) {
+    alert()
+}
+
+
+var is_confirm; //undefined
+
+Falsy
+
+0
+false
+    ""
+undefined
+
+truthy
+52025
+    " lsdhf " {}
+    []
+
+
+var str;
+
+if (str) {
+    //exceute
+}
+
+
+
+
+
+
+
+
+
+var number_1; //undefined
+var number_2;
+var myNumber;
+
+if (number_1 == undefined || number_1 == "") {
+    myNumber = "NOT Valid Number"
+
+} else {
+
+    myNumber = number_1;
+
+}
+
+myNumber = number_1 || "NOT Valid Number";
+
+myNumber = "NOT Valid Number";
+
+
+false
+
+condition ? "" : ""
+
+
+JS Interactions 
+
+alert  ===> I am okey 
+confirm ===> yes / no 
+prompt 
+

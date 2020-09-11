@@ -1,0 +1,73 @@
+
+Understanding JavaScript datatypes
+===================================
+
+1.   number
+2.   string
+3.   boolean
+4.   Object
+5.   Array
+6.   undefined
+7.   null
+8.   NaN
+9.   Symbol
+10.  BigInt
+
+
+var person_1_name = 10;
+var person_1_city = "Pune";
+var person_1_mob = 9678457811;
+
+var student_2_name = "Anil";
+var student_2_city = "Mumbai";
+var student_2_mob = 8586458287;
+
+There are some properties with each student 
+
+name
+city
+mob
+
+var student_1 = { name: "Namrata", city: "Pune", mob: 9678457811, marks: [40, 60, 70] }
+var student_2 = { name: "Anil", city: "Mumbai", mob: 8586458287 }
+
+
+var student_1_ch_marks = 40;
+var student_1_phy_marks = 60;
+var student_1_math_marks = 70;
+
+var student_1_marks = [40, 60, 70]; //Array datatype
+
+var good_students = ["Anil", "Arushi", "Namrata"];
+var good_students = "Anil, Arushi, Namrata";
+
+var obj = {  key: value, city: "xyz"}
+
+var hsc_students = [ { name: "Anil", city: "Mumbai", mob: 8586458287 }, {}, {} ]
+
+
+
+
+
+
+
+
+
++  ===> Number , String
+*
+/
+-
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <script src="annyang.min.js"></script>
+    <script>
+        if (annyang) {
+            // Let's define our first command. First the text we expect, and then the function it should call
+            var commands = {
+                'show alert': function() {
+                    alert("Hello world")
+                },
+                'add :left plus :right': calculate,
+            };
+
+            // Add our commands to annyang
+            annyang.addCommands(commands);
+
+            // Start listening. You can call this here, or attach this call to an event, button, etc.
+            annyang.start();
+
+
+            function calculate(num1, num2) {
+                alert(Number(num1) + Number(num2))
+            }
+        }
+    </script>
+</head>
+
+<body>
+    add 10 + 20
+</body>
+
+</html>
