@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
+import { CountdownModule, CountdownGlobalConfig } from 'ngx-countdown';
+
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterPartComponent } from './footer-part/footer-part.component';
@@ -18,6 +20,11 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { AngularFirestoreModule } from '@angular/fire/firestore'
 import { environment } from 'src/environments/environment';
+import { TestTimerComponent } from './test-timer/test-timer.component';
+
+function countdownConfigFactory() {
+  return ({ format: 'mm:ss' });
+}
 
 @NgModule({
   declarations: [
@@ -31,7 +38,8 @@ import { environment } from 'src/environments/environment';
     ContactUsComponent,
     ChattingPageComponent,
     GrowthComponent,
-    ChildComponent
+    ChildComponent,
+    TestTimerComponent
   ],
   imports: [
     BrowserModule,
@@ -40,9 +48,11 @@ import { environment } from 'src/environments/environment';
     AngularFireModule.initializeApp(environment.db_config),
     AngularFireDatabaseModule,
     AngularFirestoreModule,
-
+    CountdownModule,
   ],
-  providers: [],
+  providers: [
+    { provide: CountdownGlobalConfig, useFactory: countdownConfigFactory }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

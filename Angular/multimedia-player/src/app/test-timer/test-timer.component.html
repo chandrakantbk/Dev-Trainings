@@ -1,0 +1,9 @@
+<h1>Count Down </h1>
+
+<p>This will emmit event of type notify at 2, and 4th second. </p>
+
+<countdown #cd [config]="config" (event)="handleEvent($event)"></countdown>
+<br> <br>
+<button class="btn btn-primary m-4" (click)="begin()">BEGIN</button>
+<button class="btn btn-primary m-4" (click)="pauseStart()">PAUSE/START</button>
+<button class="btn btn-primary m-4" (click)="restart()">RESTART</button>

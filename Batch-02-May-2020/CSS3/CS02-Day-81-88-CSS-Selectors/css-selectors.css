@@ -115,7 +115,7 @@ li:last-child {
     background: yellow;
 }
 
-li:last-child {
+section li:last-child {
     background: gold !important;
 }
 
@@ -198,15 +198,10 @@ input:checked+label {
 
 
 /* 
-:last-of-type 
 :first-of-type 
+:last-of-type 
 :nth-of-type() 
 :nth-child()
-
-
-:after 
-
-:before 
 
 
 */
