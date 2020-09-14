@@ -13,3 +13,100 @@ earlyRetirement();
 
 
 
+Array [10, 202, 30, 40]
+Object {key: value }
+
+
+
+stutent_1 = { name: 'Shrikant', seat_number: 101 }
+
+var a = 10;
+
+
+var arr  = [10, 2020, 20 ]
+
+arr[1]
+
+                          1    2    3    4
+students_seat_numbers = [ 101, 102, 103, 104 ]
+                index      0    1    2    3
+
+students_seat_numbers[ 0 ]   // 101 
+students_seat_numbers[ 1 ]   // 102 
+students_seat_numbers[ 2 ]   // 103
+students_seat_numbers[ 3 ]   // 104
+students_seat_numbers[ 4 ]   // undefined 
+ 
+for(var index = 0; index <= 3; index++   ){
+
+    console.log( students_seat_numbers[ index ]   )
+
+}
+
+
+
+
+
+1 - 10th different class
+
+> from each class you need to send 3 students' seat number 
+
+var toppers = [ [101, 105, 106 ], [ 202, 203, 205 ]   ]
+
+var toppers =  { 
+    class_10th: [ 101, 202, 601 ],
+    class_9th: [ 901, 905, 903 ]
+}
+
+
+
+
+
+var arr = [ 10, 2020, 30]
+var arr = [ "KK", 2020, 30]
+
+var arr = [ "KK", 2020, false]
+var arr = [ CK, [1010, 20, 30], false]
+
+
+all_stuents = [ { name: "Trupti", seat_number: 101 }, { name: "KK", seat_number: 102 } ]
+
+student_1 = { name: "Trupti", seat_number: 101 }
+student_2 = { name: "KK", seat_number: 102 }
+
+
+student_1_name = "Trupti";
+student_1_seat_number = 101;
+
+student_2_name = "KK";
+student_2_seat_number = 102;
+
+
+
+
+
+
+
+
+
+
+
+
+obj = { key: value, key2: value2   }
+    
+      C1   C2    C3
+ R1   10   20    30   ===> 60
+ R2   50   60    40   ===> 150
+ R3   60   70    80   ===> 210
+
+for(var row = 0; row < 3; row++ ){
+    
+    var sum = 0;
+
+    for(var col = 0; col < 3; col++){
+        sum = sum + col_value;
+    }
+
+    console.log( sum )
+
+}
