@@ -1,0 +1,131 @@
+p:first-child
+p:last-child
+
+p:first-of-type { }
+p:last-of-type { }
+
+p:nth-child( 2 + 1  ){
+   
+}
+
+1   3   5  
+
+p:nth-of-type( 2n + 1 ){   // 3
+
+}
+
+<div>
+    <h2>
+    <p> 
+    <p>
+    <p>
+   
+    <h2>
+</div>
+
+
+
+* { }
+
+tagName{ }
+.className { }
+#idName { }
+
+.parent .child{  }
+div>section { }
+
+article ~ p{ }
+article + p{ }
+
+[data-companyname]{ }
+[data-companyname |= "tata"]{ }
+[data-companyname ~= "tata"]{ }
+[data-companyname *= "tata"]{ }
+[data-companyname $= "tata"]{ }
+[data-companyname ^= "tata"]{ }
+
+
+CSS Pseudo Elements
+:before
+:after 
+
+div:before{ content: 'text' }
+
+CSS Pseudo Classes
+
+:visited
+:active
+:hover
+:checked
+:disabled
+:first-child 
+:last-child 
+:first-of-type 
+:last-of-type 
+:nth-child(2n - 2){ }
+:nth-of-type() { }
+:not()
+
+a container 
+
+first div 
+2nd paragraph 
+
+
+.container > div:first-child > p:nth-child(2){  }
+
+
+
+
+link address http   ===> insecure
+link address https   ===> secure
+
+$> Click Here 
+
+[href^='https']:before{
+    content: '$>' 
+}
+
+
+Responsive Web Development 
+
+@media()   => media query 
+
+
+.header{
+   background: black;
+   color: white;
+}
+
+@media screen and (max-width: 800px){
+    
+    .header {
+        background: gray;
+    }
+
+}
+
+
+<div class="d-flex">
+
+</div>
+
+<div class="bg-warning">
+    
+</div>
+
+
+
+
+<p data-companyname="tata-card"> </p>
+<p data-companyname="tata card"> </p>
+<p data-companyname="tatacard"> </p>
+<p data-companyname="my comany tata"> </p>
+
+<div class="" data-companyname="infy">
+</div>
+
+<div class="" data-companyname="tata">
+</div>
+
+<div class="parent"> </div>
