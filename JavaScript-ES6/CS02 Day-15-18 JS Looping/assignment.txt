@@ -110,3 +110,100 @@ for(var row = 0; row < 3; row++ ){
     console.log( sum )
 
 }
+JS client side programming ===> now with the help node.js server side 
+
+
+Data types 
+
+number
+string 
+array 
+object 
+boolean
+
+
+null 
+undefined
+NaN
+
+BigInt
+Symbol
+
+
+
+
+var n = 10;
+
+var obj = {name: "Namrata", key2: "value2"  }
+
+console.log( obj.name )
+
+obj["name"]   // Namrata
+
+
+var arr = ["Namrata", {name: "CK" }, 30, true]
+           0            1             2   3 
+arr[1]  // {name: "CK"}
+
+arr[1].name
+
+arr[1]["name"]
+
+
+
+
+
+
+
+
+var input = "Mumbai (BOM)";
+
+var is_origin_found = false;
+
+//flight_data 3 values
+
+for(var index = 0; index < flight_data.length; index++ ){
+    
+    if(input ==  flight_data[ index ].origin ){
+        is_origin_found = true;
+
+        break;
+        console.log("Stopped for loop")
+    }
+ 
+}
+
+
+console.log("City Found: " + is_origin_found)
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+var marks = [50, 30, 400]
+
+students.name 
+
+students.name[3]
+
+
+
+
+students[0].name 
+students[1].name 
+students[2].name 
+ 
+
+
+

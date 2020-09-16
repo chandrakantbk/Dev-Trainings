@@ -1,0 +1,53 @@
+
+
+var flight_data = [
+        
+        {
+            arrivalTime: "6:00",
+            destination: "Mumbai (BOM)",
+            flightNo: "AI-119",
+            name: "Air India",
+            origin: "Delhi (DEL)",
+            price: 3525
+        },
+
+        {
+            arrivalTime: "14:15",
+            destination: "Pune (PNQ)",
+            flightNo: "AI-117",
+            name: "Air India",
+            origin: "Mumbai (BOM)",
+            price: 5117
+        },
+
+        {
+            arrivalTime: "6:00",
+            destination: "Mumbai (BOM)",
+            flightNo: "AI-119",
+            name: "Air India",
+            origin: "Jaipur (JIP)",
+            price: 3525
+        },
+        {
+            arrivalTime: "13:00",
+            date: "2020/11/02",
+            departureTime: "11:00",
+            destination: "Pune (PNQ)",
+            flightNo: "SJ-116",
+            name: "SpiceJet",
+            origin: "Bengaluru (BLR)",
+            price: 5645
+        },
+        {
+            arrivalTime: "6:00",
+            destination: "Mumbai (BOM)",
+            flightNo: "AI-119",
+            name: "Air India",
+            origin: "Jaipur (JIP)",
+            price: 3525
+        },
+ ]
+
+
+ // Write a program to check whether Airport is available at given city
+ 
