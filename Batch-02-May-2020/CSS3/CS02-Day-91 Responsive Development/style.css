@@ -1,0 +1,15 @@
+.page-container {
+    background-color: teal;
+    color: white;
+    font-size: 40px;
+    padding: 60px;
+}
+
+@media screen and (max-width: 760px) {
+    .page-container {
+        font-size: 20px;
+        padding: 20px;
+        background-color: yellowgreen;
+        border: 4px solid #000;
+    }
+}
