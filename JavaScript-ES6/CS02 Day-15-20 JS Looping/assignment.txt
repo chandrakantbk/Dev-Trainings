@@ -205,5 +205,268 @@ students[1].name
 students[2].name 
  
 
+var array = [50, 100, 300, "TEST" ]
+              0   1    2     3
+         
+array.length // 4
+
+for(var i = 0; i < array.length; i++  )
+{
+    console.log(  array[ i ]  )
+}
+
+for(var i in array){
+   // i string  "0"
+    console.log(  array[ "0" ] )
+}
+
+for of 
+
+for(var val of  array ){
+    console.log( val )
+}
+
+
+
+falsy 
+""
+false 
+0
+NaN
+null 
+undefined
+
+var counter = 1;
+
+for( ; ; ){
+    console.log(counter)
+}
+
+SK      : 
+Arushi  : 0
+Namrata : 
+Kanchan : 0
+Trupti  :
+Sanjay  : 
+
+
+
+for(; condition; ){
+
+}
+
+
+
+
+var num = 20;
+
+for( ; num <= 10; num++ ){
+    console.log( num );
+}
+
+while( false  ){
+    console.log( num );  // 1
+    num++;
+} 
+
+
+
+var num = 50;
+
+do{
+
+   // look at the building construction
+   // work for it
+
+} while( is_there_work ) // false 
+
+
+
+
+
+1
+2
+3
+4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+while 
+do while 
+
+
+
+// write a program to tell whether given array is empty or with elements
+
+var array = [];
+var students = [10, 20]
+var marks = [ ]
+var is_empty = getStatusOfArray( marks );
+var is_attended = getStatusOfArray( marks );
+
+
+array = [10, 20, 30, 50]
+
+array = ADRESS4500;
+
+[  ]
+[ ]
+[ ]
+[ ]
+[ ]
+
+
+
+console.log("I am after function call")
+
+
+
+
+
+function getStatusOfArray( param ){
+
+    return param.length == 0 // true  
+
+}
+
+
+
+for 
+    for in 
+    for of 
+    syntax 
+
+while 
+do while 
+
+
+// Write a program to tell me, how many days it takes to complete all the tasks
+
+100 Workers;
+
+Tasks = 5000;
+
+1 worker / day: 10 task;
+
+Print : Today I am working 
+
+
+ 100 workers / day = tasks ? 
+ 100 workers / day
+                100 * 10 = 1000 tasks
+
+ no. of days (5) ===    task / 1000 task;
+
+
+
+
+1 worker / day: 10 task;
+
+
+10 * 10 = 100;
+
+
+var workers = 10;
+var tasks_per_day = 10;
+var tasks = 100;
+var no_of_working_days = 0;
+
+while( no_of_working_days < (tasks/tasks_per_day * workers)  ){
+            // <=
+            //( 100 / 10 * 10 )
+
+    console.log("Today I am working");
+    no_of_working_days++; // 1
+
+}
+
+
+no_of_working_days = 0;
+
+do{
+     console.log("Today I am working");
+     no_of_working_days++; //
+
+} while(no_of_days < 1)
+
+
+alert("I will be working for: " + no_of_days + " day(s)");
+
+
+
+
+
+
+
+Infinite loop 
+
+for( ; ; ){ 
+    // infinite loop
+}
+
+while(true){
+
+}
+
+
+
+infinite 
+
+for(var i=0; true; i++){
+    // infinite
+}
+
+for( ; ; ){
+    // infinite
+}
+
+while( 1 ){
+     // infinite  
+}
+
+
+birth 
+O2
+death
+
+death = true;
+
+while(1){
+    breath++;
+
+    if(death){
+        break;
+    }
+}
+
+
+
+baking system
+
+login ==> 
+timer starts
+
+
+while(true){
+    
+    miliseconds++;
+
+    if(logout){
+        break;
+    }
+}
+
 
 
