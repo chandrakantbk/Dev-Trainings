@@ -1,0 +1,79 @@
+.page-container {
+    background-color: teal;
+    color: white;
+    font-size: 40px;
+    padding: 60px;
+}
+
+.desktop-image {
+    width: 100%;
+    display: block;
+}
+
+.mobile-image {
+    width: 100%;
+    display: none;
+}
+
+.pannel {
+    text-align: center;
+    background-color: rgb(247 245 245);
+    margin: 0px 0px;
+    padding: 100px 0px;
+}
+
+.thumbnail {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background: url("../../media/pic-1.jpg") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.description {
+    padding: 20px;
+    font-size: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 70%;
+    text-align: left;
+}
+
+.bg-yellow-light {
+    background-color: #faf3b5;
+}
+
+.pannel-3 .description {
+    width: 50%;
+}
+
+@media screen and (max-width: 913px) {
+    .pannel-3 .description {
+        display: block;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .mobile-image {
+        display: block;
+        border: 10px solid red;
+        width: 80%;
+    }
+    .desktop-image {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .page-container {
+        font-size: 20px;
+        padding: 20px;
+        background-color: yellowgreen;
+    }
+    .mobile-image {
+        width: 100%;
+        /*  */
+    }
+}

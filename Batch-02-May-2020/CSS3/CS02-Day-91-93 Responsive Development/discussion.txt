@@ -1,0 +1,198 @@
+
+Responsive Development 
+
+
+Screen / Devices - Responsive Website fits well on all the devices
+
+
+.image-container{ 
+    display: flex; 
+}
+
+image{ 
+    width: 600px;
+}
+
+h1{ 
+    font-size: 30px;
+    background-color: green;
+    color: white;
+}
+
+@media screen and (max-width: 760px){
+ 
+  h1{ 
+    font-size: 18px;
+    background-color: blue;
+  }
+
+}
+
+
+// 480px
+
+// 760px
+
+
+
+
+
+
+
+
+
+
+
+CSS selectors 
+
+.class-selector
+#id-selector 
+tag name 
+
+
+attribute selectors ==> [attribute |= ""] 
+sibling selectors   ==> [attribute ~= ""] 
+children selectors  ==> element  children
+
+Pseudo selectors
+p:first-child { }
+p:last-child 
+:nth-child (1)
+
+p:first-of-type 
+p:last-of-type 
+
+p:nth-of-type (1)
+
+:hover
+:visited 
+:active
+:checked 
+:focus 
+
+Pseudo Elements
+
+:before 
+:after 
+
+
+Responsive Development 
+
+
+[ Name      ]
+[ Name      ]
+
+Name : [   Name    ]
+
+Name : [   Name    ]
+
+
+
+Framewords ===> Bootsstap/ Kendo UI/ Semantic UI 
+
+CSS ==> 
+
+@keyframes 
+
+@media ==> shows your webpages 
+
+            desktop / mobile / tablet / print devices /
+
+                  SCREEN                  print
+
+
+desktop Screen
+tablet Screen
+mobile Screen
+
+
+different types mobiles
+ 
+ scrren sizes change mob 
+
+ 
+
+
+
+Content Width 800px 
+
+.container {
+  width: 800px; // fixed 
+} 
+
+
+0px 799px ==> 100%;
+if screen size is less than your requirement then adjust the content according to screen size
+
+Samsung mobile ==> 440px 
+Oppo mobile    ==> 440px 
+LG mobile      ==> 430px 
+
+
+@media screen and (max-width: 799px ){
+
+
+  .container {
+    width: 100%;
+    
+  }
+
+}
+
+
+
+
+
+Profile page 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
