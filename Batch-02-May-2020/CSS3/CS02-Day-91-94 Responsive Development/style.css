@@ -48,6 +48,22 @@
     width: 50%;
 }
 
+.orientation-message {
+    display: none;
+}
+
+.content {
+    display: none;
+}
+
+.video-container {
+    width: 100%;
+}
+
+.video-container video {
+    width: 100%;
+}
+
 @media screen and (max-width: 913px) {
     .pannel-3 .description {
         display: block;
@@ -67,6 +83,7 @@
 }
 
 @media screen and (max-width: 760px) {
+    /* screen <= 760px */
     .page-container {
         font-size: 20px;
         padding: 20px;
@@ -75,5 +92,48 @@
     .mobile-image {
         width: 100%;
         /*  */
+    }
+}
+
+@media screen and (min-width: 600px) {
+    /* screen >= 400px   */
+    h1 {
+        color: red;
+    }
+}
+
+@media screen and (orientation: portrait) {
+    .page-container {
+        background-color: blue;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    /* .orientation-message {
+        display: block;
+    } */
+    .content {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 800px) {
+    h1 {
+        color: maroon;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 768px) and (orientation: portrait) {
+    /** portrait opentation screen width 768px */
+}
+
+@media screen and (min-width: 600px) and (max-width: 700px),
+(min-width: 1000px) {
+    /** this will apply if (screen >= 600px and screen <= 700px) OR screen width >= 1000px */
+}
+
+@media screen and (orientation: portrait) {
+    .video-container {
+        transform: rotate(90deg) translate(40%, 0%);
     }
 }
