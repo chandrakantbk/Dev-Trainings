@@ -1,0 +1,179 @@
+day 21
+======================
+var stuents = [];
+
+// Array literal
+var arrName = [];
+
+var arrName = new Array(3); // constructor
+
+var marks = [50, 30, 60]; // length n = 3
+//           0    1   2    // n-1  2
+
+// Array is a collection of data (different data types) in a sequence (Linear)
+// data structure
+
+console.log(marks[1000])
+
+
+
+var my_array = [50, 30, 60];
+
+my_array[2] // 60
+
+
+my_array[2] = 70;
+
+
+
+
+var students = [{ name: "ck" }, { marks: 100 }]
+
+var toppers_list = [
+
+    { class_10: [500, 600], class_9: [1020, 300] }
+]
+
+toppers_list[0].class_10[0]
+numbers = [ 20, 30, 50]
+
+var first_elm = numbers[0]
+
+console.log( first_elm ) //20
+
+var whether_data = [ [40, 30, 60], 30 ]
+
+
+whether_data[0][0] + whether_data[1][0]
+
+
+var first = whether_data[0] //[40, 30, 60]
+
+first[0]  // 40
+
+
+
+marks_list_1 = [50, 60, 80]
+
+marks_list_2 = [50, 60, 180]
+
+marks_list_1[0] + marks_list_2[0]
+
+marks_list_1[0] + marks_list_1[2]
+
+
+
+======================
+Day 22
+======================
+
+var natural_numbers = [10, 20, 30, 40, 50];
+
+var my_value = natural_numbers[1];
+
+
+
+var clinical_data = [ [5, 50], [6, 70], [6, 80]  ]
+
+// Write a function which will return the value at given index;
+
+var arr = [10, 20, 30 ]
+
+var student = { }
+
+indexOf()// returns -1, if element NOT found
+includes() // will return true, if element found else it will return false
+
+arr.includes()
+
+
+In Javascript everything is an object.
+
+
+
+
+
+
+
+arr.length // 3
+
+function fun(){
+
+}
+
+property
+
+var obj = { name: "ck", age: 60, myfun: fun }
+
+obj.age // 60
+
+fun()
+
+obj.myfun()
+
+
+a function which is part of object, we will call it as method
+
+
+
+// Arushi
+topers_list.includes("NE")
+
+console.log("NE is available")
+
+topers_list.indexOf("NE")
+
+console.log("Index number of NE is")
+
+
+// Kanchan
+topers_list.includes("NE")
+
+if () {
+    console.log("NE is available")
+} else {
+
+}
+
+
+
+// Namrata
+topers_list {
+
+    if (topers_list.includes("NE"))
+
+        console.log("NE is available")
+
+}
+
+var topers_list = ["CK", "TE", "NE", "LE", "PO", "LL"];
+var searchElements = ["CK", "TE", "LE"]
+
+
+for (var i = 0; i < topers_list.length; i++) {
+
+    if (topers_list[i] == "NE") {
+        console.log("NE is Available at" + i)
+        break;
+    } else {
+        console.log("NE is NOT Available")
+    }
+
+}
+
+
+
+var temp = topers_list.indexOf("NE");
+if (topers_list.includes("NE")) {
+    console.log("NE is available");
+    console.log(temp)
+} else {
+    console.log("NE is NOT available")
+}
+
+
+if (topers_list.includes("NE")) {
+    console.log("NE is available at " + topers_list.indexOf("NE"));
+} else {
+    console.log("NE is NOT available")
+}

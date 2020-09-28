@@ -63,10 +63,12 @@ var toppers =  {
 
 
 var arr = [ 10, 2020, 30]
+
 var arr = [ "KK", 2020, 30]
 
 var arr = [ "KK", 2020, false]
-var arr = [ CK, [1010, 20, 30], false]
+
+var arr = [ "CK", [1010, 20, 30], false]
 
 
 all_stuents = [ { name: "Trupti", seat_number: 101 }, { name: "KK", seat_number: 102 } ]
@@ -117,9 +119,9 @@ Data types
 
 number
 string 
+boolean
 array 
 object 
-boolean
 
 
 null 
@@ -264,11 +266,19 @@ for( ; num <= 10; num++ ){
     console.log( num );
 }
 
+for(var val of array){
+    console.log(val)
+}
+
+
+for(var index in array){
+    console.log( array[index] )
+}
+
 while( false  ){
     console.log( num );  // 1
     num++;
 } 
-
 
 
 var num = 50;
