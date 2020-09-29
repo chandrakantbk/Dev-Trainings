@@ -147,14 +147,17 @@ topers_list {
 }
 
 var topers_list = ["CK", "TE", "NE", "LE", "PO", "LL"];
+
 var searchElements = ["CK", "TE", "LE"]
 
 
 for (var i = 0; i < topers_list.length; i++) {
 
     if (topers_list[i] == "NE") {
+        
         console.log("NE is Available at" + i)
         break;
+
     } else {
         console.log("NE is NOT Available")
     }
