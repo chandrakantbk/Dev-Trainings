@@ -180,3 +180,153 @@ if (topers_list.includes("NE")) {
 } else {
     console.log("NE is NOT available")
 }
+
+Data types  
+
+
+Array 
+    includes()
+    indexOf()
+
+
+
+undefined
+NaN 
+
+
+Number("10")   ===> 10
+Number("nj")   ===> NaN 
+
+undefined ===> There is no value there in declared variable/property 
+
+var name;
+ 
+
+form 
+
+    name: [      ]
+    age:  [  25  ]  id = "candidate_age"
+
+document.getElementById("candidate_name")
+
+
+""
+
+
+null
+
+console.log( name )
+
+null ==> object
+
+undefined ==> value and type 
+
+form = {
+    name: "",
+    age: 25
+}
+
+
+
+
+
+1. iterate in the array
+2. compare each number with a condition 
+3. if condition matches then tell me the index number of that matched element 
+
+
+
+function myfun(){
+        var a = 10;
+        var b = 20;
+
+        var c = a + b;
+
+
+        console.log( c )
+
+
+}
+
+
+myfun()
+
+
+Annonymous function 
+
+(function(){
+
+})()
+
+
+
+
+
+
+
+
+
+
+
+
+getNumber(10)
+
+function getNumber(num){
+  
+    return num < 15
+
+
+
+    Not required to write like below
+    
+    if( num < 15 ){
+        
+        return true
+
+    }
+    else{
+       
+        return false
+
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+one time execute
+
+
+
+var marks = [17, 10, 30, 25, 12, 50, 60, 80, 90, 100];
+
+
+marks.findIndex( getNumber )
+
+
+function getNumber(num){
+
+    if( num < 15 ){
+        return true
+    } else {
+        return false
+    }
+    
+}
+
+present_users.includes("Chandrakant") === true 
+present_users.includes('Jain Namrata') ====> true 
+present_users.includes('Arushi')   ===> true 
+present_users.includes('Sanjay') ===> true 
+present_users.includes('Trupti') ===> true 
+present_users.includes('Kajal') ===> false 
+
+
