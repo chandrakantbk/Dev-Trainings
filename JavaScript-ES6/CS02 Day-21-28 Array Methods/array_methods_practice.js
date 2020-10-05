@@ -31,20 +31,6 @@ function searchStudent() {
 }
 
 
-var camera_data = [{ day: "25", month: "9", year: "2020", object: 45 },
-    { day: "26", month: "9", year: "2020", object: 40 },
-    { day: "27", month: "9", year: "2020", object: 35 },
-    { day: "28", month: "9", year: "2020", object: 50 },
-    { day: "29", month: "9", year: "2020", object: 45 },
-    { day: "30", month: "9", year: "2020", object: 40 },
-    { day: "01", month: "10", year: "2020", object: 0 },
-    { day: "02", month: "10", year: "2020", object: 0 },
-    { day: "03", month: "10", year: "2020", object: 100 },
-    { day: "04", month: "10", year: "2020", object: 50 },
-]
-
-
-
 /** another way but with some loopholes */
 /*
 var toppers_list = [];
@@ -105,4 +91,94 @@ for (var numOfMarks;;) {
         break; // to stop the loop if I found that student
     }
 }
+*/
+
+
+var women_coach = [
+    { seat: "L1", is_reserved: true },
+    { seat: "L2", is_reserved: true },
+
+    { seat: "L3", is_reserved: false }, // is_reserved = true
+
+    { seat: "L4", is_reserved: true },
+    { seat: "L5", is_reserved: false },
+]
+
+var seat_avail = women_coach.find(function(item) {
+    return !item.is_reserved
+});
+
+//    seat_avail =  [ { seat: "L3", is_reserved: false }, ]
+
+function bookSeat() {
+
+    if (seat_avail.length == 0) {
+        alert("NO Seat Avaible ")
+        return false;
+    }
+
+    for (var index = 0; index < women_coach.length; index++) {
+
+        if (women_coach[index].seat == seat_avail[0].seat) {
+            women_coach[index].is_reserved = true;
+        }
+
+    }
+
+    alert(seat_avail[0].seat);
+
+}
+
+bookSeat()
+
+/*
+var seat_avail = women_coach.find(function(item) {
+    return !item.is_reserved
+});
+
+for (var val of women_coach) {
+    if (val.seat == seat_avail.seat) {
+        val.is_reserved = true;
+        alert(val.seat + " reserverd for you")
+        break;
+    }
+}
+*/
+
+var is_avail = 'no';
+
+for (var item of women_coach) {
+
+    if (item.is_reserved == false) {
+        item.is_reserved = true;
+        is_avail = 'yes';
+        alert(item.seat);
+        break;
+    }
+}
+
+if (is_avail == 'no') {
+    alert("Seat is not available")
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+    var data = women_coach.filter(function(item){ 
+    // return item.is_reserved == false 
+        return !item.is_reserved
+    })
+    // [  { seat: "L3", is_reserved: false },   { seat: "L5", is_reserved: false }, ]
+
 */
