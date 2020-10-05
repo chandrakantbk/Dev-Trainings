@@ -195,4 +195,10 @@ Profile page
 
 
 
+text-transform
+text-align
+white-space: nowrap;
+text-overflow: ellipsis;
+
+overflow: hidden;
 

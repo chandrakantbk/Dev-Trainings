@@ -1,0 +1,36 @@
+.container {
+    font-size: 24px;
+    border: 2px solid gray;
+    padding: 35px;
+    display: flex;
+    justify-content: space-between;
+    width: 954px;
+    margin: 0px auto;
+}
+
+.box {
+    border: 2px solid gray;
+    padding: 20px;
+    height: 250px;
+    width: 250px;
+    display: inline-block;
+    overflow: auto;
+    /* 
+    overflow-y: hidden;
+    overflow-x: auto; */
+}
+
+p {
+    margin: 0px;
+}
+
+p {
+    margin: 20px;
+}
+
+
+/* 
+ Reset css
+ overflow
+ 
+*/

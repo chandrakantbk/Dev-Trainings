@@ -1,0 +1,14 @@
+nav {
+    height: 65px;
+}
+
+.content {
+    color: red;
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+    height: calc(100vh - 67px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

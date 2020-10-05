@@ -64,6 +64,14 @@
     width: 100%;
 }
 
+.text-center {
+    text-align: center;
+}
+
+.bg-yellow {
+    background-color: yellow;
+}
+
 @media screen and (max-width: 913px) {
     .pannel-3 .description {
         display: block;
