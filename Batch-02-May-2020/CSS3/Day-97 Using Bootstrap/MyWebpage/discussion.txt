@@ -1,0 +1,17 @@
+-primary
+-secondary
+-success
+-danger
+-warning
+-info
+-light
+-dark
+
+
+<div class="bg-dark">
+
+</div>
+
+<button class="btn btn-primary">SUBMIT </button>
+
+
