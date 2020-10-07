@@ -3,12 +3,11 @@ nav {
 }
 
 .content {
-    color: red;
-    font-size: 35px;
     text-align: center;
-    font-weight: 700;
     height: calc(100vh - 67px);
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: center
+    justify-content: center; */
+    overflow-x: hidden;
+    overflow-y: auto;
 }
