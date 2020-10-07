@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array methods</title>
+    <link href="../bootstrap.min.css" rel="stylesheet">
+    <!-- 
+        <script src="array_methods_practice.js"></script> 
+    -->
+    <script src="stack_queue.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Understanding Array methods</h1>
+        <hr>
+
+        <input type="search" id="search_item" placeholder="Enter your value">
+        <button onclick="searchStudent()">SEARCH</button>
+
+        <div id="output">
+
+        </div>
+
+        <hr>
+        <h2>Stack operations using push() and pop()</h2>
+
+        <input class="form-control" type="text" id="stack-input" placeholder="Enter element to add in the stack">
+
+        <div class="mt-3 mb-3">
+            <button class="btn btn-success" onclick="addElement()">ADD</button>
+            <button class="btn btn-danger" onclick="removeElement()">REMOVE</button>
+            <button class="btn btn-primary" onclick="showStack()">SHOW</button>
+        </div>
+
+        <div class="bg-warning p-3" id="stack">
+        </div>
+
+        <p id="cart_number">0</p>
+
+    </div>
+
+</body>
+
+</html>

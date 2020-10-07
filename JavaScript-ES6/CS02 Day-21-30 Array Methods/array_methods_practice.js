@@ -94,6 +94,7 @@ for (var numOfMarks;;) {
 */
 
 
+
 var women_coach = [
     { seat: "L1", is_reserved: true },
     { seat: "L2", is_reserved: true },
@@ -108,24 +109,26 @@ var seat_avail = women_coach.find(function(item) {
     return !item.is_reserved
 });
 
-//    seat_avail =  [ { seat: "L3", is_reserved: false }, ]
+//    seat_avail = { seat: "L3", is_reserved: false }
 
 function bookSeat() {
 
-    if (seat_avail.length == 0) {
+    if (seat_avail == undefined) {
         alert("NO Seat Avaible ")
         return false;
     }
 
     for (var index = 0; index < women_coach.length; index++) {
 
-        if (women_coach[index].seat == seat_avail[0].seat) {
+        if (women_coach[index].seat == seat_avail.seat) {
             women_coach[index].is_reserved = true;
+            alert(seat_avail.seat);
+            break;
         }
 
     }
 
-    alert(seat_avail[0].seat);
+
 
 }
 
@@ -144,7 +147,7 @@ for (var val of women_coach) {
     }
 }
 */
-
+/*
 var is_avail = 'no';
 
 for (var item of women_coach) {
@@ -161,7 +164,7 @@ if (is_avail == 'no') {
     alert("Seat is not available")
 }
 
-
+*/
 
 
 

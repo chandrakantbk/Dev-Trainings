@@ -134,7 +134,7 @@ for (var i = 0; i < developers.length; i++) {
 
 */
 
-
+/*
 // find an element which value is less than 30
 
 var array = [50, 60, 14, 80, 90, 45, 20]
@@ -221,7 +221,7 @@ var marks = [85, 95, 75, 24, 65];
 
 var myresult = marks.find(function(item) { return item < 50; });
 
-
+*/
 
 
 /*

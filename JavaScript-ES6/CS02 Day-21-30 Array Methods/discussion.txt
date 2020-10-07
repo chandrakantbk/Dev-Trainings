@@ -330,3 +330,26 @@ present_users.includes('Trupti') ===> true
 present_users.includes('Kajal') ===> false 
 
 
+==========================
+Day 30 Push() Pop() shift() and unshift()
+===========================
+
+
+var no_of_elements;
+
+var students = [
+    {name: "CK", DOJ: '20-10-2020'},
+    {name: "Namrata", DOJ: '20-10-2020'},
+    {name: "Arushi", DOJ: '21-10-2020'},
+]
+
+no_of_elements = students.push( {name: "Arushi", DOJ: '21-10-2020'} )
+
+console.log(no_of_elements) // 3
+
+var data = students.pop();
+
+console.log(data) //{name: "Arushi", DOJ: '21-10-2020'},
+
+shift()
+unshift()
