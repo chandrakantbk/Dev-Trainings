@@ -1,0 +1,11 @@
+Personal
+    |
+    |--CSS
+    |   |-css files
+    |
+    |-Assets
+        |
+        |-images
+
+    |
+    |-index.html

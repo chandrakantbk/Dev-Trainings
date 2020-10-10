@@ -1,0 +1,29 @@
+Personal
+    |
+    |--CSS
+    |   |-css files
+    |
+    |-Assets
+        |
+        |-images
+
+    |
+    |-index.html
+
+
+//10-Oct-2020 Day 101 - Background parallox effect, and using bootstrap grid
+$spacer = 16px
+
+ -0  ===> 0px
+ -1  ===> spacer * 0.25
+ -2  ===> spacer * 0.5
+ -3  ====> spacer * 1
+ -4  ====> spacer * 1.5
+ -5  ====> spacer * 2
+
+
+ Bootstrap grid ===> 12 Column
+
+row >> 
+
+

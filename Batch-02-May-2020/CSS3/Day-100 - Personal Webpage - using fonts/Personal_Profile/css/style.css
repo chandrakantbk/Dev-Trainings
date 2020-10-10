@@ -1,0 +1,25 @@
+/* .container-fullhight {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+} */
+
+@font-face {
+    font-family: 'kalamregular';
+    src: url('../assets/fonts/kalam-regular-webfont.woff2') format('woff2'), url('../assets/fonts/kalam-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.navbar {
+    height: 54px;
+}
+
+h1 {
+    font-family: 'Berkshire Swash', cursive;
+}
+
+.content {
+    height: calc(100vh - 54px);
+    overflow: auto;
+}
