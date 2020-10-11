@@ -40,17 +40,17 @@ h1 {
 }
 
 .bg-profile {
-    background-image: url('../assets/seating.jpg');
+    background-image: url('../assets/profile.jpg');
 }
 
 .bg-project {
-    background-image: url('../assets/pexels-jess.jpg');
+    background-image: url('../assets/textured-mob.jpg');
 }
 
 .bg-edu {
-    background-image: url('../assets/pexels-lukas-1420709.jpg');
+    background-image: url('../assets/notes.jpg');
 }
 
 .bg-skills {
-    background-image: url('../assets/pexels-designs.jpg');
+    background-image: url('../assets/keyboard-designs.jpg');
 }
