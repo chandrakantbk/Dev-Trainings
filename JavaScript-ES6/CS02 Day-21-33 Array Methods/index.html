@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array methods</title>
+    <link href="../bootstrap.min.css" rel="stylesheet">
+    <!-- 
+        <script src="array_methods_practice.js"></script> 
+    -->
+    <script src="stack_queue.js"></script>
+    <script src="sort.reduce.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <h1>Understanding Array methods</h1>
+                <hr>
+
+                <input type="search" id="search_item" placeholder="Enter your value">
+                <button onclick="searchStudent()">SEARCH</button>
+
+                <div id="output">
+
+                </div>
+
+                <hr>
+                <h2>Stack operations using push() and pop()</h2>
+
+                <input class="form-control" type="text" id="stack-input" placeholder="Enter element to add in the stack">
+
+                <div class="mt-3 mb-3">
+                    <button class="btn btn-success" onclick="addElement()">ADD</button>
+                    <button class="btn btn-danger" onclick="removeElement()">REMOVE</button>
+                    <button class="btn btn-primary" onclick="showStack()">SHOW</button>
+                </div>
+
+                Items in Cart: <span id="cart_number" class="bg-warning mt-2 mb-2 p-2">0</span>
+
+                <div class="bg-warning p-3 mt-3" id="stack-output">
+                    <span class="text-muted">Here stack will be shown</span>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="card mt-3 mb-5">
+            <div class="card-header">Array - sort and reduce </div>
+            <div class="card-body">
+                <table class="table border w-100">
+                    <tr>
+                        <td>
+                            Addition of all numbers in the array [50, 60, 80]
+                            <br>
+                            <button class="btn btn-primary" onclick="showMyAddition()">ADD Elements</button>
+                        </td>
+                        <td>
+                            Addition: <span id="addition_box"> 0 </span>
+                        </td>
+                    </tr>
+                </table>
+
+                <h2>Student table</h2>
+                <button class="btn btn-success" onclick="showData()">SHOW STUDENTS</button>
+
+                <table class="table table-bordered mt-4" id="student_table">
+                    <tr>
+                        <td></td>
+                    </tr>
+                </table>
+
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
