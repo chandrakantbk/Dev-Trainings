@@ -263,7 +263,7 @@ num = num - you_num; // 300 - 250 ==>> 50
 
 */
 
-
+/*
 // Sort the list of students in asc order by marks [ Array: sort() ]
 
 var students_list = [
@@ -275,6 +275,9 @@ var students_list = [
 ];
 
 var final_list = students_list.sort(function(a, b) { return b.marks - a.marks });
+
+*/
+
 /*
 // Sort the student list by using Rules   
 // marks > 50% ==> cgpa
@@ -284,6 +287,7 @@ var final_list = students_list.sort(function(next, current) {
     if (current.marks > 50) { return current.cgpa - next.cgpa }
     if (current.marks <= 50) { return current.marks - next.marks }
 })
+
 */
 
 /*
@@ -298,3 +302,37 @@ var final_list = students_list.sort(function(next, current) {
 */
 
 // students_list.sort( function(n, c){ return n.name.localeCompare(c.name) })
+
+
+// Day 34 
+
+var name_list = ["CK", "Kanchan", "Arushi", "Namrata", "Sanjay"]
+    /*
+
+        forEach()
+        map()
+        reverse()
+        split()
+        join()
+
+    */
+var data_arr = name_list.forEach(function(item, index) {
+
+    }) //  ===>  Nothing returns; so no values will be there in data_arr
+
+var data_arr = name_list.map(function(item, index) {
+
+        return index + "-" + item + "My"
+
+    }) // ==> returns a new Array. You may get modified data in the new array
+
+
+var modified_list = students_list.map(function(item, i) {
+    if (item.name == "Namrata") {
+        return { name: "Namrata", age: 20 }
+    } else {
+        return item
+    }
+});
+
+console.log(modified_list);
