@@ -1,0 +1,29 @@
+Commit -m "Today client to change version to varsion"
+15-Oct-2020   
+
+Commit -m "removed varsion"
+16-Oct-2020 2:00PM
+
+
+
+version control   ===> SVN Tortoise 
+                       Git 
+
+Github  ===> Storage 
+Gitlab 
+bitbucket
+
+
+Google Drive 
+
+
+reverse() ===> array change
+
+forEach() ==> for loop
+map()  ==> returns a new array. You may mod
+split(" ")  ==> returns a array
+join("-") ===> returns a string
+
+CUBKS CS02 Day-35 JS Array splice() and slice() and using version control
+
+AwirodE

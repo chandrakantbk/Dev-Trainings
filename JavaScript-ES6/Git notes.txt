@@ -1,0 +1,45 @@
+1. Github account
+
+2. Create a new repository
+
+3. install: Git tool 
+
+4. Copy the path of created repository [ Repo checkout path ]
+
+5. On local computer, create a folder [ Projects ]
+
+6. Open the projects folder in cmd/termial 
+
+7. Type a command [ Git command ]
+
+    git clone [Repo checkout path]
+
+8. move to the repository [folder ] using a command 
+
+    cd [Repo]
+
+9. Now you are inside your repository folder.
+
+10. Let's create a sample text file for adding to Github repo
+
+11. Type a command 
+
+    git add .
+
+12. Now commit your files/folders. Type the below command 
+
+    git commit -m "Your message text"
+
+    If your get error/fail to commit 
+
+    then do a config git
+    git --global config user.name "ck"
+    git --global config user.email "ck@github.com"
+
+
+13. Now upload your data to github [push]
+
+14. Enter username and password
+
+
+

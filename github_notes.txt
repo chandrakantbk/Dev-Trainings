@@ -1,0 +1,31 @@
+1. Create Repo on github 
+2. Local machine create a folder and clone the repo 
+    git clone https://github.com/chandrakantbk/sample_shopping_web
+
+3. Config git with following commands
+    git config --local user.name "CK"
+    git config --local user.email "ck@github.com"
+
+4. Add/edit your files in the repo [folder]
+
+5. Then add those changes using a commands
+
+    git add .
+
+6. Now save your changes for the version control
+
+    git commit -m "Project init"
+
+7. Now send your updated changes to the github 
+
+    git push
+
+8. Enter your username then password
+
+======================
+
+For getting the updates from github use following command 
+
+    git pull 
+
+    
