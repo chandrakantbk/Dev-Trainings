@@ -1,0 +1,31 @@
+@media screen and (max-width: 576px) {
+    /* 	Extra small 0 - 576  */
+}
+
+@media screen and (min-width: 576px) {
+    /* 	Extra small 576 - next */
+    .btn {
+        color: green;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    /* 	Extra small 768px - next */
+    .btn {
+        color: RED;
+    }
+}
+
+
+/*
+
+Extra small <576px	
+
+Small ≥576px
+Medium ≥768px	
+Large ≥992px
+Extra large ≥1200px
+
+.col-	.col-sm-	.col-md-	.col-lg-	.col-xl-
+
+*/
