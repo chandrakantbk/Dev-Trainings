@@ -1,0 +1,30 @@
+find
+findIndex()
+indexOf()
+sort
+map
+forEach
+push
+pop
+shift
+unshift
+slice
+splice
+includes()
+reverse()
+reduce( function(total, current){ return total + current })
+reduceRight 
+arr.concat(array2)
+filter()
+split("-")
+string.join("-")
+
+//======================
+Day 41
+
+20 Array Methods 
+4 new Methods 
+
+code re-factor == re-write the code 
+
+Example with array methods 
