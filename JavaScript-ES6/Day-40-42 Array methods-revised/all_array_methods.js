@@ -43,3 +43,37 @@ console.log(numbers);
 var new_length = numbers.shift(60);
 console.log(numbers);
 console.log("After shift() return the new_length" + new_length);
+
+
+
+// fill()
+
+var number_list = new Array(5); // [udefined, undefined, undefined, undefined, undefined]
+
+number_list.fill("blank");
+
+// Eg. 2
+
+var game_points = [10, 20, 30, 40, 50, 60];
+
+game_points.fill(0, game_points.length - 2);
+
+
+// every() ==> return s true or false 
+var game_points = [10, 5, 30, 40, 50, 60];
+
+var is_all_passed = game_points.every(function(item) { return item >= 10 })
+
+//is_all_passed false
+
+// some()
+
+
+// flat()
+var whether = [
+    [28, 34],
+    [29, 35],
+    [27, 32]
+]
+
+var flat_data = whether.flat();
