@@ -8,7 +8,6 @@ var data = [
     { name: "SK", city: "Mumbai" },
 ]
 
-
 // 1. find() ==> returs the first matched elem
 
 function getStudentCity(std_name) { // "SK"
@@ -77,3 +76,8 @@ var whether = [
 ]
 
 var flat_data = whether.flat();
+
+// map()
+var new_data = data.map(function(item, i) {
+    return { name: item.name, city: item.city, age: 20 + i }
+});
