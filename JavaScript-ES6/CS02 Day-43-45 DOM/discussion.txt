@@ -1,6 +1,23 @@
-What is DOM 
-What is DOM Tree
-What is Event Driven Programming 
+What is DOM                         ==> html document (viewport )
+What is DOM Tree                    ==> tree format which represents DOM 
+What is Event Driven Programming    ==> Depends on the event app works/respond 
+
 
 BOM Parts:
 Title bar, Addrees bar
+
+// Day - 45
+
+var tbl = document.getElementById('data_table_id')
+
+var all_buttons = document.getElementsByTagName('button');
+var all_btns = document.getElementsByClassName('btn');
+var all_btns = document.querySelectorAll('.btn');
+
+Accessing / Modifying classes 
+
+var tbl = document.getElementById('data_table');
+
+tbl.classList.add('bg-warning');    ===> Add bg-warning class to table 
+tbl.classList.remove('bg-warning'); ===> remove bg-warning class from table 
+tbl.classList.toggle('bg-warning'); ===> adds and removes (toggle) class on the table 

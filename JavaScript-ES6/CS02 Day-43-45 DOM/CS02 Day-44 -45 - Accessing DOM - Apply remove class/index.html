@@ -5,23 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="../../bootstrap.min.css" rel="stylesheet">
     <script src="data.js"></script>
     <script src="program.js"></script>
 </head>
 
 <body>
 
-    <h1>How to write a program</h1>
+    <div class="container">
+        <h1>How to write a program</h1>
+        <form>
+            <input type="search" name="search_srting">
+            <input type="text" name="user_name" placeholder="Enter your name">
 
-    <button onclick="showRecords()">SHOW Table</button>
+            <input type="radio" name="choice"> BBA
+            <br>
+            <input type="radio" name="choice"> BCA
+        </form>
 
-    <button onclick="sortByName()">SORT BY NAME (Dec)</button>
-    <button onclick="showTopThree()">TOP 3</button>
-    <button onclick="printNumbers()">Print Numbers</button>
+        <button class="btn btn-primary" onclick="showRecords()">SHOW Table</button>
+        <button class="btn btn-primary" onclick="sortByName()">SORT BY NAME (Dec)</button>
+        <button class="btn btn-primary" onclick="showTopThree()">TOP 3</button>
+        <button class="btn btn-primary" onclick="printNumbers()">Print Numbers</button>
+        <button class="btn btn-primary" onclick="change_tbl_bg()">Change TBL BG</button>
 
-    <table border="1" width="100%" id="data_table">
+        <a href="#" class="btn btn-primary" onclick="how_many_classes_on_table()">Tell Me No of Classes on Table </a>
 
-    </table>
+        <table class="mt-5 table table-strpped bg-warning" id="data_table">
+
+        </table>
+    </div>
 
 
 </body>

@@ -7,5 +7,7 @@ function getStudentsData() {
         { name: 'Arushi', city: 'Pune' },
     ]
 
-    return arr.map((item) => { return item });
+    var d_cpy_arr = arr.map((item) => { return item });
+
+    return d_cpy_arr;
 }

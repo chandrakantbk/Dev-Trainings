@@ -1,5 +1,5 @@
 // show students records
-
+/*
 var data = [
     { name: 'SK', city: 'Pune' },
     { name: 'Trupti', city: 'Pune' },
@@ -8,6 +8,9 @@ var data = [
     { name: 'Arushi', city: 'Pune' },
 ]
 
+*/
+
+var data = getStudentsData();
 
 function showRecords() {
     // alert("I will do it")
@@ -58,9 +61,28 @@ function showTopThree() {
 
 }
 
+// Day 45
+function how_many_classes_on_table() {
+    var tbl = document.getElementById('data_table');
+
+    var no_of_classes = tbl.classList.length;
+
+    console.log(tbl.classList);
+    console.log(no_of_classes);
+
+    tbl.classList.add('bg-warning');
+
+}
 
 
+function change_tbl_bg() {
+    var tbl = document.getElementById('data_table');
+    //tbl.classList.add('bg-warning');
+    //tbl.classList.remove('bg-warning');
 
+    tbl.classList.toggle('bg-warning');
+
+}
 
 
 
@@ -76,10 +98,13 @@ function showTopThree() {
 
 
 function printNumbers() {
+    var all_buttons = document.getElementsByTagName('button');
+    var all_btns = document.getElementsByClassName('btn');
+    //var all_btns = document.querySelectorAll('.btn');
 
-    for (var i = 1; i <= 10; i++) {
+    for (var i = 1; i <= all_buttons.length; i++) {
 
-        console.log(i);
+        console.log('Button ' + i);
 
     }
 
