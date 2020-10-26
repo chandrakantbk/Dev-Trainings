@@ -1,0 +1,6 @@
+What is DOM 
+What is DOM Tree
+What is Event Driven Programming 
+
+BOM Parts:
+Title bar, Addrees bar

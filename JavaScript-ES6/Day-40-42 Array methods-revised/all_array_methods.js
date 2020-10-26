@@ -1,5 +1,6 @@
 var data = [
-    { name: "SK", city: "Pune" },
+    { name: "SK", city: "Pune", max_arr: [50, 30, 60], address: { city: 'pune', pin: 401452, } },
+
     { name: "PK", city: "Mumbai" },
     { name: "Anuja", city: "Pune" },
     { name: "Kanchan", city: "Pimpri" },
