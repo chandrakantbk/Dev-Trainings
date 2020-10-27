@@ -85,6 +85,13 @@ function change_tbl_bg() {
 }
 
 
+function change_btn_color() {
+    var btn = document.querySelectorAll('button');
+    btn[0].classList.remove('btn-primary');
+    btn[0].classList.add('btn-danger');
+
+}
+
 
 
 

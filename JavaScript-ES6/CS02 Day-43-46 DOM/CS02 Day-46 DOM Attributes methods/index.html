@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../../bootstrap.min.css" rel="stylesheet">
+    <script src="attributes.js"></script>
+    <style>
+        .hiden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="d-flex justify-content-between shadow">
+            <button class="btn btn-primary" onclick="showTab()">
+                HOME
+            </button>
+            <a href="#" class="btn btn-primary" onclick="showTab(0)">
+                Show Tab 1
+            </a>
+            <button class="btn btn-primary" onclick="showTab(1)">
+                Show Tab 2
+            </button>
+        </div>
+
+        <div class="data-box p-5 shadow mt-3">
+            <p>Your content will be shown here</p>
+        </div>
+
+        <div class="data-box  p-5 shadow mt-3 hiden" id="data-0">
+            <h1>Tab 1 Data</h1>
+            <p>This is your credit card info</p>
+            <ul>
+                <li>List 1</li>
+                <li>List 2</li>
+                <li>List 3</li>
+            </ul>
+        </div>
+
+        <div class="data-box p-5 shadow mt-3 hiden" id="data-1">
+            <h1>Tab 2 Data: Eduction</h1>
+            <p>This Eduction</p>
+            <ul>
+                <li>CCA</li>
+                <li>DCA</li>
+                <li>MBA</li>
+            </ul>
+        </div>
+
+    </div>
+</body>
+
+</html>

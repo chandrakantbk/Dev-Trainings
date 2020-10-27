@@ -21,3 +21,25 @@ var tbl = document.getElementById('data_table');
 tbl.classList.add('bg-warning');    ===> Add bg-warning class to table 
 tbl.classList.remove('bg-warning'); ===> remove bg-warning class from table 
 tbl.classList.toggle('bg-warning'); ===> adds and removes (toggle) class on the table 
+
+
+.btn-warning{color: red;}.btn-danger{color: green;}
+
+
+
+//HTML Collection
+
+document.getElementById('dt_tbl-1')
+document.getElementsByClassName('table-stripped')  
+document.getElementsByTagName('table')
+document.getElementsByName('username')
+document.querySelector('table') // returns only one elements
+var tbl = document.querySelectorAll('table')
+
+tbl[0].classList ==> returns a collection of classes which are avail on the elements
+
+['table-stripped', 'bg-warning']
+
+tbl[0].classList.add('text-center')
+tbl[0].classList.remove('text-center')
+tbl[0].classList.toggle('text-center')
