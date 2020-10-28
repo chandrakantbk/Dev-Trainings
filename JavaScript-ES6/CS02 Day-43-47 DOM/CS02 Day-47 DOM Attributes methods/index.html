@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Attribute Methods</title>
+    <link href="../../bootstrap.min.css" rel="stylesheet">
+    <script src="attributes.js"></script>
+    <style>
+        .img-responsive {
+            width: 400px;
+            height: 250px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="p-2 shadow bg-light">
+            <button class="btn btn-primary" onclick="changeImage(0)">Show Mob</button>
+            <button class="btn btn-primary" onclick="changeImage(1)">Show Nature</button>
+            <button class="btn btn-primary" onclick="changeImage(2)">Show Water</button>
+            <button class="btn btn-primary" onclick="changeImage(3)">Show Girl</button>
+        </div>
+
+        <img class="mt-2 img-responsive">
+
+        <hr>
+
+        <input type="text" placeholder="Enter your seat number" id="seat_no">
+
+        <button class="btn btn-primary" onclick="generate_hallticket()">Generate Hallticket</button>
+
+        <a class="btn btn-success disabled" href="#" target="_blank" download="true">Get Your Hallticket </a>
+
+    </div>
+
+</body>
+
+</html>
