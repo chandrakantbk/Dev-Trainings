@@ -1,0 +1,17 @@
+Browser
+I have loaded this file             ===> onload
+DOM Tree ready                      ===> onready=""
+                                    ===> onmouseover
+                                    ===> onmouseout
+                                    ===> onmousemove
+                                    ===> oncontextmenu = "closeContext()"
+handlerFunction
+
+List of 
+
+onload
+onready
+onmouseover
+onmouseout
+onmousemove
+oncontextmenu

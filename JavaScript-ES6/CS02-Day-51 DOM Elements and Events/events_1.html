@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events </title>
+
+    <script src="events.practicle.js"></script>
+
+    <style>
+        .box {
+            padding: 20px;
+            border: 2px solid #000;
+            width: 80px;
+            height: 100px;
+            background-color: darkcyan;
+            color: #ffffff;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, 100px);
+            grid-gap: 20px;
+        }
+        
+        .control {
+            padding: 4px;
+            font-size: 18px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+
+<body oncontextmenu="showMessage()">
+    <h1>Let's learn more about JS events</h1>
+
+    <div class="grid">
+
+        <div class="box" onmouseover="fun()"> 1 </div>
+
+        <div class="box" onmouseover="fun()"> 2 </div>
+
+        <div class="box" onmouseover="fun()"> 3 </div>
+
+        <div class="box" onmouseover="fun()"> 4 </div>
+
+        <div class="box" onmouseover="fun()"> 5 </div>
+
+        <div class="box" onmouseover="fun()"> 6 </div>
+
+        <div class="box" onmouseover="fun()"> 7 </div>
+
+        <div class="box" onmouseover="fun()"> 8 </div>
+
+        <div class="box" onmouseover="fun()"> 9 </div>
+
+        <div class="box" onmouseover="fun()"> 10 </div>
+
+        <div class="box" onmouseover="fun()"> 11 </div>
+
+    </div>
+
+    <br><br>
+
+    <input type="button" class="control" onclick="updateBox()" value="Change Box Values">
+
+    <input type="text" class="control" placeholder="Enter your name" id="user_input">
+
+
+</body>
+
+</html>

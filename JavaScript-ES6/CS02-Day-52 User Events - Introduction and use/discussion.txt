@@ -1,0 +1,15 @@
+Browser ==> Event happened : click 
+            mousemove
+
+    |-web page 
+        |
+        |-button 
+        |-button 
+        |-button 
+        |-button 
+
+
+User: YOU
+
+
+Events bubbling ==> goes up from target to parent
