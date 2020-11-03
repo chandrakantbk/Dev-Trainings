@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 53: Event Object </title>
+    <script src="event.object.js"></script>
+    <link href="../bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body onclick="tell_me_class_name(event)">
+
+    <div class="container bg-light py-3">
+
+        <div class="shadow m-4 p-3">
+            <div class="mb-2 p-3" onclick="alert('Parent is clicked')">
+                <p>My Div to Trouble you. </p>
+
+                <div onclick="alert('Child is clicked')">
+
+                    <span>Child to be targeted</span>
+
+                </div>
+
+            </div>
+
+            <button class="btn btn-primary" onclick="handleEvent(event)">TEST ME 1</button>
+
+            <button class="btn btn-primary">TEST ME 2</button>
+            <button class="btn btn-primary">TEST ME 3</button>
+            <button class="btn btn-primary">TEST ME 3</button>
+
+            <button class="btn btn-primary">TEST ME 4</button>
+        </div>
+
+
+        <div class="p-3 shadow m-4">
+            <p class="p-2 m-3 bg-primary shadow"> Line 1 </p>
+            <p class="p-2 m-3 bg-warning shadow"> Line 2 </p>
+            <p class="p-2 m-3 bg-danger shadow"> Line 2 </p>
+            <p class="p-2 m-3 shadow "> Line 2 </p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
