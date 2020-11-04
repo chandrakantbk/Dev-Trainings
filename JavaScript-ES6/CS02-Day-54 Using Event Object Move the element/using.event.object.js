@@ -24,7 +24,7 @@ function setColor(e) {
 function tryPaint(e) {
     console.log("X " + e.x + " Y " + e.y);
 
-    var canvas = e.target; // document.getElementsByClassName('paint_canvas')[0]
+    var canvas = document.getElementsByClassName('paint_canvas')[0]; // e.target;
 
     //var code = `<div class="dot" style=" left: ${e.x}px; top: ${ e.y }px; "> </div>`;
 
