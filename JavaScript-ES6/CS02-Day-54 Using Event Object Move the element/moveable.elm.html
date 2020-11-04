@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- onmousedown="moveBox(event)" -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 54: Using Event Object move the element</title>
+    <link href="../bootstrap.min.css" rel="stylesheet">
+    <script src="using.event.object.js"></script>
+    <style>
+        body {
+            background: url('../../Batch-02-May-2020/media/nature-1.jpg') no-repeat scroll 0 0/cover transparent;
+        }
+        
+        .paint_canvas {
+            height: 450px;
+            width: 800px;
+            overflow: hidden;
+        }
+        
+        .paint_canvas .dot {
+            background-color: #000;
+            position: absolute;
+            width: 4px;
+            height: 4px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container bg-light py-3 shadow">
+
+        <div class="box bg-warning shadow p-3" style="width: 100px; height: 100px;">
+            TEXT
+        </div>
+
+        Select Your Color: <input type="color" id="color" onchange="setColor(event)">
+
+
+        <div class="shadow">
+            <div class="m-3 paint_canvas border border-rounded" onmousemove="tryPaint(event)">
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
+
+
+<div class="dot" style=" "> </div>
