@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 55: Keyboard Events </title>
+    <link rel="stylesheet" href="../bootstrap.min.css">
+    <script src="keyboard.events.js"></script>
+
+</head>
+
+<body>
+    <!-- div.container.shadow.py-3.bg-light#main-box > button.btn.btn-primary  -->
+
+    <div class="container shadow py-3 bg-ligh">
+
+        <input type="text" id="search_box" class="form-control" oninput="hanldeSearch()">
+
+        <!-- <button class="btn btn-primary m-2" onclick="hanldeSearch()">Search</button> -->
+
+        <div class="m-3 shadow p-3" data-ref="output" id="output_box">
+            <p class="text-muted">Your result will be here...</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
