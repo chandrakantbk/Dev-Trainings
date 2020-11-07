@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Day 55: Keyboard Events </title>
+    <title>Day 55, 56, 58: Keyboard Events and Debouncing </title>
     <link rel="stylesheet" href="../bootstrap.min.css">
     <script src="keyboard.events.js"></script>
 
@@ -15,7 +15,7 @@
 
     <div class="container shadow py-3 bg-ligh">
 
-        <input type="text" id="search_box" class="form-control" oninput="hanldeSearch()">
+        <input type="text" id="search_box" class="form-control" onkeydown="handleSearch(event)">
 
         <!-- <button class="btn btn-primary m-2" onclick="hanldeSearch()">Search</button> -->
 
@@ -23,6 +23,13 @@
             <p class="text-muted">Your result will be here...</p>
         </div>
     </div>
+
+    <button class="btn btn-primary" onclick="exeAfterSomeTime()">Show alert MSG after 5 Sec</button>
+
+    <button class="btn btn-primary" onclick="cancelTimer()">Cancel the timer</button>
+
+    <button class="btn btn-primary" onclick="typeSentences()">Type Sentences</button>
+
 
 </body>
 
