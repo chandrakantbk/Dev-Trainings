@@ -34,6 +34,7 @@ var search_timer;
 
 //fu
 function handleSearch(params) {
+    console.log(params)
 
     clearTimeout(search_timer);
 

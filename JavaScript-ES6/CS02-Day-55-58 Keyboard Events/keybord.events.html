@@ -4,8 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Day 55, 56, 58: Keyboard Events and Debouncing </title>
+
+    <title>Day 55, 56, 57, 58: Keyboard Events and Debouncing </title>
+
     <link rel="stylesheet" href="../bootstrap.min.css">
+
     <script src="keyboard.events.js"></script>
 
 </head>
@@ -15,7 +18,7 @@
 
     <div class="container shadow py-3 bg-ligh">
 
-        <input type="text" id="search_box" class="form-control" onkeydown="handleSearch(event)">
+        <input type="text" id="search_box" class="form-control" onkeypress="handleSearch(event)">
 
         <!-- <button class="btn btn-primary m-2" onclick="hanldeSearch()">Search</button> -->
 
@@ -30,6 +33,18 @@
 
     <button class="btn btn-primary" onclick="typeSentences()">Type Sentences</button>
 
+    <div>
+        <p data-ref="10">10</p>
+        <p data-ref="20">20</p>
+        <p data-ref="30">30</p>
+        <p data-ref="40">40</p>
+        <p data-ref="50">50</p>
+        <p data-ref="60">60</p>
+        <p data-ref="70">70</p>
+        <p data-ref="80">80</p>
+        <p data-ref="90">90</p>
+        <p data-ref="100">100</p>
+    </div>
 
 </body>
 

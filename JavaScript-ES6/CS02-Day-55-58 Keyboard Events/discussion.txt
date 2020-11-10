@@ -1,0 +1,64 @@
+Day - 58
+======
+
+Binary Search Algoritham
+
+Devide and Concer technique
+
+data = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100 ]  // length 10
+
+10/2 == 5;
+
+middleIndex = 5;
+
+
+70 == data[ middleIndex ] 
+
+70 < data[middleIndex] 
+
+   search in left array 
+
+70 > data[ middleIndex ]
+
+  search in  right side 
+
+
+
+
+
+
+
+
+
+search = 70;
+
+//Linear Search
+
+// iteration count: 7
+
+var result = [];
+
+
+
+for(let idx = 0; idx < data.length; idx++){
+
+    if( data[idx] == search ){ //70
+        console.log("Found the value at: " + idx );
+
+        result.push( idx );
+
+    }
+
+}
+
+return result;
+
+
+
+
+arr.filter()  ==> Algoritham
+
+
+arr.sort()  ===> Insersion sort 
+
+            ===> Quick sort
