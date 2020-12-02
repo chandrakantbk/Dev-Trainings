@@ -1,11 +1,26 @@
-// Search Algo: Day 59 - Binary Search 
+Partial Steps to prepare for the Interview
+====================================
+Revise the looping structure
+Revise understanding of the condtional statements 
+Revise Comparision opertors
 
-// Binary Search 
+========================================
+Assignment on search
 
-var resultIndex;
-var search = 100;
-var data_array = [10, 20, 25, 30, 45, 60] // length 6, 
-    /* Index       0  1   2   3   4   5 */
+var data_array = [40, 50, 60, 80, 90, 10, 100 ]
+
+1. Find the value 100, and tell me index number 
+    A] using array method
+    B] Without array method
+
+2. Using linear serach algorithm tell me how many jumps 
+   you are doing to find an perticular element. Eg. Find 10.
+
+Use while and for loop;
+
+
+
+=====================================
 
 
 /*
@@ -37,10 +52,3 @@ step 6: search_value > array[ middleIndex ]  // center point of the array
         startIndex  = middleIndex + 1;
 
 */
-
-var startIndex = 0;
-var lastIndex = data_array.length - 1;
-
-while (startIndex <= lastIndex) {
-
-}

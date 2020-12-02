@@ -1,0 +1,93 @@
+HTML vs HTML5
+
+List of Tag Names
+
+HTML JS
+
+video == > load, lodedmetadata, canplay, pause, play, playing, timeupdate
+audio == > load, lodedmetadata, canplay, pause, play, playing, timeupdate
+table == >
+    div
+p
+strong Vs b
+em Vs i
+ul
+ol
+canvas
+span
+
+
+CSS
+
+What is responsive dev
+
+Media Query | Breakpoint
+
+CSS Selectors | 30 selectors
+
+child selectors
+attribute selectors[href |= ""]
+
+
+
+
+
+<video src="" width="400" controls>
+   
+</video>
+
+
+table
+    <tr>
+    <tr>
+    <tr>
+        <td>
+            <table>
+                <tr>
+                <tr>
+            </table>
+        </td>
+
+
+table 
+
+|    Sr |             TYPE             |
+----------------------------------------
+|    1  | ELECT          |    Fashan   |                
+|       |----------------|------------ |
+|       | dta            |   HFD       |
+------------------------------------------------
+
+<table>
+    <tr>
+        <td>
+            SR 
+        <td>
+        <td colspan="2">
+            TYPE
+        </td>
+    <tr>
+
+    <tr>
+        <td rowspan="2"> 1 </td>
+        <td> ELECT </td>
+        <td> Fashan </td>
+    <tr>
+
+
+<div>
+    <p>
+    <p>
+    <p>
+</div>
+
+display ==> block / inline-block / inline / none / flex / grid / table /table-cell / table-row / 
+position
+background-*
+border
+border-*
+margin
+align
+float
+padding
+vertical-align
