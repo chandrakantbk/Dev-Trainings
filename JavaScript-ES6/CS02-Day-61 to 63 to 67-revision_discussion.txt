@@ -1,0 +1,293 @@
+// Re-Continued 07-Dec-2020 
+
+<!doctype html>
+<html>
+    <head>
+        <tile>Web Page title</title>
+
+        <link href="style.css" rel="stylesheet">
+
+        <script src="script.js">
+         
+        <style>
+            p{
+                color: green;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <p style="color: red" class="p-1" id="child-1">Hello World</p>
+
+        <p style="color: red" class="p-1" id="">Hello World</p>
+
+    </body>
+</html>
+
+
+
+span
+div
+p 
+img
+h1 h6
+iframe
+
+table, tr, th, td, caption thead tbody
+
+<table>
+    <thead>
+        <tr>
+            <th>
+            <th>
+            <th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>
+            <td>
+            <td>
+        <tr>
+    </tbody>
+
+ul type
+
+ol  start="10" type="1"
+
+<ol reversed start="10" type="1">
+    <li>List name 1</li>
+    <li>List name 1</li>
+    <li>List name 1</li>
+    <li>List name 1</li>
+    <li>List name 1</li>
+    <li>List name 1</li>
+</ol>
+
+10. List name 1
+11. List name 2
+12. List name 1
+
+
+dd dl dt 
+
+Formatting: b i strong em ins del small big mark sup sub 
+
+form
+fieldset
+legend
+input       submit | reset | number | text | date | color | range | month | week | button
+button
+select 
+option
+optgroup
+
+main
+header
+footer
+article
+section
+
+video
+source
+audio
+
+<a href="link.html" target="_self"> Click here </a>
+
+<embed>
+<object> applets
+
+<video controls class="w-1000" id="video-1">
+    <source src="file1.mp4" type="video/mp4">
+    <source src="file2.ogg type="video/ogg">
+    <source src="file.avi" type="video/avi">
+    <p> We can not play video <p>
+</video>
+
+<video controls class="w-1000" id="video-2">
+    <source src="file1.mp4" type="video/mp4">
+    <source src="file2.ogg type="video/ogg">
+    <source src="file.avi" type="video/avi">
+    <p> We can not play video <p>
+</video>
+
+====================================
+
+HTML vs CSS 
+
+CSS 
+    inline          ==> <p style="color: red">This is text </p>
+
+    internal        ==> <style> 
+
+                            #id_name{ }
+                            .class_name{ }
+                            p{ }
+
+                            <div>
+                                <article>
+                                    <p> grand child
+                                    <section>
+                                        <p>
+                                    </section>
+                                </article>
+
+                                <p> direct child
+                            </div>
+
+
+    external         ====> <link href="style.css" rel="stylesheet"> 
+
+
+css display ==> block | inline-block | inline | flex | grid | table | none
+css animation 
+css transform 
+css flexbox 
+css grid 
+
+.box{
+    color: white;
+    background: black;
+}
+
+@media print {
+    .box{
+        color: black;
+        background: gray;
+    }
+}
+
+JavaScript ==>> Processing => interactive 
+
+internal
+<script src="myscript.js">
+    
+<script>
+
+
+myscript.js 
+
+funvtion name(){
+
+}
+
+JS Revision [10-Dec-2020]
+
+Computer Applications
+    |
+    |- 1] Web Applications [Web Developer]
+               Server  ===>(Connection)===>  Client
+      (DBMS)
+                App                              |
+               Server Side Development           |==> Client Side Development 
+                Backend Developers                       Frontend Developers
+                Node.js/Deno.js                             JS / jQuery.js / Angular/ React /Vue 
+
+                                      Full Stack Developer            
+
+    |
+    |- 2] Desktop Applications 
+    |       Electorn.js 
+    |
+    |- 3] Cloud Applications
+            AWS SDK 
+            Node.js 
+
+
+
+
+
+First Name :
+Email: 
+
+
+regi-form.html 
+                             >>>>>>>>>>        SK 
+SERVER                       <<<<<< ======>    server // ip // domain // (Browser)
+
+                                                                    document.getElementById("first").value == ""
+                                                                    alert("Please ")
+                                                                    7.5% 
+
+                                                                    Month: 1,050
+                                                                    12
+                                                                    7.5% 
+
+                                                                    ========
+                                                                    ANSWER 
+
+
+
+
+
+
+
+<html>
+    <head>
+        <title>I am title of this window </title>
+        
+        <link href="style.css" rel="stylesheet" />
+        <script>
+
+        </script>
+    </head>
+
+    <body>
+
+          <div> </div>
+        
+          <script> 
+                var name = "Hello";
+                var marks = 50;
+               
+                let
+                const 
+                >>
+                <<
+                >>>
+                ??
+
+
+
+
+               var result = marks / 5 * 100;
+                +
+                -
+                %
+
+                
+
+
+            var is_max = marks > 40 ? "Yes" : "NO"
+
+                ? : 
+
+
+                ||
+
+                && 
+
+                !
+                10 > 9
+                9 < 10
+
+                8 <= 10
+
+                10 >= 5
+
+                5 == "5"
+
+                10 != 15
+
+          </script>
+
+          <p> </p>
+    </body>
+
+</html>
+
+
+
+
