@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="scope.js"></script>
+</head>
+
+<body>
+    <h1>Scope day 74-75</h1>
+    <pre>
+        var a = 10; // global
+
+        function fun(){
+            var b = 50; // local scope
+        }
+    
+        console.log(b) // ReferenceError
+
+    </pre>
+    <hr>
+    <pre>
+        var a = 10;
+        var b = 20; 
+
+        function fun(){
+            // Variable Shadowing 
+            var b = 50; // local scope
+            console.log(b) //50
+        }
+
+        console.log(b) // 20
+
+    </pre>
+</body>
+
+</html>

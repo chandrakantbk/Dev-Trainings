@@ -1,0 +1,11 @@
+var a = 10; // global
+let a = 10;  // global
+const a = 10; // global
+
+
+function fun(){
+    var b = 50; // local scope
+
+}
+
+console.log(b)  // Error - Refernce
