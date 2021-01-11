@@ -60,8 +60,7 @@ var key = prompt("Add your company name: ");
 data[key + "Computers"] = "IT company"
 */
 
-
-var companyData = {}
+var companyData = { appleComputers: 'IT Company', }
 
 function addCompany() {
     var keyName = prompt("Enter name: ");
@@ -80,4 +79,35 @@ function addCompany() {
 
     e.innerHTML = name_list.join(" - ");
 
+}
+
+
+
+
+// Day 80: 11-Jan-2021
+var admition_data = {
+    college: 'Sample College',
+    city: 'BR',
+    "FY1990": 500205,
+    "FY1991": 40404,
+}
+
+
+function addIncome() {
+    var year = document.getElementById('fy-year').value; // ""
+    var income = document.getElementById('fy-income').value;
+
+    if (year == "") {
+        alert("Enter Year");
+        return false;
+    }
+
+    admition_data["FY" + year] = income;
+
+    console.log(admition_data);
+
+    alert(year + " Added Successfully!");
+
+    document.getElementById('fy-year').value = "";
+    document.getElementById('fy-income').value = "";
 }

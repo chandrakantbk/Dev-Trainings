@@ -56,12 +56,25 @@
 
         <hr>
 
-        <button class="btn btn-primary" onclick="addCompany()">Add Company</button>
+        <button class="btn btn-primary mr-3" onclick="addCompany()">Add Company</button>
 
-        <div class="bg-warning m-4 border shadow p-2" id="comapny-list">
+        <div class="bg-primary m-4 border shadow p-2" id="comapny-list">
             This will be list......
         </div>
 
+        <!-- Day 80: 11-Jan-2021 -->
+        <div class="card">
+            <div class="card-header bg-warning text-dark">
+                ADD INCOME for FY
+            </div>
+
+            <div class="card-body">
+                <input type="text" class="form-control my-3" placeholder="Enter Year" id="fy-year">
+                <input type="text" class="form-control my-3" placeholder="Enter Ammount" id="fy-income">
+                <button class="btn btn-primary" onclick="addIncome()">ADD INCOME</button>
+            </div>
+
+        </div>
     </div>
 </body>
 
