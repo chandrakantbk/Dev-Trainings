@@ -1,0 +1,43 @@
+
+// Day-76 - JS Object 6-Jan-2020
+
+
+var obj = {} // using object litteral 
+
+var o = Object.create() // using object create method
+
+var f = new fun(); // using new keyword
+
+
+
+
+
+// 3 ways of adding property for the object
+
+var person = { 'name': 'CK', 'city': 'Pune', 'office address': null } // while creating using object litteral
+
+person.city = 'Pune';
+
+person['last name'] = "";
+
+person['city'] = "BLR"
+
+
+
+// 3 most ways to access object property
+var inputVal = prompt("Enter your query"); // name
+
+var result = person[ keyName ]
+
+person.name // CK 
+person['name'] 
+person[inputVal] //
+
+
+getInfo(keyName){
+   return person[keyName]
+}
+
+function fun(){
+
+}
