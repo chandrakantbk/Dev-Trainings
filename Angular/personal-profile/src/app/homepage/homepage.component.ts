@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Util } from './../shared-class/util';
 
 @Component({
   selector: 'app-homepage',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomepageComponent implements OnInit {
 
-  constructor() { }
+  constructor(private util: Util) { }
 
   ngOnInit() {
+    let util = new Util('CK', 28);
+    this.util.printName();
   }
+
 
 }
