@@ -1,0 +1,83 @@
+//Date: 24-Jan-2020
+
+// JavaScript:   Scripting Programming web development
+
+// keywords: let const var
+
+var a = 10;
+
+let t = 30;
+const pi = 3.14;
+
+
+// 1. re-declaration
+
+var j = 50;
+j = 60;
+
+
+// same variable name not allowed
+let h = 500;
+let k = 600;
+
+const pi = 5;
+
+
+function fun() {
+    var f = 80;
+    f = 50;
+
+    let f = 50;
+
+}
+
+// 2. scope diff 
+
+function run() {
+    var g = 20;
+    let g = 50; // error
+
+    function z() {
+        var r = g + 10;
+        // console.log(index);
+    }
+
+    for (const index = 0; index < 10; index++) {
+
+    }
+
+    if (a < b) {
+        const t = true;
+
+    }
+
+}
+
+// 3. re-assignment 
+var h = 600;
+
+h = 605;
+
+let j = 50;
+
+j = 400;
+
+const pi = "Pune";
+
+pi = 6;
+
+// Data Types 
+
+let name = "Pune"; // string
+const p = 10 //number
+var student = { name: "g", city: 'pune' } //object
+var list = [40, 30, 50, ] // Array
+var isAllow = true // boolean
+var i = 10 n //bigInt 
+
+   // - +2 ^ 53
+
+
+var y = 82582025852028820058087101470478068906980289205402698860 n;
+
+var z = y * 5n; //invalid big int

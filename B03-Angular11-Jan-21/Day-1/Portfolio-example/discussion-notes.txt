@@ -1,0 +1,8 @@
+//25-Jan-2021 8:30PM
+
+Framework vs Library
+
+
+0. Node js install
+1. Angalar npm install -g @angular/cli
+2. Visual code : add Angular 11 snippets 

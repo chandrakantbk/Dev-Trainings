@@ -1,0 +1,103 @@
+##Day 01: Introduction [25-JAN-2021]
+
+2010: AngularJS developed by Misko Hevery, a employee at Google
+2014-2015: Re-written the AngularJS using Typescript and became Angular 2
+
+Angular is a framework for frontend development. 
+
+Diff Framework Vs library is - 
+Framework: Provides Structure (and Functionalities) and keeps the programs flow control
+Library: Provides Functionalities and developer decides the program flow control
+
+To start with Angular, you need to download/install followings
+
+0. Node.js : NPM
+1. npm install -g @angular/cli: Angular 11
+2. Visual Code
+
+=================================================================================
+
+##Day 02: Starting Project [26-JAN-2021]
+
+Install specific version:
+
+npm install -g @angular/cli@8.3.17
+
+ng new <ProjectName>
+
+ng serve --open
+------------------------------------------------
+#Further Reading: Keywords 
+angular/cli 
+node.js 
+npm 
+
+------------------------------------------------
+#Tasks
+1. Install Angular and Create a Project called Portfolio
+
+ng new Portfolio
+ng serve 
+
+=================================================
+#Day 03: Understanding Angular Project and component [27-JAN-2021]
+
+Project structure 
+
+Portfolio 
+    |
+    |-src
+        |
+        |-app
+            |
+            |-app.component.html
+            |-app.component.css
+
+Angular run on port 4200 by default.
+We can change that port using a flag --port <portNumber>
+            ng serve 
+            ng serve --port 5000
+            npm start
+-main.ts: Entry point for angular app  
+-test.ts: Entry Point for test 
+-package.lock.js: list of packages and dependencies
+-package.js: list of used packages
+
+Command to generatte component: 
+
+ng generate component <componentName>
+
+Keywords to read more about:
+main.ts 
+AppModule
+AppComponent
+MVVM
+ 
+Module [may have more than one components]
+    -component [is made up of 4 files]
+        -html
+        -css 
+        -spec.ts 
+        -ts
+Ex: 
+AppModule 
+    AppComponent
+    component-homepage 
+    component-cantactus
+    component-menubar
+
+==========================
+Day 04: Revising Prerequisites
+
+CRP: Critical Rendering path 
+
+1. DOM 
+2. CSSOM 
+3. Render tree
+4. Layout 
+5. Paint
+
+-CSS is Render Blocking
+-JS is Parser Blocking
+-JS Runs after CSSOM Event and (might be) before DOM construction
+-Render tree get formed only after DOM and CSSOM is ready
