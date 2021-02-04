@@ -1,0 +1,81 @@
+p{margin: 0px;  }
+
+p, div, body, html{
+    margin: 0px;
+}
+
+
+
+.box{
+    margin-top: 10px; 
+    margin-bottom: 20px; 
+    margin-left: 100px;
+    margin-right: 50px;
+
+            /* top right bottom left */
+    margin: 10px 50px 20px 100px;
+
+
+   /*
+    border-left-style: solid;
+    border-left-width: 10px;
+    border-left-color: yellow;
+   */
+    /*
+        border-style: solid;
+        border-width: 10px;
+        border-color: yellowgreen;
+    */
+
+    border: 10px solid red;
+                   /* top  right */
+
+    border-color: green gold;
+    
+    border-color: red gold green;
+
+   /*  border-style: solid groove dotted double; */
+
+
+}
+
+p{
+    color: green; 
+}
+
+h1{ color: red; }
+
+.pointer{
+    width: 0px;
+    height: 0px;
+    color: white;
+    font-size: 20px;
+    border-width: 50px;
+    border-style: solid;
+    border-color: green transparent gold;
+    border-top-width: 0px;
+
+    /* border: 10px solid red; */
+/*  
+    border-style: solid;
+    border-width: 10px 10px 0px 10px;
+   border-color: green transparent; 
+   */
+
+}
+/** 1-Feb-2021 Day-7 */
+/** Position: absolute | relative | fixed | sticky | static */
+
+.container{
+    width: 350px;
+    height: auto;
+    border: 5px solid black;
+    margin: 50px auto;
+}
+
+h1{
+    color: red;
+    border: 5px solid;
+    padding: 10px;
+    position: relative;
+}

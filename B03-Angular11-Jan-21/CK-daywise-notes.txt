@@ -87,7 +87,7 @@ AppModule
     component-menubar
 
 ==========================
-Day 04: Revising Prerequisites
+Day 04: Revising Prerequisites [HTML]
 
 CRP: Critical Rendering path 
 
@@ -101,3 +101,198 @@ CRP: Critical Rendering path
 -JS is Parser Blocking
 -JS Runs after CSSOM Event and (might be) before DOM construction
 -Render tree get formed only after DOM and CSSOM is ready
+
+=========================================================
+Day 05: Revising Prerequisites [CSS3]
+
+CSS Selectors: Used to select the perticular element from DOM.
+
+Some Basic Selectors:
+*          : Global selector, selects all the elements in current document
+tagname    : Tag selector, selects all elements of that perticuar tag 
+.className : Class Selector, selects the element having the className applied
+#id        : Id Selector, select the element with having the perticular id 
+
+==========================================================
+Day 06: Revising Prerequisites [CSS3 Properties] [30-Jan-2021]
+
+List of some important css Properties
+-------------------
+display: inline | block | inline-block | none | flex | grid | table | table-cell 
+position: relative | absolute | fixed | sticky | static 
+margin: <top> <right> <bottom> <left>;
+border-radious 
+border-style 
+border-color
+border-width 
+background-* 
+color 
+text-align 
+font-family
+font-size 
+font-style
+line-height
+
+@font-face {
+    font-family: <fontName>;
+    src: url("fonts/fontName.ttf") format("opentype");
+}
+@import "path/name.css";
+===========================================================
+Day 07: Revising Prerequisites [CSS3 Properties] [01-Feb-2021]
+
+Examples on position: relative | absolute | fixed | sticky | static 
+
+absolute: the top, left, right and bottom is calcuated from the parents border(whose position is not static); if position is not set on parent element, it keep searching till any parent has position set other than "static", and reaches to html tag if no one parent match.
+
+relative: the top, left, right and bottom calcuates from current elements border.
+
+
+===========================================================
+
+Day 08: Revising Prerequisites [CSS3 Properties] [02-Feb-2021] - postponed
+
+===========================================================
+
+Day 09: CSS display, fonts and bootstrap [Revisiting Prerequisites] [03-Feb-2021]
+
+display: flex 
+ - You can align items inside the flex box using justify-content and align-items.
+ - justify-content works on main axis (usually default the horizontal, X axis)
+ - align-items works on cross axis(usually default in vertical direction, Y axis)
+ 
+
+Read: 
+bootstrap classes
+css selectors 
+css flex
+css grid
+
+
+display: none
+display: inline 
+display: block 
+display: inline-block 
+display: flex 
+display: grid  
+
+===========================================================
+
+Day 10: JavaScript(ES6) [Revisiting Prerequisites] [04-Feb-2021]
+
+
+var a = 10 // number
+var a = `pune` // string 
+var flag = true // boolean 
+var g; // undefined
+var hNum = 100820059803988520258520028520285202585202585202585202582025820025820025852n // BigInt
+NaN 
+null 
+Array 
+Object 
+
+var arr = [ ] //array literal 
+
+var arr2 = new Array()
+
+var obj = { } // object literal
+
+
+var name = "Akshay";
+var age = 25;
+var city = "City"
+
+var marks = [50, 60, 85, 30]
+              0   1   2   3
+              
+var ak_record = {name:  "Akshay", age: 25, city: "Pune", m: [50,60,85,30] }
+
+
+var records = ["BLR", false, 50, null, [405, 505, 60], {name:  "Akshay", age: 25, city: "Pune", m: [50,60,85,30] } ]
+
+// access values using index numbers
+records[1]
+records[0] = "BLR"
+
+Array.isArray( records[4]  )  // true
+
+
+typeof marks //  "object"
+
+var student_list = [];
+
+
+student_list[5] = {name: "akshay", city: "pune"}
+
+
+student_list[0] // undefined 
+
+for(assignment; condition; callback-expression){
+
+}
+
+for(var index = 0; check() ; increment() ){
+    console.log(index)
+}
+
+while( check() ){
+
+}
+
+do{ 
+  
+}while()
+
+if(i < 50) console.log("valid")
+var num = 50
+
+if(num < 50) {  
+    console.log("valid") 
+
+} else if(k < 20){ 
+    //
+}
+
+
+if( -10 ){
+    // statement
+}
+
+var t = 50 + 60 // 110
+
+a + b  // 
+
+var y = 50;
+
+// Falsy
+-------------
+0
+null 
+undefined 
+""
+NaN 
+false 
+
+// Truthy
+[]
+{}
+50
+-50
+true 
+" "
+
+var name = " "
+var emArr = []
+
+if(name){
+    // this will execute
+}
+
+// Whats next
+for - in 
+for - of 
+object 
+array 
+Math 
+Date 
+
