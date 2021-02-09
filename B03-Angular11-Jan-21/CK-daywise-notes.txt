@@ -207,6 +207,9 @@ var marks = [50, 60, 85, 30]
               
 var ak_record = {name:  "Akshay", age: 25, city: "Pune", m: [50,60,85,30] }
 
+ak_record.m // [50,60,85,30]
+
+ak_record.m[0]
 
 var records = ["BLR", false, 50, null, [405, 505, 60], {name:  "Akshay", age: 25, city: "Pune", m: [50,60,85,30] } ]
 
@@ -296,3 +299,21 @@ array
 Math 
 Date 
 
+====================================
+
+Day 11: JS for loop, array and object (ES6) [Revisiting Prerequisites] [08-Feb-2021]
+
+// iterates over and gets keys in k
+for(let k in array_or_obj  ){
+    console.log( k ) // key name 
+    console.log( array_or_obj[ k ] ) // value of the key 
+}
+
+// iterates over and get values in v
+for(let v of array_iterable){
+     console.log( v ) // key's value | array value 
+}
+
+=============================================
+
+Day 12: JS array and object (ES6)
