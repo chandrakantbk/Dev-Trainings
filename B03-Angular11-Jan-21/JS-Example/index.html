@@ -6,11 +6,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="basics.js"></script>
+    <style>
+        .container {
+            padding: 30px;
+            border: 2px sienna solid;
+            margin: 50px;
+            position: relative;
+        }
 
+        .popup {
+            position: absolute;
+            top: 0;
+            width: 150px;
+            height: 80px;
+            border: 2px solid gold;
+            left: 150px;
+
+        }
+
+        .hide {
+            display: none !important;
+        }
+    </style>
 </head>
 
 <body>
     <h1>Hello JS</h1>
+
+
+    <label for="t1">Value 1:</label>
+
+    <input type="text" id="t1" name="val1" class="form-control">
+
+    <label for="t2">Value 2</label>
+
+    <input type="text" id="t2" name="val2" class="form-control">
+
+    <button onclick="handleAdd()">ADD + </button>
+
+    <input type="text" id="result" placeholder="Result...">
+
+    <div class="result-area">
+        .....
+    </div>
+
+    <p class="result-area">
+        para
+    </p>
+
+    <!--  <button onmouseover="handleEvent(event)">SUBMIT 2</button> -->
+
+    <!-- <input type="submit">
+        <input type="reset"> -->
+
+
+
+    <div class="container" onclick="hidePopup()">
+
+        <button onclick="callButtonEvent(event)">Setting</button>
+
+        <div class="popup hide">
+            POPUP TEXr
+        </div>
+    </div>
+
+
+
 </body>
 
 </html>
