@@ -317,3 +317,115 @@ for(let v of array_iterable){
 =============================================
 
 Day 12: JS array and object (ES6)
+
+-order in object is not same if keys are identical to numbers. 
+-The number keys will be aranged in ascending order
+
+var obj=  {
+    "name": "CK"
+    "0": 10
+}
+
+=======================================================
+
+Day 13: JS array and object (ES6)
+
+-Checking element in the Array
+
+var arr [50, 30, 12, 50, 60]
+
+arr.includes(30) // true 
+arr.indexOf(50) // 0  tells index from begin, if not found in array then will return -1
+arr.lastIndexOf(50) // 3 
+
+// find method used to find the first matched element based on function
+// returns array item, here it will return 12
+
+arr.find( function(elm){
+    if(elm % 3 == 0){ 
+        return true
+    } else {
+        return false
+    }
+ })
+
+// filter method: return all matched elements. return array of matched array items 
+
+arr.filter(function(e){
+    if(e % 10 == 0){
+        return true
+    } else{ 
+        return false 
+    }
+})
+
+// returns [50, 30, 50, 60]
+
+
+Sort method: compares next value with current. callback function should return as below:
+
+if current value is less: -1
+if current and next values are same: 0
+if current value is greter than next: 1
+
+arr.sort() //sorts array in ascending array
+
+arr.reverse() // reverse the entire array 
+
+========================================================
+Day 15: Understanding components
+
+Create New Project: ng new ProjectName 
+ 
+strict checking : Y/N 
+Routing: Y 
+Stylesheet: CSS 
+
+
+Create Component using command: ng g c componentName
+
+
+Following is Angular project structure
+-----------------------------
+ProjectName(project folder)
+    |-e2e           : testing code goes here
+    |-node_modules  : NPM packages 
+    |-src           : application source code goes here
+        |
+        |-app(module)
+            module.ts 
+            component: ng generate component <componentName>
+
+            module[product]
+                | proctuts.module.ts 
+                |-components
+                |
+            module[admin]
+                |-admin.module.ts
+                |
+
+--------------------------------------------------
+
+module [login module]
+    |- <modulename>.module.ts : things about the module, used references and component list 
+                    component1, component2
+
+    |-<modulename>.routing.ts
+
+    |-component1: login-page
+    |-component2: reset-password-page
+    |-forget-password
+        |
+        |-template file (html files)
+        |-Stylesheet file (css files)
+        |-typescript file (ts files)
+        |-spect.ts
+
+Routing example:
+[
+    { path: 'login', component: LoginComponent },
+]
+
+example.com/login
+example.com/reset-password
+example.com/forget-password

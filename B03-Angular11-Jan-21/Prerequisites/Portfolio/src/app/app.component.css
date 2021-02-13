@@ -1,0 +1,65 @@
+
+h1 {
+    color: red; 
+    text-align: right;
+    height: 200px;
+    width: 200px;
+   
+}
+
+.text-red{
+    color: red !important;
+    width: 400px;
+}
+
+#my-id{color: maroon !important;}
+
+p{ color: green; }
+
+
+.d-block{
+    display: block;
+}
+
+.bg-red{
+    background-color: #FF0000;
+}
+
+.bg-yellow{
+    background-color: #d6cb4c;
+}
+
+.span-box{
+   /*  display: none;  *//* block | inline-block | inline  */
+    width: 500px;
+    height: 100px;
+    padding: 10px;
+    border: 10px solid green;
+    background-color: maroon;
+    /* 
+    border-style: solid;
+    border-width: 10px;
+    border-color: green; 
+    */
+
+}
+
+
+/* 
+    selector {property: value; property: value; property: value; } 
+
+    1 tag selector
+    .text-red{} 
+*/
+
+
+/** 
+    CRP 
+    CSS Selectors
+    CSS display 
+    CSS Specifity rules
+
+*/
+
+
+
