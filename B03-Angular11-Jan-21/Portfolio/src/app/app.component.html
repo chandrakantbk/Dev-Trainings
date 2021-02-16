@@ -1,29 +1,16 @@
-<a href="/skills">SKILLS</a>
-<br>
-<a href="/projects">Projects</a>
-<br>
-<a href="/login">Login</a>
+<nav class="navbar navbar-dark bg-dark">
+    <!-- Navbar content -->
+    <a class="nav-item btn bg-white" href="/skills">SKILLS</a>
+    <a class="nav-item btn bg-white" href="/educations">Education</a>
+    <a class="nav-item btn bg-white" href="/projects">Projects</a>
+</nav>
 
-<h1>Hello Angular </h1>
+<div class="p-4 shadow m-4">
 
-<pre>
-  Project 
-  |
-  |-Module
-      |
-      |-Component 
-      |-mycomponent   
-            ng generate component eduction
-                                    |
-                                    |-eduction.component.css
-                                    |-eduction.component.html
-                                    |-eduction.component.ts 
-                                    |-eduction.component.spec.ts 
-</pre>
+    <router-outlet></router-outlet>
 
-<hr>
-<hr>
+</div>
 
-<router-outlet></router-outlet>
-
-<hr>
+<footer class="navbar bg-primary p-4 text-white">
+    &copy; Copyright @ CUBKS
+</footer>
