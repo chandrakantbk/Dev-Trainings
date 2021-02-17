@@ -429,3 +429,38 @@ Routing example:
 example.com/login
 example.com/reset-password
 example.com/forget-password
+
+====================================================
+Day 16: One way binding [13-Feb-2021]
+    -String Interpollation ( using default {{  }} )
+    -Property Binding 
+    -Attribute Binding 
+    -Style Binding
+    -Class Binding
+
+===================================================
+Day 17: Bootstrap and Two way binding [15-Feb-2021]
+
+Using Two way binding steps
+
+1. Go to app.module.ts file 
+2. add FormsModule in the import array like below 
+
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        FormsModule  // here we added forms module
+    ],
+
+Using Bootstrap steps:
+
+1. npm install bootstrap
+2. copy bootstrap's relative path from node_modules folder 
+3. Edit angular.json file.
+    -find styles array and add your path like below.
+        styles: [
+            "node_modules/bootstrap/dist/css/bootstrap.min.css",
+            "src/styles.css"
+        ]
+
+===================================================

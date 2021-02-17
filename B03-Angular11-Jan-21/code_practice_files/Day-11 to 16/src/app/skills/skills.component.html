@@ -1,0 +1,35 @@
+<p>String Interpollation </p>
+<p> {{ title }} </p>
+
+<input placeholder="{{place_title }}" type="text" value="{{num}}">
+
+<input type="text" [disabled]="flag">
+
+<img src="{{ img_src }}" width="200">
+
+<br><br>
+<input type="checkbox" name="degree">BCA <br>
+<input type="checkbox" name="degree" id="ch02" [checked]="check_flag">DCA
+
+<hr>
+
+<p [style.color]="color_name">
+    BLUE TEXT
+</p>
+
+<div [innerHTML]="div_content">
+    <p>This is text inside div</p>
+</div>
+
+<table>
+    <tr>
+        <td [attr.colspan]="col_count"></td>
+        <td></td>
+    </tr>
+</table>
+
+
+1. string Interpollation
+2. property binding [checked]
+3. attribute binding
+4. style binding [style.color]

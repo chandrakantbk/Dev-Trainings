@@ -1,0 +1,14 @@
+<nav class="navbar navbar-dark bg-dark">
+  <a class="nav-item btn bg-white">SKILLS</a>
+  <a class="nav-item btn bg-white">TEST</a>
+</nav>
+
+<div class="shadow p-3 w-50 mx-auto">
+
+  <input type="text" class="from-control" [(ngModel)]="myname">
+
+  <hr>
+  <input type="text" class="from-control" value="{{ myname }}" id="t1">
+
+  <button (click)="tellMeName()">CLICK</button>
+</div>
