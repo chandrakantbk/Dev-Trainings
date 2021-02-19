@@ -1,0 +1,41 @@
+<div class="container">
+    <input type="text" [(ngModel)]="first_value">
+    <input type="text" [ngModel]="sec_value" (ngModelChange)="handleModelValue($event)">
+
+    <input type="text" [value]="third" (input)="changeMyValue($event)">
+
+    <p>First: {{first_value}}</p>
+    <p>Second: {{ sec_value }}</p>
+
+    <hr>
+    <input type="text" [value]="my_variable" (focus)="handleChangeValue($event)" (blur)="removeFocus($event)">
+
+    <input type="text" [value]="my_variable" (focus)="handleChangeValue($event)">
+
+    <input type="text" [value]="my_variable" (input)="handleChangeValue($event)">
+    <input type="text" [value]="my_variable" (input)="handleChangeValue($event)">
+    <input type="text" [value]="my_variable" (input)="handleChangeValue($event)">
+    <input type="text" [value]="my_variable" (input)="handleChangeValue($event)">
+
+    <input type="text" [value]="my_variable" (input)="handleChangeValue($event)">
+
+    <input type="text" [value]="my_variable" (input)="handleChangeValue($event)">
+
+    <input type="text" [value]="my_variable" (input)="handleChangeValue($event)" class="form-control">
+
+    <p>{{ my_variable }}</p>
+
+    <hr>
+    <button class="btn btn-primary mx-2">Laptop</button>
+    <button class="btn btn-primary mx-2">Creadit Card</button>
+    <button class="btn btn-primary mx-2">Mobile</button>
+    <button class="btn btn-primary mx-2">Desktop</button>
+    <button class="btn btn-primary mx-2">Table</button>
+    <button class="btn btn-primary mx-2">All</button>
+
+
+    <p>You clicked on {{ btn_text }}</p>
+
+</div>
+
+<app-footer-item></app-footer-item>
