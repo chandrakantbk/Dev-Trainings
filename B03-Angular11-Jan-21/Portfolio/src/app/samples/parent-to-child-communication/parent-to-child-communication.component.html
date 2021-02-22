@@ -1,0 +1,17 @@
+<div class="container-fluid">
+    <h1>Product list [ 5 % ]</h1>
+
+    <input type="text" placeholder="COUPAN CODE" class="form-control">
+
+    <button class="btn btn-success my-2" (click)="applyCoupan()">APPLY</button>
+
+    <div class="d-flex justify-content-between">
+
+        <app-product-item [product_data]="product_list[0]"></app-product-item>
+
+        <app-product-item [product_data]="product_list[1]"></app-product-item>
+
+        <app-product-item [product_data]="product_list[2]"> </app-product-item>
+
+    </div>
+</div>

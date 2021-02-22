@@ -1,0 +1,13 @@
+.header-bar {
+    display: flex;
+    padding: 2px 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.number-item {
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+}

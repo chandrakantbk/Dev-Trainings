@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="header-bar bg-primary">
+        <h3 class="m-0 text-white">TO DO List</h3>
+        <div class="number-item bg-white m-2">
+            {{ no_of_todos }}
+        </div>
+    </div>
+
+    <div class="m-3 p-3 shadow">
+        <app-todo-list-item [myname]="list_1_text" (mynameChange)="handleListEvent($event)"></app-todo-list-item>
+
+        <app-todo-list-item [myname]="list_2_text" (mynameChange)="handleListEvent($event)"></app-todo-list-item>
+
+        <app-todo-list-item [myname]="20 + 30" (mynameChange)="handleListEvent($event)"></app-todo-list-item>
+
+        <app-todo-list-item [myname]="'list 4'" (mynameChange)="handleListEvent($event)"></app-todo-list-item>
+
+        <app-todo-list-item [myname]="'list 5'" (mynameChange)="handleListEvent($event)"></app-todo-list-item>
+
+    </div>
+
+</div>

@@ -1,0 +1,23 @@
+<nav class="navbar navbar-dark bg-dark">
+    <!-- Navbar content -->
+    <a class="nav-item btn bg-white" href="/">HOME</a>
+    <a class="nav-item btn bg-white" href="/skills">SKILLS</a>
+    <a class="nav-item btn bg-white" href="/educations">Education</a>
+    <a class="nav-item btn bg-white" href="/projects">Projects</a>
+</nav>
+
+<p class="p-4 shadow m-4 bg-warning">Selected Products: {{ selected_product }}</p>
+
+<div class="p-4 shadow m-4 d-flex ">
+
+    <!-- <router-outlet></router-outlet>  -->
+    <app-product-item [product_name]="p1" (productChange)="handleChildData($event)"></app-product-item>
+
+    <app-product-item [product_name]="p2" (productChange)="handleChildData($event)"></app-product-item>
+
+    <app-product-item [product_name]="p3" (productChange)="handleChildData($event)"></app-product-item>
+
+    <app-product-item [product_name]="p4" (productChange)="handleChildData($event)"></app-product-item>
+
+
+</div>

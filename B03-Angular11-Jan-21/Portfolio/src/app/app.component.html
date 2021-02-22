@@ -4,27 +4,11 @@
     <a class="nav-item btn bg-white" href="/skills">SKILLS</a>
     <a class="nav-item btn bg-white" href="/educations">Education</a>
     <a class="nav-item btn bg-white" href="/projects">Projects</a>
+    <a class="nav-item btn bg-white" href="/samples">Demos</a>
 </nav>
 
 <div class="p-4 shadow m-4" style="color: red">
 
-    <!-- <router-outlet></router-outlet> -->
-
-
-    <h1>Product list [ 5 % ]</h1>
-
-    <input type="text" placeholder="COUPAN CODE" class="form-control">
-
-    <button class="btn btn-success my-2" (click)="applyCoupan()">APPLY</button>
-
-    <div class="d-flex justify-content-between">
-
-        <app-product-item [product_data]="product_list[0]"></app-product-item>
-
-        <app-product-item [product_data]="product_list[1]"></app-product-item>
-
-        <app-product-item [product_data]="product_list[2]"> </app-product-item>
-
-    </div>
+    <router-outlet></router-outlet>
 
 </div>

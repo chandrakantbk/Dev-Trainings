@@ -1,0 +1,8 @@
+<div class="mb-3 mx-4 shadow p-3 row align-items-center">
+    <div class="col" [class.completed]="isComplete === true">
+        {{ myvar }}
+    </div>
+    <div class="col-3">
+        <button class="btn btn-success" (click)="markItemComplete()" [disabled]="isComplete">complete</button>
+    </div>
+</div>

@@ -433,10 +433,10 @@ example.com/forget-password
 ====================================================
 Day 16: One way binding [13-Feb-2021]
     -String Interpollation ( using default {{  }} )
-    -Property Binding 
-    -Attribute Binding 
-    -Style Binding
-    -Class Binding
+    -Property Binding    <input [propertyName]="varName">
+    -Attribute Binding   <input [attr.attributeName]="varName">
+    -Style Binding       <div [style.color]="varName">
+    -Class Binding       <div [class.success]="booleanVar">
 
 ===================================================
 Day 17: Bootstrap and Two way binding [15-Feb-2021]
@@ -464,3 +464,55 @@ Using Bootstrap steps:
         ]
 
 ===================================================
+Day 18: Recap Everything - Making a Portfolio Finally [16-Feb-2021]
+
+==============================================
+Day 19: Angular Event Binding and Basic Examples [17-Feb-2021]
+
+<button (click)="handlerMethod($event)">
+
+- here $event is a special variable in which angular exposes event payload data 
+- ( EventName ) = "functionToHandleEvent()"
+
+==============================================
+Day 20: Angular Event Binding - Practice [18-Feb-2021]
+
+==============================================
+
+Day 21: Component's Communication - [Parent-Child] 
+
+app.component [Parent]
+    |-product-item [Child]
+
+app.component.html 
+    <parent-item [customPropertyName]="variableFromAppComponent"> </parent-item> 
+
+- we can take any value from parent component using [] property binding syntax. 
+- Need to define the customPropertyName inside product-item.component.ts file using @Input
+
+product-item.component.ts
+
+    @Input('customPropertyName') customPropertyName:any;
+
+==============================================
+
+App module 
+    1. app.component 
+    2. product-item 
+    3. card
+
+<div [innerText]="varible"> </div>
+
+<button ()="">
+
+app.component [Parent]
+    |-product-item [Child]
+        |-card [child of product item]
+
+app.component.html [TS -variable ]
+    <product-item [propertyName]="variable" (onChildChange)> [TS]
+                                    | @Input('propertyName')
+                                      @Output() onChildChange = new EventEmmiter()
+
+        product-item.html 
+            <card>

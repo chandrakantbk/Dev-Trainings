@@ -11,7 +11,7 @@ import { EventSyntaxComponent } from './event-syntax/event-syntax.component';
 import { FormsModule } from '@angular/forms';
 import { HomePageComponent } from './home-page/home-page.component';
 import { FooterItemComponent } from './footer-item/footer-item.component';
-import { ProductItemComponent } from './product-item/product-item.component';
+import { SamplesModule } from './samples/samples.module';
 
 @NgModule({
   declarations: [
@@ -23,12 +23,12 @@ import { ProductItemComponent } from './product-item/product-item.component';
     EventSyntaxComponent,
     HomePageComponent,
     FooterItemComponent,
-    ProductItemComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    SamplesModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
