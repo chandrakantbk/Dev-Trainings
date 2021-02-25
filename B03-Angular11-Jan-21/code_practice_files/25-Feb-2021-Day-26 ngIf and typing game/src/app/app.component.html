@@ -1,0 +1,39 @@
+<div class="container">
+    <p>ngIf example</p>
+    <input type="radio" value="guest" name="usertype" id="u1" [(ngModel)]="user">
+    <label for="u1" class="mx-3">Guest</label>
+
+    <input type="radio" value="authenticated" name="usertype" id="u2" [(ngModel)]="user">
+
+    <label for="u2" class="ml-2">Authenticated</label>
+
+    <div *ngIf="user == 'authenticated'; else mydiv">
+        Authenticated User: Product list + Prize
+    </div>
+
+    <ng-template #mydiv>
+        <div>
+            Guest: Product list
+        </div>
+    </ng-template>
+
+</div>
+
+
+<div class="container">
+    <h3 class="text-center">Typing Game</h3>
+    <div class="p-2 shadow m-4">
+        <h4 class="text-right text-success">Points: {{ points }} </h4>
+        <div class="p-3 mb-3">
+            {{ str_text }}
+        </div>
+
+        <input type="text" class="form-control" (input)="checkInput($event)" [(ngModel)]="user_text">
+
+        <h3 class="text-success" *ngIf="answer == 'correct' ">Correct</h3>
+
+        <h3 class="text-danger" *ngIf="answer == 'incorrect'">Incorrect</h3>
+
+    </div>
+
+</div>

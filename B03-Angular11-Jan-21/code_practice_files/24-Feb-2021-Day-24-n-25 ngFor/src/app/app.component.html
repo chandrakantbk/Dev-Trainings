@@ -1,0 +1,36 @@
+<div class="container">
+    <div id="d-{{ idx + 1 }}" *ngFor="let v of arr; let idx = index">
+        <p> {{ v }} </p>
+    </div>
+
+    <div class="m-4 shadow p-3" *ngFor="let val of arr_list; let idx = index; let is_first = first; let is_last = last; let is_odd = odd; let is_even = even; ">
+        <p>Index: {{ idx }}</p>
+        <p>Value: {{ val }}</p>
+        <p>Is First: {{ is_first }}</p>
+        <p>Is Last: {{ is_last }}</p>
+        <p>Is this even: {{ is_even }}</p>
+        <p>Is this odd: {{ is_odd }}</p>
+    </div>
+
+</div>
+
+<table class="table mb-4">
+    <tr>
+        <th>Sr. No</th>
+        <th>Name</th>
+        <th>Is first Element</th>
+        <th>Is Last Element</th>
+        <th>Is Even Element</th>
+        <th>Is Odd Element</th>
+    </tr>
+
+    <tr class="shadow" [class.bg-warning]="is_odd" *ngFor="let item of arr_list; let mySrNo = index; let ans_is_first = first; let my_last = last; let my_even = even; let is_odd = odd; ">
+        <td>{{ mySrNo + 1 }}</td>
+        <td>{{ item }}</td>
+        <td>{{ ans_is_first ? 'YES' : '-' }}</td>
+        <td> {{ my_last ? 'YES': '-'}} </td>
+        <td> {{ my_even ? 'YES' : 'NO' }} </td>
+        <td> {{ is_odd ? 'ODD' : 'NA' }}</td>
+    </tr>
+
+</table>
