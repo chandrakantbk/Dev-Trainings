@@ -1,0 +1,21 @@
+<div class="container">
+    <h1 class="text-success">Hello ngSwitch</h1>
+
+    <select name="city_dropdown" [(ngModel)]="city_name" (change)="handleEvent()">
+    <option value="">Select City</option>
+    <option value="pune">Pune</option>
+    <option value="mumbai">Mumbai</option>
+    <option value="30">BLR</option>
+  </select>
+
+    <div class="shadow m-4 p-3" [ngSwitch]="city_name">
+
+        <p *ngSwitchCase="city_1">I am in Pune</p>
+
+        <p *ngSwitchCase="'mumbai'">I am in Mumbai</p>
+
+        <p *ngSwitchDefault>Default Text</p>
+
+    </div>
+
+</div>
