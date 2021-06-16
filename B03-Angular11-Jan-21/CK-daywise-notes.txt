@@ -516,3 +516,68 @@ app.component.html [TS -variable ]
 
         product-item.html 
             <card>
+===================================
+Day 28: ngNonBindable, ngClass and ngStyle [1-March-2021]
+
+<div [ngStyle]="{'color': 'green',  'font-size.px': 10}">
+    text
+</div>
+
+<ul>
+    <li *ngFor="let item of student_list">
+        <span [ngStyle]="{'color': item.city == 'pune' ? 'green' : 'red' }">
+      {{ item.name }} :: {{ item.city }}
+    </span>
+    </li>
+</ul>
+
+<pre ngNonBindable>{{ text_1 }}</pre>
+
+=================================================
+Day 29: Angualar lifecycle [2-March-2021]
+
+ngOnChanges - called when an input binding value changes
+ngOnInit - after the first ngOnChanges
+ngDoCheck - after every run of change detection
+ngAfterContentInit - after component content initialized
+ngAfterContentChecked - after every check of component content
+ngAfterViewInit - after component's view(s) are initialized
+ngAfterViewChecked - after every check of a component's view(s)
+ngOnDestroy - just before the component is destroyed
+
+
+================================
+Day 38
+
+
+UI ==> Angular 
+
+API ==> Python (Application) = > backend  
+
+GET    api/get/city
+[
+    {name: 'SK', city: 'Pune'}, 
+    {name: 'Anu', city: 'Pune'}
+]
+
+
+table
+    Name      City                  Action Button
+
+    Test1     test city             Edit    Delete 
+
+
+
+<tr *ngFor = "let item of student_aary">
+    <td>{{ item.name  }}</td>
+    <td>{{ item.city }} </td>
+    <td> rdit delete </td>
+</tr>
+
+
+var student_aary;
+
+this.http.get('http://skapi.com/api/get/city').subscribe( (data)=>{
+    this.student_aary = res;
+})
+

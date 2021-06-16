@@ -1,0 +1,20 @@
+<div class="container">
+    <h3>
+        {{ title }}
+    </h3>
+
+    <a class="btn btn-primary mx-2" (click)="changeTitle()">
+        Change Title
+    </a>
+
+    <button class="btn btn-primary" (click)="hideSkills()">
+        Remove SKills
+    </button>
+
+    <div class="p-4 shadow mt-3" *ngIf="is_show">
+
+        <app-skills (myskilChange)="handleData($event)" [name]="title"></app-skills>
+
+    </div>
+
+</div>

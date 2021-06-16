@@ -1,0 +1,78 @@
+<!--
+         
+    <nav class="navbar bg-dark mb-4 " role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-warning" (click)="showContent('practice')">Practice Questions </button>
+
+        <button type="button" class="btn btn-warning" [disabled]="is_level_1_passed == true" (click)="showContent('exam', 1)">Start Exam Level 1</button>
+
+        <button type="button" class="btn btn-warning" [disabled]="is_level_1_passed == false" (click)="showContent('exam', 2)">Start Exam Level 2</button>
+
+    </nav>
+
+    <div *ngIf="current_page == 'practice'">
+        <h4 class="m-3">Level 1 Questions</h4>
+
+        <div class="p-3 shadow m-3" *ngFor="let item of questions_level_1">
+            <h5>{{ item.question }} </h5>
+            <p>Answer: {{ item.answer }}</p>
+        </div>
+
+        <hr>
+
+        <h4>Level 2 Questions</h4>
+
+        <div class="p-3 shadow m-3" *ngFor="let item of questions_level_2">
+            <h5>{{ item.question }} </h5>
+            <p>Answer: {{ item.answer }}</p>
+        </div>
+
+    </div>
+
+    <div *ngIf="current_page == 'exam'; else elsePart ">
+        <app-exam [questions_list]="current_exam_set" (onExamChange)="handleExamData($event)">
+           
+        </app-exam>
+    </div>
+
+
+    -->
+
+
+
+<!-- ng content example -->
+<!--  
+       <app-exam [questions_list]="current_exam_set" (onExamChange)="handleExamData($event)">
+            <h2 class="text-danger">This is heading</h2>
+            <p>This is description</p>
+
+        </app-exam>
+
+        <br> <br>
+
+        <app-exam [questions_list]="current_exam_set" (onExamChange)="handleExamData($event)">
+
+            <h2>This is heading 2</h2>
+
+        </app-exam> 
+    -->
+
+<!-- ng-template example -->
+
+<!-- 
+        is_my_name: {{ is_my_name }}
+
+        <div *ngIf="is_my_name == true; else part2">
+            <p> this is my name</p>
+        </div>
+
+        <ng-template #part2>
+            <p>this is NOT my name</p>
+        </ng-template>
+
+        <ng-container *ngIf="is_my_name">
+            <div *ngFor="let item of questions_level_1">
+                {{item.question}}
+            </div>
+        </ng-container>
+         
+    -->

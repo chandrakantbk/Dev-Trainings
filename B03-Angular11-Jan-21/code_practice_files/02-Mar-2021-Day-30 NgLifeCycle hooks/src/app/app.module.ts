@@ -4,16 +4,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ExamComponent } from './exam/exam.component';
-import { EmployeeProcessComponent } from './employee-process/employee-process.component';
-import { LifecycleHooksComponent } from './lifecycle-hooks/lifecycle-hooks.component';
+import { ChildComponent } from './child/child.component';
+import { SkillsComponent } from './skills/skills.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ExamComponent,
-    EmployeeProcessComponent,
-    LifecycleHooksComponent
+    ChildComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,

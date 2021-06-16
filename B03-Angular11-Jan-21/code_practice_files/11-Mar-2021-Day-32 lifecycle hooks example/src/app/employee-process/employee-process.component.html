@@ -1,0 +1,10 @@
+<div class="container">
+    <h4>Check console log to check the dynamic list of selected items array </h4>
+    <div *ngFor="let item of emp_lists; let idx = index; ">
+        <input type="checkbox" id="{{ 'ch-' + idx }}" [(ngModel)]="item.is_checked">
+        <label for="{{ 'ch-' + idx }}" class="pl-2"> {{ item.name }} </label>
+    </div>
+
+    <button class="btn btn-primary" (click)="handleSelected()">SUBMIT</button>
+
+</div>
